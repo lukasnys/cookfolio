@@ -48,7 +48,7 @@ ingredients:
     unit: ml
 ---
 
-# Marokkaanse kippenboutjes
+<Recipe />
 
 ## Instructions
   - Verwarm de oven voor op 200°C.

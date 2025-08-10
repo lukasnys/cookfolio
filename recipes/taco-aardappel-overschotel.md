@@ -41,4 +41,4 @@ ingredients:
 
 ---
 
-# Taco aardappel overschotel
+<Recipe />

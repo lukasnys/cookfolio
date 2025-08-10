@@ -24,4 +24,4 @@ ingredients:
     unit: g
 ---
 
-# Risotto met erwt en spek
+<Recipe />

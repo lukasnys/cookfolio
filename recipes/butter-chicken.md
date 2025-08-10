@@ -48,7 +48,7 @@ ingredients:
     unit: brik
 ---
 
-# Butter chicken 
+<Recipe />
 
 ## Instructions
 

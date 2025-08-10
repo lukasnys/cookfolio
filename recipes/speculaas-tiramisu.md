@@ -27,7 +27,7 @@ ingredients:
     unit: snuf
 ---
 
-# Speculaas tiramisu
+<Recipe />
 
 ## Instructions
   - Maak sterke koffie. Gebruik hiervoor 1 maatje koffie per kopje 

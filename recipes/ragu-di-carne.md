@@ -48,7 +48,7 @@ ingredients:
     unit: g
 ---
 
-# Ragu di carne
+<Recipe />
 
 ## Instructions
 

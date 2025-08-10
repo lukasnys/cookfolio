@@ -13,5 +13,5 @@ ingredients:
 
 ---
 
-# Ovenschotel met gehakt en broccoli
+<Recipe />
 

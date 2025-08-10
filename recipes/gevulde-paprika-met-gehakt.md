@@ -39,7 +39,7 @@ ingredients:
    unit: snuf
 ---
 
-# Gevulde paprika met gehakt
+<Recipe />
 
 ## Instructions
   - Snijd de paprikas in de lengte doormidden. Hol ze uit met een lepel.

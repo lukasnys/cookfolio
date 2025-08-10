@@ -27,4 +27,4 @@ ingredients:
     unit: g
 ---
 
-# Thaise curry
+<Recipe />

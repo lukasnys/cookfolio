@@ -33,4 +33,4 @@ ingredients:
     unit: stuk
 ---
 
-# Gehaktballetjes in tomatensaus
+<Recipe />

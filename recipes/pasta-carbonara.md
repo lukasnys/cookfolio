@@ -15,5 +15,5 @@ ingredients:
     unit: ml
 ---
 
-# Pasta carbonara 
+<Recipe />
 

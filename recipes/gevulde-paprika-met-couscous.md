@@ -42,4 +42,4 @@ ingredients:
     unit: g
 ---
 
-# Gevulde paprika met couscous
+<Recipe />

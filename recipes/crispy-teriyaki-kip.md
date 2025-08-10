@@ -40,7 +40,7 @@ ingredients:
 
 ---
 
-# Crispy teriyaki kip
+<Recipe />
 
 ## Instructions
   - Voor kipkruiden:

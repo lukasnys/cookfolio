@@ -21,4 +21,4 @@ ingredients:
     unit: g
 ---
 
-# Varkenshaasje met spruitjes in de oven
+<Recipe />

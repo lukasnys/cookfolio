@@ -21,4 +21,4 @@ ingredients:
     unit: eetlepel
 ---
 
-# Egg fried rice
+<Recipe />

@@ -30,4 +30,4 @@ ingredients:
     unit: g
 ---
 
-# Mexicaanse wraps 
+<Recipe />

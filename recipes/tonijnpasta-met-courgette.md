@@ -24,7 +24,7 @@ ingredients:
     unit: snuf
 ---
 
-# Tonijnpasta met courgett
+<Recipe />
 
 ## Instructions
 

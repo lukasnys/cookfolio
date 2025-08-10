@@ -36,7 +36,7 @@ ingredients:
     unit: g
 ---
 
-# Katsu curry
+<Recipe />
 
 ## Instructions
   - Snij de ui in kleine stukken de aardappel en wortel in grove stukken

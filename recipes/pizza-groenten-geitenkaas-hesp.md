@@ -27,7 +27,7 @@ ingredients:
     unit: pak
 ---
 
-# Pizza groenten & geitenkaas & hesp
+<Recipe />
 
 ## Instructions
   - Paprika, rode ui en champignons in stukjes snijden & op de pizza leggen

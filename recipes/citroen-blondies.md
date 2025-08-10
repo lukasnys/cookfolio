@@ -36,7 +36,7 @@ ingredients:
     unit: eetlepel
 ---
 
-# Citroen blondies
+<Recipe />
 
 ## Instructions
   - Verwarm oven op 160 graden

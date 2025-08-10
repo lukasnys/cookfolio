@@ -43,7 +43,7 @@ ingredients:
     unit: g
 ---
 
-# Varkenswangetjes
+<Recipe />
 
 ## Ingredients
     - Pel de uien en snipper ze grof.

@@ -27,4 +27,4 @@ ingredients:
     unit: blik
 ---
 
-# Groene soep
+<Recipe />

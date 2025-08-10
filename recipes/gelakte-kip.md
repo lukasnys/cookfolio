@@ -27,7 +27,7 @@ ingredients:
     unit: snuf
 ---
 
-# Gelakte kip
+<Recipe />
 
 ## Instructions
   - Kook de boontjes samen met de knoflookteentjes (in hun geheel) in water met een beetje zout, peper en een scheutje olijfolie tot ze gaar zijn.

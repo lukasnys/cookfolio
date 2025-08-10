@@ -54,4 +54,4 @@ ingredients:
     unit: stuk
 ---
 
-# Chili con carne 
+<Recipe />

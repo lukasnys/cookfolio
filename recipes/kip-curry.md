@@ -33,7 +33,7 @@ ingredients:
     unit: eetlepel
 ---
 
-# Kip curry
+<Recipe />
 
 ## Instructions
 

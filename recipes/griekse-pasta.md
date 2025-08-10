@@ -27,7 +27,7 @@ ingredients:
     unit: snuf
 ---
 
-# Griekse pasta
+<Recipe />
 
 ## Instructions
   - Snijd de kip in stukjes

@@ -39,7 +39,7 @@ ingredients:
     unit: g
 ---
 
-# Chocolate chip koekjes
+<Recipe />
 
 ## Instructions
   - Oven voorverwarmen op 190 graden

@@ -24,7 +24,7 @@ ingredients:
     unit: snuf
 ---
 
-# Appel crumble 
+<Recipe />
 
 ## Instructions
   - Breng de roomboter op kamertemperatuur

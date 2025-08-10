@@ -21,7 +21,7 @@ ingredients:
     unit: g
 ---
 
-# Kip tomaat in de oven
+<Recipe />
 
 ## Instructions
 

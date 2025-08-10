@@ -33,7 +33,7 @@ ingredients:
     unit: dl
 ---
 
-# Zoetzure kip
+<Recipe />
 
 ## Instructions
 

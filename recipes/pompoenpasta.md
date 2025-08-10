@@ -21,7 +21,7 @@ ingredients:
     unit: snuf
 ---
 
-# Pompoenpasta
+<Recipe />
 
 ## Instructions
 

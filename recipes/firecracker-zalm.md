@@ -24,4 +24,4 @@ ingredients:
     unit: stuks
 ---
 
-# Firecracker zalm
+<Recipe />

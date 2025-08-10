@@ -24,6 +24,6 @@ ingredients:
     unit: g
 ---
 
-# Krullekes in kaassaus
+<Recipe />
 
 

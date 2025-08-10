@@ -33,7 +33,7 @@ ingredients:
     unit: g
 ---
 
-# Fitte schotel
+<Recipe />
 
 ## Instructions
   - Verwarm je oven voor op 180 °C.

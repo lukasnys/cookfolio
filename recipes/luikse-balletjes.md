@@ -36,7 +36,7 @@ ingredients:
     unit: blokje
 ---
 
-# Luikse balletjes
+<Recipe />
 
 ## Instructions
 

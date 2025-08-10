@@ -24,5 +24,5 @@ ingredients:
     unit: theelepel
 ---
 
-# Broccoli kip stir fry 
+<Recipe />
 

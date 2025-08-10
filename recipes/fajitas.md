@@ -39,4 +39,4 @@ ingredients:
     unit: snuf
 ---
 
-# Fajitas
+<Recipe />

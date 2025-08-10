@@ -18,4 +18,4 @@ ingredients:
     unit: portie
 ---
 
-# Bruno’s wraps
+<Recipe />

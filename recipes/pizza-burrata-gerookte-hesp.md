@@ -24,5 +24,5 @@ ingredients:
     unit: stuk
 ---
 
-# Pizza burrata & gerookte hesp
+<Recipe />
 

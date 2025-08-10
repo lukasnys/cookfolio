@@ -24,5 +24,5 @@ ingredients:
     unit: snuf
 ---
 
-# Zalmlasagne
+<Recipe />
 

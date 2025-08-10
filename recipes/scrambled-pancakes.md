@@ -21,4 +21,4 @@ ingredients:
     unit: theelepel
 ---
 
-# Scrambled pancakes
+<Recipe />

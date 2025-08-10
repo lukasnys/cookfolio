@@ -48,7 +48,7 @@ ingredients:
     unit: g
 ---
 
-# Spaghetti
+<Recipe />
 
 ## Instructions
   - Alles heel fijn snijden, bakken in boter, spaghkruiden op doen en 5min laten stoven. 

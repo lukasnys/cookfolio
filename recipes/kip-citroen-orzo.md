@@ -39,7 +39,7 @@ ingredients:
     unit: bol
 ---
 
-# Kip citroen orzo
+<Recipe />
 
 ## Instructions
   - Kruid de kip met 1/2 theelepel zout, paprika en peper.
