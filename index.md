@@ -7,4 +7,6 @@ hero:
 
 ---
 
+<WeekPlanner />
+
 <RecipeList />
