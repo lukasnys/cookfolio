@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "recipes:dev": "vitepress dev recipes",
-    "recipes:build": "vitepress build recipes",
-    "recipes:preview": "vitepress preview recipes"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "keywords": [],
   "author": "",
