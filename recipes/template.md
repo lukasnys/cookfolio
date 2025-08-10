@@ -1,11 +1,9 @@
 ---
 title: x
-servings: x,
-tags: [x, y, z]
 ingredients:
-  - x
-  - y
-  - z
+  - name: x
+    quantity: <number>
+    unit: stuk/blik/g/snuf/brik/teen/blad/tak/eetlepel/theelepel
 ---
 
 # X 
