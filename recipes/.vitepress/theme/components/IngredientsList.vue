@@ -2,7 +2,7 @@
   <h2>Ingredients</h2>
   <ul>
     <li v-for="ingredient in ingredients" :key="ingredient.name">
-      {{ ingredient.name }} {{ ingredient.quantity }} {{ ingredient.unit }}
+      {{ ingredient.quantity }} {{ ingredient.unit }} {{ ingredient.name }} 
     </li>
   </ul>
 </template>
