@@ -5,14 +5,40 @@ cuisine: Mexicaans
 tested: true
 weekdayFriendly: true
 ingredients:
-  - name: x
+  - name: aardappel
+    quantity: 600
+    unit: g
+  - name: paprikapoeder
+    quantity: 1
+    unit: eetlepel
+  - name: olijfolie
+    quantity: 1
+    unit: eetlepel
+  - name: gemengd gehakt
+    quantity: 500
+    unit: g
+  - name: passata
+    quantity: 400
+    unit: g
+  - name: taco kruiden
+    quantity: 1
+    unit: zakje
+  - name: rode paprika
     quantity: 1
     unit: stuk
+  - name: gele paprika
+    quantity: 1
+    unit: stuk
+  - name: ui
+    quantity: 1
+    unit: stuk
+  - name: geraspte kaas
+    quantity: 100
+    unit: g
+  - name: zure room
+    quantity: 1
+    unit: pot
+
 ---
 
 # Taco aardappel overschotel
-
-## Ingredients
-- x
-
-![Untitled](Untitled%205.png)

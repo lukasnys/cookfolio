@@ -1,48 +1,58 @@
 ---
 title: Spaghetti
-mealType: Pasta
-cuisine: Italiaans
-tested: true
-weekdayFriendly: false
 ingredients:
+  - name: rode paprika
+    quantity: 2
+    unit: stuk
+  - name: gele paprika
+    quantity: 1
+    unit: stuk
+  - name: selderstengel
+    quantity: 4
+    unit: stuk
   - name: wortel
-    quantity: 650
-    unit: g
-  - name: tomaten
+    quantity: 3
+    unit: stuk
+  - name: tomatenpuree
+    quantity: 2
+    unit: blik
+  - name: tomatenpassata
+    quantity: 2
+    unit: brik
+  - name: knoflook
+    quantity: 4
+    unit: teentje
+  - name: ui
     quantity: 2
     unit: stuk
-  - name: gele uien
-    quantity: 2
+  - name: zoetzure augurk
+    quantity: 3
     unit: stuk
-  - name: gemengd gehakt
-    quantity: 500
-    unit: g
-  - name: kruiden
+  - name: spaghettikruiden
+    quantity: 1
+    unit: eetlepel
+  - name: chili
+    quantity: 1
+    unit: snuf
+  - name: vleesbouillon
+    quantity: 1
+    unit: blok
+  - name: sriracha
     quantity: 1
     unit: snuf
   - name: ketchup
-    quantity: 2
-    unit: eetlepel
+    quantity: 1
+    unit: squirt
+  - name: gemengd gehakt
+    quantity: 800
+    unit: g
 ---
 
 # Spaghetti
 
-Voor 2 personen (met restjes)
-
-## Ingredients
-- 650g wortel
-- 2 tomaten
-- 2 gele uien
-- 500g gemengd gehakt
-- Kruiden: paprika, look, italiaanse kruiden, uienpoeder, zout, peper
-- 2 lepels ketchup
-
-## Cooking steps
-
-1. Snij de uien & bak ze aan in de pan
-2. Voeg het gehakt toe aan de pan
-3. Snij de wortels in kleine stukjes en voeg toe aan de pan wanneer het gehakt doorbakken is
-4. Maak een kruis in de achterkant van de tomaten en leg ze in een pan met kokend water tot de pel begint los te komen
-5. Pel de tomaten en snij in kleine stukjes (doe dit op een bord zodat je het tomatensap bewaart)
-6. Voeg de tomaten en 2 lepels ketchup toe aan de saus
-7. Laat koken tot de wortels gaar zijn
+## Instructions
+  - Alles heel fijn snijden, bakken in boter, spaghkruiden op doen en 5min laten stoven. 
+  - Look, ketchup, sriracha toevoegen: 1min laten doorbakken
+  - Passata toeveogen + bouillonblokje en water. 10min pruttelen en dan mixen.
+  - Gehakt bakken en spagh kruiden op doen
+  - Toevoegen aan saus samen met de room, nadien nog kruiden met peper en zout

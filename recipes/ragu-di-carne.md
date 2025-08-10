@@ -1,7 +1,7 @@
 ---
 title: Ragu di carne
 ingredients:
-  - name: gehakt
+  - name: gemengd gehakt
     quantity: 350
     unit: g
   - name: pancetta sneetjes
@@ -35,45 +35,22 @@ ingredients:
     quantity: 40
     unit: g
   - name: tomatenpassata
+    quantity: 2
+    unit: dl
+  - name: rode wijn
+    quantity: 2.50
+    unit: dl
+  - name: geraspte kaas
     quantity: 200
     unit: g
-  - name: rode wijn
-    quantity: 250
-    unit: g
-  - name: geraspte kaas
-    quantity: 1
-    unit: snuf
   - name: tagliatelle
-    quantity: 1
-    unit: snuf
+    quantity: 500
+    unit: g
 ---
 
 # Ragu di carne
 
-Meal Type: Pasta
-Cuisine: Italiaans
-URL: https://dagelijksekost.vrt.be/gerechten/tagliatelle-al-ragu-di-carne
-Tested?: Yes
-OK for weekday: No
-
-## Ingredients
-- 350 g gehakt
-- 100 g pancetta sneetjes
-- 1 wortel
-- 2 stengels selder
-- 1 ui
-- 2 teentjes knoflook
-- 2 takjes tijm
-- 2 blaadjes laurier
-- Rozemarijn
-- 400 g tomatenstukjes
-- 40 g tomatenpuree
-- 2 dl tomatenpassata
-- 2.5 dl rode wijn
-- Geraspte kaas
-- Tagliatelle
-
-## RECEPT
+## Instructions
 
 - Verwarm over voor op 140 graden
 - Bak de gesneden spek in een ovenvaste pot

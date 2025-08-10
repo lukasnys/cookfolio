@@ -42,12 +42,11 @@ ingredients:
 # Chocolate chip koekjes
 
 ## Instructions
-
-- Oven voorverwarmen op 190 graden
-- Meng bloem, baksoda en bakpoeder, zet apart
-- Mix boter en suiker
-- Voeg eieren toe en mix tot lichte kleur
-- Voeg het bloemmengsel toe
-- Hak de chocolade in stukken en voeg toe aan het deeg
-- Portioneer het deeg in balletjes van ongeveer 60 gram
-- Leg er 9 op een bakplaat en bak voor 8 tot 10 minuten
+  - Oven voorverwarmen op 190 graden
+  - Meng bloem, baksoda en bakpoeder, zet apart
+  - Mix boter en suiker
+  - Voeg eieren toe en mix tot lichte kleur
+  - Voeg het bloemmengsel toe
+  - Hak de chocolade in stukken en voeg toe aan het deeg
+  - Portioneer het deeg in balletjes van ongeveer 60 gram
+  - Leg er 9 op een bakplaat en bak voor 8 tot 10 minuten

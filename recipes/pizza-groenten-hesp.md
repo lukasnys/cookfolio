@@ -10,12 +10,9 @@ ingredients:
   - name: rode ui
     quantity: 1
     unit: stuk
-  - name: champignons
-    quantity: 250
+  - name: hesp
+    quantity: 150
     unit: g
-  - name: geitenkaas
-    quantity: 1
-    unit: reep
   - name: geraspte kaas
     quantity: 200
     unit: g

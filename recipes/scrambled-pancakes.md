@@ -22,16 +22,3 @@ ingredients:
 ---
 
 # Scrambled pancakes
-
-Meal Type: Snack
-Cuisine: Hybrid
-Tested?: Yes
-OK for weekday: Yes
-
-## Ingredients
-- 170g bloem
-- 45g suiker
-- 25g olie
-- 1 ei
-- 150g melk
-- 0.5 theelepel zout

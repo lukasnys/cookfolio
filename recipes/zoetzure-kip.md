@@ -1,16 +1,16 @@
 ---
 title: Zoetzure kip
 ingredients:
-  - name: uien
+  - name: ui
     quantity: 2
     unit: stuk
   - name: kip
     quantity: 600
     unit: g
-  - name: rode paprikas
+  - name: rode paprika
     quantity: 2
     unit: stuk
-  - name: wortels
+  - name: wortel
     quantity: 2
     unit: stuk
   - name: maïzena
@@ -19,7 +19,7 @@ ingredients:
   - name: tomatenpuree
     quantity: 40
     unit: g
-  - name: champignons
+  - name: champignon
     quantity: 250
     unit: g
   - name: ketchup
@@ -35,19 +35,7 @@ ingredients:
 
 # Zoetzure kip
 
-## Ingredients
-- 2 uien
-- 600 g kip
-- 2 rode paprikas
-- 2 wortels
-- maïzena
-- 40 g tomatenpuree
-- 250 g champignons
-- 6 eetlepels ketchup
-- 6 eetlepels zoete chili saus
-- 1 dl appelazijn
-
-## RECEPT
+## Instructions
 
 - Pel een ui en snipper ze fijn. Laat wat olie heet worden in een steelpan en stoof de ui erin aan. Voeg er 2 delen water aan toe en kook de rijst gaar.
 - Snijd het vlees van de kippendijen in reepjes of in blokjes en kruid de kip met peper en kippenkruiden.

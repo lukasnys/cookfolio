@@ -42,7 +42,6 @@ ingredients:
 # Gevulde paprika met gehakt
 
 ## Instructions
-
   - Snijd de paprikas in de lengte doormidden. Hol ze uit met een lepel.
   - Leg de paprikas op een met bakpapier beklede bakplaat en kruid ze met peper, zout en olijfolie.
   - Plaats de paprikas gedurende 15 minuten in een voorverwarmde oven van 180 graden.

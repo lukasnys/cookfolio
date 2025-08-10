@@ -1,13 +1,13 @@
 ---
 title: Mexicaanse wraps
 ingredients:
-  - name: paprikas
+  - name: rode paprika
     quantity: 2
     unit: stuk
   - name: rode ui
     quantity: 1
     unit: stuk
-  - name: gehakt
+  - name: gemengd gehakt
     quantity: 500
     unit: g
   - name: avocado
@@ -26,19 +26,8 @@ ingredients:
     quantity: 1
     unit: pak
   - name: geraspte kaas
-    quantity: 1
-    unit: snuf
+    quantity: 200
+    unit: g
 ---
 
 # Mexicaanse wraps 
-
-## Ingredients
-  - 2 paprikas
-  - 1 rode ui
-  - 500g gehakt
-  - 1 avocado
-  - 1 blik tomatenpuree
-  - 1 blik mais
-  - 1 pot zure room
-  - Wraps
-  - Geraspte kaas

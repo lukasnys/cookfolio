@@ -23,21 +23,11 @@ ingredients:
 
 # Kip tomaat in de oven
 
-## Ingredients
-  - 2 borsten kip
-  - Half potje pesto
-  - 2 mozarella ballen
-  - 500g tomatenpassata
-  - Geraspte kaas
-  - Kippenkruiden
-  - Pizzakruiden
-  - Pasta
+## Instructions
 
-## RECEPT
-
-- Snij de kip in stukjes
-- Voeg de kip toe aan de ovenschoten en voeg kippenkruiden toe
-- Snij de mozarella in dunne plakjes en leg op de kip
-- Voeg de pesto evenredig toe over de mozarella
-- Voeg de passata toe en strooi geraspte kaas erop
-- Zet in een onvoorverwarmde oven op 180 graden voor 1 uur
+  - Snij de kip in stukjes
+  - Voeg de kip toe aan de ovenschoten en voeg kippenkruiden toe
+  - Snij de mozarella in dunne plakjes en leg op de kip
+  - Voeg de pesto evenredig toe over de mozarella
+  - Voeg de passata toe en strooi geraspte kaas erop
+  - Zet in een onvoorverwarmde oven op 180 graden voor 1 uur

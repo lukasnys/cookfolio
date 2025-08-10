@@ -26,16 +26,7 @@ ingredients:
 
 # Tonijnpasta met courgett
 
-## Ingredients
-- 1 courgette
-- 400g tonijn uit blik
-- Halve potje kruidenkaas
-- 1 ui
-- 3 teentjes look
-- Room
-- Geraspte kaas
-
-## RECEPT
+## Instructions
 
 - Snij de ui, look an courgette
 - Zet water op vuur

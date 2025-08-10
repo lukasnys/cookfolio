@@ -1,10 +1,10 @@
 ---
 title: Luikse balletjes
 ingredients:
-  - name: gehakt
+  - name: gemengd gehakt
     quantity: 400
     unit: g
-  - name: sjalots
+  - name: sjalot
     quantity: 2
     unit: stuk
   - name: ei
@@ -16,13 +16,13 @@ ingredients:
   - name: ui
     quantity: 1
     unit: stuk
-  - name: look
+  - name: knoflook
     quantity: 1
     unit: teen
   - name: tijm
     quantity: 2
     unit: tak
-  - name: balsamico azijn
+  - name: balsamicoazijn
     quantity: 1
     unit: eetlepel
   - name: luikse stroop
@@ -33,31 +33,12 @@ ingredients:
     unit: blad
   - name: kippenbouillon
     quantity: 1
-    unit: dl
+    unit: blokje
 ---
 
 # Luikse balletjes
 
-## Ingredients
-  - 400g gehakt
-  - 2 sjalots
-  - 1 ei
-  - 2 tsp paneermeel
-  - 1 ui
-  - 1 teentje look
-  - 2 takjes tijm
-  - Balsamico azijn
-  - 1.5 tsp luikse stroop
-  - 2 blaadjes laurier
-  - 1 dl kippenbouillon
-
-Meal Type: Vlees
-Cuisine: Vlaams
-URL: https://dagelijksekost.vrt.be/gerechten/luikse-balletjes-met-frietjes-en-sla
-Tested?: Yes
-OK for weekday: No
-
-## RECEPT
+## Instructions
 
 - Meng het gehakt met 1 gesneden sjalot en de peterselie
 - Voeg het eigeel toe aan het gehakt, voeg het paneermeel toe en kruid met peper en zout

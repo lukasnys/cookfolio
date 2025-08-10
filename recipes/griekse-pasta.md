@@ -29,3 +29,11 @@ ingredients:
 
 # Griekse pasta
 
+## Instructions
+  - Snijd de kip in stukjes
+  - Marineer in gember en sojasaus voor minstens een half uur
+  - Bak in de olijfolie met een bouillonblokje
+  - Voeg de gekookte Griekse pasta bij de kip en bak verder
+  - Snijd de tomaatjes in 4
+  - Snijd de feta in blokjes
+  - Serveer tomaatjes en feta er apart bij

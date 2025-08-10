@@ -15,7 +15,3 @@ ingredients:
 
 # Ovenschotel met gehakt en broccoli
 
-## Ingredients
-  - 500 g gehakt
-  - 1 broccoli
-  - 500 g aardappelen

@@ -1,45 +1,30 @@
 ---
 title: Groene soep
 ingredients:
-  - name: uien
+  - name: ui
     quantity: 2
     unit: stuk
-  - name: teentjes look
+  - name: knoflook
+    quantity: 4
+    unit: teen
+  - name: courgette
+    quantity: 2
+    unit: stuk
+  - name: spinazi
     quantity: 4
     unit: stuk
-  - name: courgettes
+  - name: kippenbouillon
     quantity: 2
     unit: stuk
-  - name: blokjes spinazie uit de diepvries
-    quantity: 4
-    unit: stuk
-  - name: blokjes kippenbouillon
-    quantity: 2
-    unit: stuk
-  - name: Provencaalse kruiden
+  - name: provencaalse kruiden
     quantity: 1
     unit: snuf
   - name: olie
     quantity: 1
     unit: eetlepel
-  - name: Water
+  - name: water
     quantity: 1
     unit: blik
 ---
 
 # Groene soep
-
-Meal Type: Soep
-Cuisine: Vlaams
-Tested?: Yes
-OK for weekday: No
-
-## Ingredients
-- 2 uien
-- 4 teentjes look
-- 2 courgettes
-- 4 blokjes spinazie uit de diepvries
-- 2 blokjes kippenbouillon
-- Provencaalse kruiden
-- Scheutje olie
-- Water

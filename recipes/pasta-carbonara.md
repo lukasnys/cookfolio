@@ -1,24 +1,19 @@
 ---
 title: Pasta carbonara
 ingredients:
-  - name: pasta
+  - name: cappelini
     quantity: 400
     unit: g
-  - name: pancetta
-    quantity: 150
+  - name: spekreepjes
+    quantity: 300
     unit: g
-  - name: eieren
+  - name: ei
     quantity: 3
     unit: stuk
-  - name: parmezaan
-    quantity: 100
-    unit: g
+  - name: room
+    quantity: 250
+    unit: ml
 ---
 
 # Pasta carbonara 
 
-## Ingredients
-  - 400g pasta
-  - 150g pancetta
-  - 3 eieren
-  - 100g parmezaan

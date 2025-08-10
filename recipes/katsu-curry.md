@@ -7,16 +7,19 @@ ingredients:
   - name: wortel
     quantity: 1
     unit: stuk
-  - name: aardappelen
+  - name: aardappel
     quantity: 2
     unit: stuk
   - name: appel
     quantity: 0.5
     unit: stuk
+  - name: knoflook
+    quantity: 1
+    unit: teen
   - name: ketchup
     quantity: 1
     unit: eetlepel
-  - name: soja saus
+  - name: sojasaus
     quantity: 1
     unit: theelepel
   - name: honing
@@ -35,21 +38,15 @@ ingredients:
 
 # Katsu curry
 
-## Ingredients
-  - 1 ui, in stukken gesneden
-  - 1 wortel, in stukken gesneden
-  - 2 aardappelen, in stukken gesneden
-  - een halve appel, geraspt
-  - 1 tbsp ketchup
-  - 1 tsp soja saus
-  - 1 tsp honing
-  - 3 japanese curry blokjes
-  - 1 ei
-  - Panko
-  - Lookpoeder, uipoeder, zout, peper
+## Instructions
+  - Snij de ui in kleine stukken de aardappel en wortel in grove stukken
+  - Rasp de halve appel
+  - Voeg de ui, geplette knoflook, aardappel en wortel toe aan een pan
+  - Voeg water toe tot dat de groenten bedekt zijn
+  - Voeg de appel en de sauzen toe
+  - Laat simmeren tot gaar
 
-Meal Type: Gevogelte
-Cuisine: Japans
-URL: https://www.instagram.com/reel/C3fkVE4MeHB/?igsh=MW11Y3l4eWR2cHFvcQ==
-Tested?: No
-OK for weekday: Yes
+  - Snij de kip in stukken
+  - Mix de kruiden & het ei
+  - Dip de kip in het eimengsel, vervolgens in de pank
+  - Bak de kip in een pan met olie

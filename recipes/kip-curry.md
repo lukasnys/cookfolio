@@ -35,28 +35,10 @@ ingredients:
 
 # Kip curry
 
-## Ingredients
-  - 500g kip
-  - 1 sjalot
-  - 1 gele paprika
-  - 1 rode paprika
-  - 1 blik ananas
-  - 400ml kokosmelk
-  - 1 blok kippenbouillon
-  - 1 el kippenkruiden
-  - 2 el kerriepoeder
-  - 1/2 el kurkuma
+## Instructions
 
-Meal Type: Gevogelte
-Cuisine: Hybrid
-URL: https://www.libelle-lekker.be/bekijk-recept/88687/kipcurry-met-verse-ananas-en-rijst
-Tested?: No
-OK for weekday: Yes
-
-## RECEPT
-
-- Kook de rijst gaar in lichtgezouten water volgens de aanwijzingen op de verpakking. Giet hem af en laat hem goed uitlekken.
-- Snij de kipfilet in reepjes en kruid met kippenkruiden. Verhit olijfolie in een pan en bak de kip aan alle kanten goudbruin en gaar. Neem de kippenreepjes uit de pan.
-- Pel en snipper de sjalot. Maak de paprika’s schoon en snij ze in reepjes. Verhit opnieuw olie in de pan en stoof de sjalot glazig. Voeg de paprikareepjes toe en schep goed om. Voeg het kerriepoeder en de kurkuma toe en roerbak tot de geuren vrijkomen.
-- Schenk er de kokosmelk bij, spoel het blikje uit en voeg zo nog een beetje water toe. Verkruimel het bouillonblokje erbij en leg er de kip opnieuw bij. Laat 10 minuten op een zacht vuur garen en indikken.
-- Snij de citroen in partjes. Snij de ananas in blokjes en voeg de blokjes toe aan de stoofpot. Laat nog even meewarmen. Schep de kipcurry in kommen en serveer met de rijst. Werk af met de sesamzaadjes, een handvol verse groene kruiden en een partje limoen.
+  - Kook de rijst gaar in lichtgezouten water volgens de aanwijzingen op de verpakking. Giet hem af en laat hem goed uitlekken.
+  - Snij de kipfilet in reepjes en kruid met kippenkruiden. Verhit olijfolie in een pan en bak de kip aan alle kanten goudbruin en gaar. Neem de kippenreepjes uit de pan.
+  - Pel en snipper de sjalot. Maak de paprika’s schoon en snij ze in reepjes. Verhit opnieuw olie in de pan en stoof de sjalot glazig. Voeg de paprikareepjes toe en schep goed om. Voeg het kerriepoeder en de kurkuma toe en roerbak tot de geuren vrijkomen.
+  - Schenk er de kokosmelk bij, spoel het blikje uit en voeg zo nog een beetje water toe. Verkruimel het bouillonblokje erbij en leg er de kip opnieuw bij. Laat 10 minuten op een zacht vuur garen en indikken.
+  - Snij de citroen in partjes. Snij de ananas in blokjes en voeg de blokjes toe aan de stoofpot. Laat nog even meewarmen. Schep de kipcurry in kommen en serveer met de rijst. Werk af met de sesamzaadjes, een handvol verse groene kruiden en een partje limoen.

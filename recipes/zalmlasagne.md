@@ -1,17 +1,28 @@
 ---
 title: Zalmlasagne
-mealType: Pasta
-cuisine: Italiaans
-url: https://www.ah.be/allerhande/recept/R-R324192/lasagne-met-ricotta-spinazie-en-gerookte-zalm
-tested: true
-weekdayFriendly: true
 ingredients:
-  - name: x
+  - name: spinazie
+    quantity: 600
+    unit: g
+  - name: gerookte zalm
+    quantity: 200
+    unit: g
+  - name: ui
     quantity: 1
     unit: stuk
+  - name: lasagnevellen
+    quantity: 12
+    unit: stuk
+  - name: ricotta
+    quantity: 250
+    unit: g
+  - name: melk
+    quantity: 200
+    unit: ml
+  - name: nootmuskaat
+    quantity: 1
+    unit: snuf
 ---
 
 # Zalmlasagne
 
-## Ingredients
-- x
