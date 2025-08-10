@@ -5,17 +5,17 @@ ingredients:
     quantity: 500
     unit: g
   - name: broccoli
-    quantity: 1
-    unit: stuk
+    quantity: 500
+    unit: g
+  - name: aardappelen
+    quantity: 500
+    unit: g
+
 ---
 
 # Ovenschotel met gehakt en broccoli
 
 ## Ingredients
-  - 500g gehakt
+  - 500 g gehakt
   - 1 broccoli
-
-Meal Type: Vlees
-Cuisine: Vlaams
-Tested?: Yes
-OK for weekday: No
+  - 500 g aardappelen

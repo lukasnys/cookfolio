@@ -1,13 +1,13 @@
 ---
 title: Kip tomaat in de oven
 ingredients:
-  - name: kip borsten
-    quantity: 2
-    unit: stuk
+  - name: kip
+    quantity: 500
+    unit: g
   - name: pesto
     quantity: 0.5
     unit: pot
-  - name: mozarella ballen
+  - name: mozarella
     quantity: 2
     unit: stuk
   - name: tomatenpassata
@@ -32,11 +32,6 @@ ingredients:
   - Kippenkruiden
   - Pizzakruiden
   - Pasta
-
-Meal Type: Gevogelte
-Cuisine: Vlaams
-Tested?: Yes
-OK for weekday: Yes
 
 ## RECEPT
 

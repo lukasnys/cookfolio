@@ -1,8 +1,8 @@
 ---
 title: Gevulde paprika met couscous
 ingredients:
-  - name: paprikas
-    quantity: 3
+  - name: rode paprika
+    quantity: 2
     unit: stuk
   - name: courgette
     quantity: 1
@@ -22,44 +22,24 @@ ingredients:
   - name: couscous
     quantity: 300
     unit: g
-  - name: Italiaanse kruiden
+  - name: italiaanse kruiden
     quantity: 1
     unit: snuf
-  - name: Paprika kruiden
+  - name: paprikapoeder
     quantity: 1
     unit: snuf
-  - name: Zout en peper
+  - name: zout en peper
     quantity: 1
     unit: snuf
-  - name: Oregano
+  - name: oregano
     quantity: 1
     unit: snuf
-  - name: Groentenbouillon
+  - name: groentenbouillon
     quantity: 1
-    unit: blok
-  - name: Geraspte kaas
-    quantity: 1
-    unit: snuf
+    unit: kubus
+  - name: geraspte kaas
+    quantity: 200
+    unit: g
 ---
 
 # Gevulde paprika met couscous
-
-Meal Type: Veggie
-Cuisine: Hybrid
-Tested?: Yes
-OK for weekday: Yes
-
-## Ingredients
-- 3 paprikas
-- 1 courgette
-- 2 wortels
-- 1 ui
-- 3 teentjes look
-- 500 g passata
-- 300 g couscous
-- Italiaanse kruiden
-- Paprika kruiden
-- Zout en peper
-- Oregano
-- Groentenbouillon
-- Geraspte kaas

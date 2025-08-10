@@ -1,5 +1,5 @@
 ---
-title: Romige tonijnpasta met courgett
+title: Tonijnpasta met courgette
 ingredients:
   - name: courgette
     quantity: 1
@@ -24,13 +24,7 @@ ingredients:
     unit: snuf
 ---
 
-# Romige tonijnpasta met courgett
-
-Meal Type: Pasta
-Cuisine: Italiaans
-URL: https://vm.tiktok.com/ZGeFdgUPX/
-Tested?: Yes
-OK for weekday: Yes
+# Tonijnpasta met courgett
 
 ## Ingredients
 - 1 courgette

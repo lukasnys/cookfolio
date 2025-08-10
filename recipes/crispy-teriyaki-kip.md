@@ -2,15 +2,15 @@
 title: Crispy teriyaki kip
 ingredients:
   - name: broccoli
-    quantity: 1
-    unit: stuk
+    quantity: 500
+    unit: g
   - name: edamame bonen
     quantity: 200
     unit: g
-  - name: lente-ui
+  - name: lente ui
     quantity: 1
     unit: stuk
-  - name: kipfilet
+  - name: kip
     quantity: 300
     unit: g
   - name: cornflakes
@@ -37,27 +37,20 @@ ingredients:
   - name: gemberpoeder
     quantity: 1
     unit: eetlepel
-  - name: terriyakisaus
-    quantity: 2
-    unit: eetlepel
+
 ---
 
 # Crispy teriyaki kip
 
-## Ingredients
-- 1 broccoli
-- 200 g edamame bonen
-- lente-ui
-- 300g kipfilet
-- Voor kipkruiden:
-    - 200g cornflakes
-    - zout en peper
-    - 1 theelepel knoflookpoeder
-    - 1 theelepel uienpoeder
-    - 1 theelepel paprikapoeder
-- Voor de teriyakisaus:
-    - 70ml sojasaus
-    - 50 ml water
-    - 4 eetlepels honing
-    - 1 eetlepel gemberpoeder
-    - (optioneel) 2 eetlepels kant-en-klare terriyakisaus
+## Instructions
+  - Voor kipkruiden:
+    - Cornflakes
+    - Zout en peper
+    - Knoflookpoeder
+    - Uienpoeder
+    - Paprikapoeder
+  - Voor de teriyakisaus:
+    - Sojasaus
+    - Water
+    - Honing
+    - Gemberpoeder

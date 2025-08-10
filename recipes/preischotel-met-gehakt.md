@@ -1,10 +1,10 @@
 ---
 title: Preischotel met gehakt
 ingredients:
-  - name: aardappels
+  - name: aardappelen
     quantity: 750
     unit: g
-  - name: kipgehakt
+  - name: kippengehakt
     quantity: 300
     unit: g
   - name: prei
@@ -40,12 +40,6 @@ ingredients:
 ---
 
 # Preischotel met gehakt
-
-Meal Type: Vlees
-Cuisine: Vlaams
-URL: https://www.instagram.com/reel/C3uDH9BIKIW/?igsh=djJlbWN4ZmxkOTdo
-Tested?: No
-OK for weekday: No
 
 ## Ingredients
 - 750 gram aardappels (iets kruimig)

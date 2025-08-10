@@ -11,7 +11,7 @@ ingredients:
     quantity: 1
     unit: stuk
   - name: wortels
-    quantity: 1.5
+    quantity: 2
     unit: stuk
   - name: tomaatstukjes
     quantity: 1
@@ -20,7 +20,7 @@ ingredients:
     quantity: 1
     unit: blik
   - name: knoflook
-    quantity: 3
+    quantity: 4
     unit: teen
   - name: laurier
     quantity: 1
@@ -43,22 +43,15 @@ ingredients:
   - name: chilivlokken
     quantity: 1
     unit: snuf
+  - name: mais
+    quantity: 1
+    unit: blik
+  - name: looksaus
+    quantity: 1
+    unit: portie
+  - name: tomaat
+    quantity: 2
+    unit: stuk
 ---
 
 # Chili con carne 
-
-## Ingredients
-  - 500g gemengd gehakt
-  - 1 rode paprika
-  - 1 uien
-  - 1.5 wortels
-  - 1 blik tomaatstukjes
-  - 1 blik chilibonen
-  - 3 teen knoflook
-  - 1 blad laurier
-  - 1 tak tijm
-  - 2 eetlepel olijfolie
-  - 0.125 theelepel cayenne
-  - 0.25 theelepel komijn
-  - 0.25 theelepel korianderzaad
-  - 1 snuf chilivlokken

@@ -13,7 +13,7 @@ ingredients:
   - name: vanillesuiker
     quantity: 1
     unit: zakje
-  - name: eieren
+  - name: ei
     quantity: 2
     unit: stuk
   - name: bloem
@@ -41,21 +41,7 @@ ingredients:
 
 # Chocolate chip koekjes
 
-## Ingredients
-- 227 g boter (kamertemperatuur)
-- 232 g witte suiker
-- 213 g lichtbruine suiker
-- 1 zakje vanillesuiker
-- 2 eieren
-- 427 g bloem
-- 1 tsp baksoda
-- 1/2 tsp bakpoeder
-- 1 tsp zout
-- 125 g witte chocolade
-- 125 g melk chocolade
-- 125 g zwarte chocolade
-
-## RECEPT
+## Instructions
 
 - Oven voorverwarmen op 190 graden
 - Meng bloem, baksoda en bakpoeder, zet apart

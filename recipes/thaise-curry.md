@@ -14,5 +14,3 @@ ingredients:
 
 ## Ingredients
 - x
-
-![Untitled](Untitled%205.jpeg)

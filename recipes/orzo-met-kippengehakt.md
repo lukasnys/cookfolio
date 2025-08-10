@@ -50,7 +50,3 @@ ingredients:
   - 150ml room
   - 1 groentenbouillonblokje
   - 200g broccoli
-
-URL: https://vm.tiktok.com/ZGem3W7qp/
-Tested?: No
-OK for weekday: No

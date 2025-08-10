@@ -1,17 +1,21 @@
 ---
 title: Bruno's wraps
 ingredients:
-  - name: x
-    quantity: 1
+  - name: avocado
+    quantity: 2
     unit: stuk
+  - name: kip
+    quantity: 500
+    unit: g
+  - name: ui
+    quantity: 500
+    unit: g
+  - name: ijsbergsla
+    quantity: 1
+    unit: zak
+  - name: sriracha
+    quantity: 1
+    unit: portie
 ---
 
 # Bruno’s wraps
-
-Meal Type: Gevogelte
-Cuisine: Hybrid
-Tested?: Yes
-OK for weekday: Yes
-
-## Ingredients
-  - x

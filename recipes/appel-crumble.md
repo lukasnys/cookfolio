@@ -1,7 +1,7 @@
 ---
 title: Appel crumble
 ingredients:
-  - name: appels
+  - name: appel
     quantity: 575
     unit: g
   - name: bloem
@@ -18,7 +18,7 @@ ingredients:
     unit: g
   - name: citroensap
     quantity: 1
-    unit: snuf
+    unit: portie
   - name: kaneel
     quantity: 1
     unit: snuf
@@ -26,21 +26,12 @@ ingredients:
 
 # Appel crumble 
 
-## Ingredients
-  - 575g appels
-  - 175g bloem
-  - 65g witte suiker
-  - 65g bruine suiker
-  - 110g roomboter
-  - Citroensap
-  - Kaneel
-
-## Recept
-- Breng de roomboter op kamertemperatuur
-- Snij appels in kleine stukjes, voeg citroensap en 2 lepels bruine suiker toe en meng
-- Giet de appels in een ovenschaal
-- Meng de suiker en boter samen
-- Voeg kaneel toe
-- Voeg de bloem toe tot een kruimeldeeg
-- Strooi het deegmengsel over de appels en druk aan
-- Steek de ovenschaal in de over voor 40 minuten op 190 graden
+## Instructions
+  - Breng de roomboter op kamertemperatuur
+  - Snij appels in kleine stukjes, voeg citroensap en 2 lepels bruine suiker toe en meng
+  - Giet de appels in een ovenschaal
+  - Meng de suiker en boter samen
+  - Voeg kaneel toe
+  - Voeg de bloem toe tot een kruimeldeeg
+  - Strooi het deegmengsel over de appels en druk aan
+  - Steek de ovenschaal in de over voor 40 minuten op 190 graden

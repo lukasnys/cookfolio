@@ -1,10 +1,5 @@
 ---
 title: Zoetzure kip
-mealType: Gevogelte
-cuisine: Chinees
-url: https://dagelijksekost.vrt.be/gerechten/kippenblokjes-in-zoetzure-saus-en-rijst
-tested: false
-weekdayFriendly: true
 ingredients:
   - name: uien
     quantity: 2

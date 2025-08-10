@@ -2,8 +2,8 @@
 title: Broccoli kip stir fry
 ingredients:
   - name: kip
-    quantity: 2
-    unit: borsten
+    quantity: 500
+    unit: g
   - name: broccoli
     quantity: 400
     unit: g
@@ -21,16 +21,8 @@ ingredients:
     unit: teen
   - name: gember
     quantity: 1
-    unit: snuf
+    unit: theelepel
 ---
 
 # Broccoli kip stir fry 
 
-## Ingredients
-  - 2 borsten kip
-  - 400g broccoli
-  - 200g rijst
-  - 5 eetlepel sojasaus
-  - 2 eetlepel bruine suiker
-  - 3 teen knoflook
-  - 1 snuf gember
