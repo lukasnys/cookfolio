@@ -10,6 +10,7 @@
     "build": "vitepress build",
     "preview": "vitepress preview",
     "lint:units": "pnpm tsx ./scripts/lint-units.ts",
+    "lint:recipes": "pnpm tsx ./scripts/lint-recipes.ts",
     "prettier:write": "pnpm exec prettier . --write",
     "prettier:check": "pnpm exec prettier . --check",
     "prepare": "husky"
@@ -38,6 +39,7 @@
     "calendar-link": "^2.11.0",
     "dayjs": "^1.11.13",
     "ics": "^3.8.1",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "valibot": "^1.1.0"
   }
 }
