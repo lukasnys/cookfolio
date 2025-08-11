@@ -7,7 +7,7 @@ defineProps<{ id: string; recipe: Recipe }>();
 
 <template>
   <button
-    class="btn btn-alt"
+    class="btn btn-alt whitespace-nowrap"
     :id="'popover-toggle-' + id"
     :popovertarget="'popover-' + id"
   >

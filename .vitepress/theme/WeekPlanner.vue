@@ -54,7 +54,7 @@ const saveWeek = () => {
   <div class="week-planner">
     <div v-for="(day, index) in weekData" :key="day.id" class="day-field">
       <label class="day-field__label" :for="day.id">{{ day.label }}</label>
-      <div class="flex items-center gap-4">
+      <div class="flex justify-end flex-wrap items-center gap-4">
         <RecipeSelect
           :selectedRecipe="day.recipe"
           :dayId="day.id"
