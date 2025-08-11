@@ -2,7 +2,7 @@
   import { data as recipes } from './recipes.data.ts';
 
   defineProps({
-    selectedRecipe: String,
+    selectedRecipe: String | null,
     dayId: String
   });
 

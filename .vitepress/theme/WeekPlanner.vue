@@ -1,7 +1,10 @@
-<script setup>
+<script setup lang="ts">
+import { ref } from 'vue';
+import {data as recipes, Ingredient, Recipe } from './recipes.data.ts';
+  
 import RecipeSelect from './RecipeSelect.vue';
 
-const weekData = [
+const weekData: { id: string; label: string; recipe: string | null }[] = [
   { id: 'monday', label: 'Monday', recipe: null },
   { id: 'tuesday', label: 'Tuesday', recipe: null },
   { id: 'wednesday', label: 'Wednesday', recipe: null },
@@ -11,8 +14,31 @@ const weekData = [
   { id: 'sunday', label: 'Sunday', recipe: null }
 ];
 
+let ingredientsRequired = ref<Ingredient[] | undefined>(undefined);
+
+const recipesByName = recipes.reduce<Record<string, Recipe>>((acc, recipe) => {
+  acc[recipe.title] = recipe;
+  return acc;
+}, {});
+
 const saveWeek = () => {
-  console.log(weekData);
+  const recipes = weekData
+    .map(day => day.recipe)
+    .filter(value => value !== null)
+    .map(day => recipesByName[day]);
+
+  ingredientsRequired.value = recipes.reduce<Ingredient[]>((acc, recipe) => {
+    recipe.ingredients.forEach(ingredient => {
+      const existing = acc.find(i => i.name === ingredient.name && i.unit === ingredient.unit);
+      if (existing) {
+        existing.quantity += ingredient.quantity;
+      } else {
+        acc.push(ingredient);
+      }
+    });
+      
+    return acc;
+  }, []);
 }
 </script>
 
@@ -57,5 +83,14 @@ const saveWeek = () => {
     </div>
 
     <button class="btn btn-brand" @click="saveWeek">Save</button>
+
+    <div v-if="ingredientsRequired">
+      <h3>Ingredients Required</h3>
+      <ul>
+        <li v-for="ingredient in ingredientsRequired" :key="ingredient.name">
+          {{ ingredient.quantity }} {{ ingredient.unit }} {{ ingredient.name }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
