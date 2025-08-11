@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 .btn {
+  font-size: 0.875rem;
+  line-height: 1.4;
   font-weight: 600;
   border-radius: calc(var(--spacing) * 2);
   padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4);
@@ -44,4 +46,24 @@
     color: var(--vp-button-alt-active-text);
     background-color: var(--vp-button-alt-active-bg);
   }
+}
+
+.vp-doc li + li {
+  margin-top: calc(var(--spacing) * 1);
+}
+
+input,
+select {
+  font-size: 0.875rem;
+  font-weight: 400;
+  background-color: var(--vp-c-bg);
+  border: 2px solid var(--vp-c-border);
+  border-radius: calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 2);
+}
+
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--vp-c-tip-1);
+  outline-offset: 2px;
 }

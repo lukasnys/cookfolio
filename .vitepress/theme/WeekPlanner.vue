@@ -96,13 +96,13 @@ const onStartDateChange = (event: Event) => {
 <template>
   <h2>Week Planner</h2>
 
-  <input
-    type="date"
-    :value="startDate.format('YYYY-MM-DD')"
-    @change="onStartDateChange"
-  />
-
   <div class="week-planner">
+    <input
+      type="date"
+      :value="startDate.format('YYYY-MM-DD')"
+      @change="onStartDateChange"
+    />
+
     <div class="week-planner__days">
       <div v-for="(day, index) in weekData" :key="day.id" class="day-field">
         <label class="day-field__label" :for="day.id">{{ day.label }}</label>
@@ -125,7 +125,7 @@ const onStartDateChange = (event: Event) => {
               target="_blank"
               :href="getLinkToAddToGcal(day)"
             >
-              <CalendarIcon class="size-6" />
+              <CalendarIcon class="size-5" />
             </a>
           </div>
         </div>
@@ -151,7 +151,7 @@ const onStartDateChange = (event: Event) => {
 .week-planner__days {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacing) * 2);
+  gap: calc(var(--spacing) * 4);
   background-color: var(--vp-c-bg-alt);
   padding: calc(var(--spacing) * 6);
   padding-top: calc(var(--spacing) * 5);
