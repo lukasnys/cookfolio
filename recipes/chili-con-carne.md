@@ -13,7 +13,7 @@ ingredients:
   - name: wortel
     quantity: 2
     unit: stuk
-  - name: tomaatstukjes
+  - name: tomatenstukjes
     quantity: 400
     unit: g
   - name: chilibonen
@@ -28,10 +28,10 @@ ingredients:
   - name: verse tijm tak
     quantity: 1
     unit: stuk
-  - name: olijfolie
+  - name: olie
     quantity: 2
     unit: el
-  - name: cayennepoeder
+  - name: cayennepeper
     quantity: 0.125
     unit: tl
   - name: gemalen komijn

@@ -1,7 +1,7 @@
 ---
 title: Kip curry
 ingredients:
-  - name: kip
+  - name: kip filet
     quantity: 500
     unit: g
   - name: sjalot

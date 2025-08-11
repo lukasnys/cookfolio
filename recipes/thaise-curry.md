@@ -1,7 +1,7 @@
 ---
 title: Thaise curry
 ingredients:
-  - name: rode paprike
+  - name: rode paprika
     quantity: 1
     unit: stuk
   - name: rode ui

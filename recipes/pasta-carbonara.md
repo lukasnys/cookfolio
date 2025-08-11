@@ -10,7 +10,7 @@ ingredients:
   - name: ei
     quantity: 3
     unit: stuk
-  - name: room
+  - name: kookroom
     quantity: 250
     unit: ml
 ---

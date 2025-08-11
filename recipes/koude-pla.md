@@ -7,7 +7,7 @@ ingredients:
   - name: aardappel
     quantity: 300
     unit: g
-  - name: kerstomaten
+  - name: kerstomaat
     quantity: 200
     unit: g
   - name: appel

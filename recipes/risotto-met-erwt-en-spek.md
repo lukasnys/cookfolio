@@ -22,7 +22,7 @@ ingredients:
   - name: parmezaanse kaas
     quantity: 85
     unit: g
-  - name: spek
+  - name: spekreepjes
     quantity: 300
     unit: g
 ---

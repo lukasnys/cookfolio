@@ -1,7 +1,7 @@
 ---
 title: Speculaas tiramisu
 ingredients:
-  - name: speculooskoeke
+  - name: speculaas koeken
     quantity: 125
     unit: g
   - name: mascarpone
@@ -10,11 +10,8 @@ ingredients:
   - name: sterke koffie
     quantity: 200
     unit: ml
-  - name: eierdooier
+  - name: ei
     quantity: 2
-    unit: stuk
-  - name: eiwit
-    quantity: 1
     unit: stuk
   - name: bloemsuiker
     quantity: 50
@@ -31,7 +28,7 @@ ingredients:
 
 ## Instructions
   - Maak sterke koffie. Gebruik hiervoor 1 maatje koffie per kopje 
-  - Splits de eieren en hou het eiwit van 1 ei apart 
+  - Splits de eieren en hou het eiwit van 1 ei apart (het andere eiwit is niet nodig)
   - Meng vervolgens met een mixer de 2 eierdooiers, de bloemsuiker en de amaretto tot een luchtig beslag. Dit mengsel moet een lichte kleur hebben 
   - Voeg de mascarpone toe en mix alles tot een glad geheel 
   - Klop het eiwit stijf en schep dit voorzichtig met een houten lepel onder de mascarponecrème. Klop de lepel niet af op de rand van de kom, want zo klopt u de lucht uit het opgeklopt eiwit 

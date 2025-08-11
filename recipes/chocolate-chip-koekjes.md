@@ -4,7 +4,7 @@ ingredients:
   - name: boter
     quantity: 227
     unit: g
-  - name: witte suiker
+  - name: kristalsuiker
     quantity: 232
     unit: g
   - name: lichtbruine suiker

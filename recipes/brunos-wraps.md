@@ -4,7 +4,7 @@ ingredients:
   - name: avocado
     quantity: 2
     unit: stuk
-  - name: kip
+  - name: kip filet
     quantity: 500
     unit: g
   - name: ui

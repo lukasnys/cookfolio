@@ -1,13 +1,13 @@
 ---
 title: Ovenschotel met gehakt en broccoli
 ingredients:
-  - name: gehakt
+  - name: gemengd gehakt
     quantity: 500
     unit: g
   - name: broccoli
     quantity: 500
     unit: g
-  - name: aardappelen
+  - name: aardappel
     quantity: 500
     unit: g
 

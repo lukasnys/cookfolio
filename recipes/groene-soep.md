@@ -10,7 +10,7 @@ ingredients:
   - name: courgette
     quantity: 2
     unit: stuk
-  - name: spinazi
+  - name: spinazie
     quantity: 4
     unit: stuk
   - name: kippenbouillon

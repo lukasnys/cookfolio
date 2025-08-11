@@ -22,7 +22,7 @@ ingredients:
   - name: gemberpoeder
     quantity: 1
     unit: tl
-  - name: zwarte peper
+  - name: peper
     quantity: 0.5
     unit: tl
   - name: kurkumapoeder
@@ -40,7 +40,7 @@ ingredients:
   - name: kip drumstick
     quantity: 9
     unit: stuk
-  - name: krielaardappelen
+  - name: krielaardappel
     quantity: 340
     unit: g
   - name: citroensap

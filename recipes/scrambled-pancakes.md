@@ -4,7 +4,7 @@ ingredients:
   - name: bloem
     quantity: 170
     unit: g
-  - name: suiker
+  - name: kristalsuiker
     quantity: 45
     unit: g
   - name: olie

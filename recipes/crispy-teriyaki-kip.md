@@ -10,7 +10,7 @@ ingredients:
   - name: lente ui
     quantity: 1
     unit: stuk
-  - name: kip
+  - name: kip filet
     quantity: 300
     unit: g
   - name: cornflakes

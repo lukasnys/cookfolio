@@ -7,13 +7,13 @@ ingredients:
   - name: komkommer
     quantity: 1
     unit: stuk
-  - name: kerstomaten
+  - name: kerstomaat
     quantity: 200
     unit: g
   - name: appel
     quantity: 1
     unit: stuk
-  - name: pasta
+  - name: spirelli
     quantity: 500
     unit: g
   - name: kaas

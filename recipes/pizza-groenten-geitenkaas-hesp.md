@@ -10,7 +10,7 @@ ingredients:
   - name: rode ui
     quantity: 1
     unit: stuk
-  - name: champignons
+  - name: champignon
     quantity: 250
     unit: g
   - name: geitenkaasrol

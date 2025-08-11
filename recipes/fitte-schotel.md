@@ -4,7 +4,7 @@ ingredients:
   - name: quinoa
     quantity: 125
     unit: g
-  - name: olijfolie
+  - name: olie
     quantity: 2
     unit: el
   - name: kippengehakt

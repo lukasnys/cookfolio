@@ -1,7 +1,7 @@
 ---
 title: Fajitas
 ingredients:
-  - name: kip
+  - name: kip filet
     quantity: 200
     unit: g
   - name: rode paprika
@@ -31,10 +31,13 @@ ingredients:
   - name: korianderzaad
     quantity: 1
     unit: el
-  - name: suiker
+  - name: kristalsuiker
     quantity: 1
     unit: el
-  - name: peper en zout
+  - name: peper
+    quantity: 1
+    unit: beetje
+  - name: zout
     quantity: 1
     unit: beetje
 ---

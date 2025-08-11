@@ -13,7 +13,7 @@ ingredients:
   - name: ui
     quantity: 1
     unit: stuk
-  - name: kip
+  - name: kip filet
     quantity: 500
     unit: g
 ---

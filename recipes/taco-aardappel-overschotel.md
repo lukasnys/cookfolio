@@ -1,9 +1,5 @@
 ---
 title: Taco aardappel overschotel
-mealType: Vlees
-cuisine: Mexicaans
-tested: true
-weekdayFriendly: true
 ingredients:
   - name: aardappel
     quantity: 600
@@ -11,7 +7,7 @@ ingredients:
   - name: paprikapoeder
     quantity: 1
     unit: el
-  - name: olijfolie
+  - name: olie
     quantity: 1
     unit: el
   - name: gemengd gehakt

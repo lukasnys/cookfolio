@@ -7,7 +7,7 @@ ingredients:
   - name: courgette
     quantity: 1
     unit: stuk
-  - name: wortels
+  - name: wortel
     quantity: 2
     unit: stuk
   - name: ui
@@ -28,13 +28,16 @@ ingredients:
   - name: paprikapoeder
     quantity: 1
     unit: beetje
-  - name: zout en peper
+  - name: peper
+    quantity: 1
+    unit: beetje
+  - name: zout
     quantity: 1
     unit: beetje
   - name: oregano
     quantity: 1
     unit: beetje
-  - name: groentenbouillon
+  - name: groentebouillon
     quantity: 1
     unit: stuk
   - name: geraspte kaas

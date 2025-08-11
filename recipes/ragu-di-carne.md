@@ -25,7 +25,7 @@ ingredients:
   - name: laurierblad
     quantity: 2
     unit: stuk
-  - name: rozemarijn
+  - name: gedroogde rozemarijn
     quantity: 1
     unit: beetje
   - name: tomatenstukjes

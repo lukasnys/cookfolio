@@ -4,10 +4,10 @@ ingredients:
  - name: rode paprika
    quantity: 3
    unit: stuk
- - name: gemalen kaas
+ - name: geraspte kaas
    quantity: 100
    unit: g
- - name: kerstomaatjes
+ - name: kerstomaat
    quantity: 10
    unit: stuk
  - name: kippengehakt

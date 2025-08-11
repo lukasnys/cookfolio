@@ -7,13 +7,13 @@ ingredients:
   - name: knoflookpoeder
     quantity: 1
     unit: beetje
-  - name: uipoeder
+  - name: uienpoeder
     quantity: 1
     unit: beetje
   - name: paprikapoeder
     quantity: 1
     unit: beetje
-  - name: krielaardappelen
+  - name: krielaardappel
     quantity: 500
     unit: g
   - name: gekruid varkenshaasje

@@ -1,7 +1,7 @@
 ---
 title: Citroen blondies
 ingredients:
-  - name: witte suiker
+  - name: kristalsuiker
     quantity: 200
     unit: g
   - name: citroenzest
@@ -28,7 +28,7 @@ ingredients:
   - name: zout
     quantity: 1/4
     unit: tl
-  - name: poedersuiker
+  - name: bloemsuiker
     quantity: 125
     unit: g
 ---

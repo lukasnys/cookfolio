@@ -1,7 +1,7 @@
 ---
 title: Kip citroen orzo
 ingredients:
-  - name: kip
+  - name: kip filet
     quantity: 500
     unit: g
   - name: paprikapoeder
@@ -25,13 +25,13 @@ ingredients:
   - name: kippenbouillon
     quantity: 1
     unit: stuk
-  - name: citroen
-    quantity: 1
-    unit: stuk
+  - name: citroensap
+    quantity: 3
+    unit: el
   - name: gedroogde tijm
     quantity: 0.5
     unit: tl
-  - name: room
+  - name: kookroom
     quantity: 250
     unit: ml
   - name: mozzarella

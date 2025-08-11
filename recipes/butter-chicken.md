@@ -1,7 +1,7 @@
 ---
 title: Butter chicken
 ingredients:
-  - name: kip
+  - name: kip filet
     quantity: 500
     unit: g
   - name: knoflook

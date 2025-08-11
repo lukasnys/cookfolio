@@ -16,7 +16,7 @@ ingredients:
   - name: knoflook
     quantity: 3
     unit: teen
-  - name: room
+  - name: kookroom
     quantity: 150
     unit: ml
   - name: geraspte kaas

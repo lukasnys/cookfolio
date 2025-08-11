@@ -1,10 +1,10 @@
 ---
 title: Griekse pasta
 ingredients: 
-  - name: kerstomaten
+  - name: kerstomaat
     quantity: 500
     unit: g
-  - name: kip
+  - name: kip filet
     quantity: 500
     unit: g
   - name: feta

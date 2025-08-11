@@ -7,7 +7,7 @@ ingredients:
   - name: rode paprika
     quantity: 2
     unit: stuk
-  - name: room
+  - name: kookroom
     quantity: 125
     unit: ml
   - name: basilicum
