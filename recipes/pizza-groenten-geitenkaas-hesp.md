@@ -4,7 +4,7 @@ ingredients:
   - name: pizzasaus
     quantity: 250
     unit: g
-  - name: paprika
+  - name: rode paprika
     quantity: 1
     unit: stuk
   - name: rode ui

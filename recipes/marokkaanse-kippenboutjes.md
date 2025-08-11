@@ -4,7 +4,7 @@ ingredients:
   - name: olijfolie
     quantity: 60
     unit: ml
-  - name: volle ongezoete yoghurt
+  - name: yoghurt
     quantity: 60
     unit: ml
   - name: paprikapoeder
@@ -25,16 +25,16 @@ ingredients:
   - name: zwarte peper
     quantity: 0.5
     unit: tl
-  - name: kurkuma
+  - name: kurkumapoeder
     quantity: 0.5
     unit: tl
-  - name: knoflook
+  - name: knoflookpoeder
     quantity: 2.5
     unit: tl
   - name: peterselie
     quantity: 2
     unit: el
-  - name: koriander
+  - name: korianderzaad
     quantity: 2
     unit: el
   - name: kip drumstick

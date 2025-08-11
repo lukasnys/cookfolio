@@ -28,7 +28,7 @@ ingredients:
   - name: kerriepoeder
     quantity: 2
     unit: el
-  - name: kurkuma
+  - name: kurkumapoeder
     quantity: 0.5
     unit: el
 ---

@@ -28,7 +28,7 @@ ingredients:
   - name: chilivlokken
     quantity: 1
     unit: el
-  - name: koriander
+  - name: korianderzaad
     quantity: 1
     unit: el
   - name: suiker

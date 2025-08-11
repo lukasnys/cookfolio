@@ -31,7 +31,7 @@ ingredients:
   - name: spaghettikruiden
     quantity: 1
     unit: el
-  - name: chili
+  - name: chilivlokken
     quantity: 1
     unit: beetje
   - name: vleesbouillon
