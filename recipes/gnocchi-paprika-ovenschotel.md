@@ -4,7 +4,7 @@ ingredients:
   - name: gnocchi
     quantity: 400
     unit: g
-  - name: Gegrilde paprika
+  - name: gegrilde paprika
     quantity: 185
     unit: g
   - name: room
