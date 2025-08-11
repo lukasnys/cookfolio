@@ -18,16 +18,9 @@ export const ALLOWED_UNITS = [
   "squirt",
 ];
 
-const recipes = getRecipes();
-const allUnits = recipes
-  .flatMap((recipe) => recipe.ingredients)
-  .map((ingredient) => ingredient.unit);
-const uniqueUnits = [...new Set(allUnits)];
-
-console.log(uniqueUnits);
-
 let hasErrors = false;
 
+const recipes = getRecipes();
 recipes.forEach((recipe) => {
   recipe.ingredients.forEach((ingredient) => {
     if (!ALLOWED_UNITS.includes(ingredient.unit)) {
