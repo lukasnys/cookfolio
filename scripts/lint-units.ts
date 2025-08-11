@@ -6,7 +6,6 @@ export const ALLOWED_UNITS = [
   "el",
   "tl",
   "kl",
-  "dl",
   "teen",
   "stuk",
   "beetje",
