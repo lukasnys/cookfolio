@@ -6,13 +6,13 @@ ingredients:
     unit: g
   - name: knoflookpoeder
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: uipoeder
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: paprikapoeder
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: krielaardappelen
     quantity: 500
     unit: g

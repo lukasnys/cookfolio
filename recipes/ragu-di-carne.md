@@ -27,7 +27,7 @@ ingredients:
     unit: stuk
   - name: rozemarijn
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: tomatenstukjes
     quantity: 400
     unit: g

@@ -18,7 +18,7 @@ ingredients:
     unit: stuk
   - name: provencaalse kruiden
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: olie
     quantity: 1
     unit: el

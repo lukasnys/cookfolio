@@ -18,7 +18,7 @@ ingredients:
     unit: g
   - name: ketchup
     quantity: 1
-    unit: scheut
+    unit: beetje
   - name: aardappel
     quantity: 500
     unit: g

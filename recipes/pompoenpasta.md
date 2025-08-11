@@ -21,7 +21,7 @@ ingredients:
     unit: ml
   - name: parmezaanse kaas
     quantity: 1
-    unit: snuf
+    unit: beetje
 ---
 
 <Recipe />

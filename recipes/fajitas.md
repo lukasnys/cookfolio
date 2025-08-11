@@ -36,7 +36,7 @@ ingredients:
     unit: el
   - name: peper en zout
     quantity: 1
-    unit: snuf
+    unit: beetje
 ---
 
 <Recipe />

@@ -21,7 +21,7 @@ ingredients:
     unit: ml
   - name: nootmuskaat
     quantity: 1
-    unit: snuf
+    unit: beetje
 ---
 
 <Recipe />

@@ -33,16 +33,16 @@ ingredients:
     unit: el
   - name: chili
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: vleesbouillon
     quantity: 1
     unit: stuk
   - name: sriracha
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: ketchup
     quantity: 1
-    unit: scheut
+    unit: beetje
   - name: gemengd gehakt
     quantity: 800
     unit: g

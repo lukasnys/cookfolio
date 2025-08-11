@@ -19,9 +19,9 @@ ingredients:
   - name: citroensap
     quantity: 1
     unit: el
-  - name: kaneel
+  - name: kaneelpoeder
     quantity: 1
-    unit: snuf
+    unit: beetje
 ---
 
 <Recipe />

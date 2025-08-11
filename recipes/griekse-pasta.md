@@ -24,7 +24,7 @@ ingredients:
     unit: stuk
   - name: gemberpoeder
     quantity: 1
-    unit: snuf
+    unit: beetje
 ---
 
 <Recipe />

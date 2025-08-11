@@ -24,16 +24,16 @@ ingredients:
     unit: g
   - name: italiaanse kruiden
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: paprikapoeder
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: zout en peper
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: oregano
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: groentenbouillon
     quantity: 1
     unit: stuk

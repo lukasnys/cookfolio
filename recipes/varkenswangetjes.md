@@ -30,7 +30,7 @@ ingredients:
     unit: el
   - name: natuurazijn
     quantity: 1
-    unit: scheut
+    unit: beetje
   - name: wortel
     quantity: 5
     unit: stuk

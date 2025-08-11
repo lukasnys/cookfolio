@@ -15,7 +15,7 @@ ingredients:
     unit: stuk
   - name: maïzena
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: tomatenpuree
     quantity: 40
     unit: g

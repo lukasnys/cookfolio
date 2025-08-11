@@ -33,10 +33,10 @@ ingredients:
    unit: g
  - name: peper
    quantity: 1
-   unit: snuf
+   unit: beetje
  - name: zout
    quantity: 1
-   unit: snuf
+   unit: beetje
 ---
 
 <Recipe />

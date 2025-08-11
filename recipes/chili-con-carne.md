@@ -42,13 +42,13 @@ ingredients:
     unit: tl
   - name: chilivlokken
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: mais
     quantity: 150
     unit: g
   - name: looksaus
     quantity: 1
-    unit: squirt
+    unit: beetje
   - name: tomaat
     quantity: 2
     unit: stuk

@@ -21,7 +21,7 @@ ingredients:
     unit: stuk
   - name: sojasaus
     quantity: 1
-    unit: scheut
+    unit: beetje
   - name: rijst
     quantity: 300
     unit: g

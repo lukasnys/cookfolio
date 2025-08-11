@@ -24,7 +24,7 @@ ingredients:
     unit: el
   - name: cacaopoeder
     quantity: 1
-    unit: snuf
+    unit: beetje
 ---
 
 <Recipe />

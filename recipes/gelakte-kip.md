@@ -21,10 +21,10 @@ ingredients:
     unit: el
   - name: zout
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: peper
     quantity: 1
-    unit: snuf
+    unit: beetje
 ---
 
 <Recipe />
