@@ -8,14 +8,14 @@ ingredients:
     quantity: 200
     unit: g
   - name: gerookte hesp
-    quantity: 1
-    unit: pak
+    quantity: 175
+    unit: g
   - name: rucola
     quantity: 100
     unit: g
   - name: groene pesto
-    quantity: 1
-    unit: pot
+    quantity: 45
+    unit: g
   - name: burrata
     quantity: 2
     unit: stuk

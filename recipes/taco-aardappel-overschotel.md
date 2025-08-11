@@ -36,8 +36,8 @@ ingredients:
     quantity: 100
     unit: g
   - name: zure room
-    quantity: 1
-    unit: pot
+    quantity: 200
+    unit: ml
 
 ---
 

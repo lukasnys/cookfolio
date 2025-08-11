@@ -4,9 +4,9 @@ ingredients:
   - name: kip
     quantity: 500
     unit: g
-  - name: pesto
-    quantity: 0.5
-    unit: pot
+  - name: groene pesto
+    quantity: 70
+    unit: g
   - name: mozarella
     quantity: 2
     unit: stuk

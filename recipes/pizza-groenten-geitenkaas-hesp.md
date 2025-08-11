@@ -23,8 +23,8 @@ ingredients:
     quantity: 1
     unit: stuk
   - name: hesp
-    quantity: 1
-    unit: pak
+    quantity: 150
+    unit: g
 ---
 
 <Recipe />

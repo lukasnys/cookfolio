@@ -18,7 +18,7 @@ ingredients:
    unit: stuk
  - name: mozzarella
    quantity: 1
-   unit: bol
+   unit: stuk
  - name: kippenkruiden
    quantity: 1.5
    unit: theelepel

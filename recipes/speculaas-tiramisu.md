@@ -8,8 +8,8 @@ ingredients:
     quantity: 250
     unit: g
   - name: sterke koffie
-    quantity: 1
-    unit: kop
+    quantity: 200
+    unit: ml
   - name: eierdooier
     quantity: 2
     unit: stuk

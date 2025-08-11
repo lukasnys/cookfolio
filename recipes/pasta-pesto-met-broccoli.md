@@ -5,8 +5,8 @@ ingredients:
     quantity: 300
     unit: g
   - name: groene pesto
-    quantity: 0.5
-    unit: pot
+    quantity: 70
+    unit: g
   - name: broccoli
     quantity: 500
     unit: g

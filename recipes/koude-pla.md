@@ -2,8 +2,8 @@
 title: Koude pla
 ingredients:
   - name: hesp
-    quantity: 1
-    unit: pak
+    quantity: 150
+    unit: g
   - name: aardappel
     quantity: 300
     unit: g

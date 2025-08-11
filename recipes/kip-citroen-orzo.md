@@ -36,7 +36,7 @@ ingredients:
     unit: ml
   - name: mozzarella
     quantity: 1
-    unit: bol
+    unit: stuk
 ---
 
 <Recipe />

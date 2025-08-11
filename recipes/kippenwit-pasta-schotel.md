@@ -2,8 +2,8 @@
 title: Pastaschotel met kippenwit
 ingredients:
   - name: kippenwit
-    quantity: 1
-    unit: pak
+    quantity: 200
+    unit: g
   - name: komkommer
     quantity: 1
     unit: stuk

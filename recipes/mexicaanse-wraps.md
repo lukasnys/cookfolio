@@ -20,11 +20,11 @@ ingredients:
     quantity: 150
     unit: g
   - name: zure room
-    quantity: 1
-    unit: pot
+    quantity: 200
+    unit: ml
   - name: wraps
-    quantity: 1
-    unit: pak
+    quantity: 370
+    unit: g
   - name: geraspte kaas
     quantity: 200
     unit: g

@@ -11,11 +11,11 @@ ingredients:
     quantity: 700
     unit: ml
   - name: knack worsten
-    quantity: 1
-    unit: pak
+    quantity: 350
+    unit: g
   - name: hesp
-    quantity: 1
-    unit: pak
+    quantity: 200
+    unit: g
   - name: boter
     quantity: 15
     unit: g
