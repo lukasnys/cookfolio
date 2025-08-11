@@ -62,32 +62,11 @@ const saveWeek = () => {
           class="flex-1"
         />
 
-        <button
+        <IngredientsPopover
           v-if="day.recipe"
-          class="btn btn-alt"
-          :id="'popover-toggle-' + day.id"
-          :popovertarget="'popover-' + day.id"
-        >
-          Check ingredients
-        </button>
-
-        <div
-          v-if="day.recipe"
-          popover
-          class="ingredients-popover"
-          :id="'popover-' + day.id"
-          :anchor="'popover-toggle-' + day.id"
-        >
-          <ul>
-            <li
-              v-for="ingredient in recipesByName[day.recipe].ingredients"
-              :key="ingredient.name"
-            >
-              {{ ingredient.quantity }} {{ ingredient.unit }}
-              {{ ingredient.name }}
-            </li>
-          </ul>
-        </div>
+          :id="day.id"
+          :recipe="recipesByName[day.recipe]"
+        />
       </div>
     </div>
 
@@ -119,64 +98,5 @@ const saveWeek = () => {
   & .day-field__label {
     font-weight: 600;
   }
-}
-
-[popover] {
-  position: absolute;
-  inset: auto;
-  margin: 0;
-  padding: 0;
-}
-
-[popover].ingredients-popover {
-  position-try-fallbacks: --top;
-
-  top: anchor(bottom);
-  right: anchor(right);
-  margin-block-start: 8px;
-
-  background: var(--vp-c-bg-elv);
-  box-shadow: var(--vp-shadow-3);
-  padding: calc(var(--spacing) * 4);
-  border: 1px solid var(--vp-c-border);
-  border-radius: calc(var(--spacing) * 2);
-
-  font-size: 0.875rem;
-  line-height: 1.4;
-
-  & ul {
-    margin: 0;
-  }
-
-  & li + li {
-    margin-top: var(--spacing);
-  }
-}
-
-.btn {
-  font-weight: 600;
-  border-radius: calc(var(--spacing) * 2);
-  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4);
-}
-
-.btn-brand {
-  border-color: var(--vp-button-brand-border);
-  color: var(--vp-button-brand-text);
-  background-color: var(--vp-button-brand-bg);
-}
-
-.btn-alt {
-  border-color: var(--vp-button-alt-border);
-  color: var(--vp-button-alt-text);
-  background-color: var(--vp-button-alt-bg);
-}
-
-@position-try --top {
-  inset: auto;
-  margin: 0;
-
-  bottom: anchor(top);
-  right: anchor(right);
-  margin-block-end: 8px;
 }
 </style>
