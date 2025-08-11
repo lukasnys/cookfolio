@@ -42,7 +42,7 @@ ingredients:
     unit: snuf
   - name: ketchup
     quantity: 1
-    unit: squirt
+    unit: scheut
   - name: gemengd gehakt
     quantity: 800
     unit: g

@@ -17,7 +17,7 @@ ingredients:
     quantity: 2
     unit: stuk
   - name: citroensap
-    quantity: 1
+    quantity: 3
     unit: el
   - name: vanille extract
     quantity: 2
@@ -31,9 +31,6 @@ ingredients:
   - name: poedersuiker
     quantity: 125
     unit: g
-  - name: citroensap
-    quantity: 2
-    unit: el
 ---
 
 <Recipe />
@@ -45,8 +42,8 @@ ingredients:
   - Voeg de boter en chocolade mengsel toe en meng handmatig
   - Voeg de eieren toe en meng handmatig
   - Meng daarna met een handmixer tot het beslag luchtig is (1 tot 2 minuten)
-  - Voeg het citroensap en de vanille extract toe
+  - Voeg het citroensap (2) en de vanille extract toe
   - Voeg de bloem en het zout toe
   - Giet het beslag in de pan en zet in de oven voor 30 minuten
-  - Maak het glazuur en giet het op de blondies wanneer deze volledig afgekoeld zijn
+  - Maak het glazuur (1 el citroensap) en giet het op de blondies wanneer deze volledig afgekoeld zijn
   - Zet het in de koelkast om op te stijvenß

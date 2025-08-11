@@ -13,9 +13,9 @@ ingredients:
   - name: champignons
     quantity: 250
     unit: g
-  - name: geitenkaas
-    quantity: 1
-    unit: reep
+  - name: geitenkaasrol
+    quantity: 180
+    unit: g
   - name: geraspte kaas
     quantity: 200
     unit: g

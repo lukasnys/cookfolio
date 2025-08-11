@@ -1,9 +1,5 @@
 ---
 title: Varkenswangetjes
-mealType: Vlees
-cuisine: Vlaams
-tested: true
-weekdayFriendly: false
 ingredients:
   - name: ui
     quantity: 2
@@ -14,16 +10,16 @@ ingredients:
   - name: bruin bier
     quantity: 330
     unit: ml
-  - name: laurier
+  - name: laurierblad
     quantity: 2
-    unit: blad
-  - name: verse tijm
+    unit: stuk
+  - name: verse tijm tak
     quantity: 2
-    unit: tak
+    unit: stuk
   - name: kruidnagel
     quantity: 1
     unit: stuk
-  - name: Luikse stroop
+  - name: luikse stroop
     quantity: 2
     unit: el
   - name: boterham

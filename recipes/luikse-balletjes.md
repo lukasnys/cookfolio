@@ -19,18 +19,18 @@ ingredients:
   - name: knoflook
     quantity: 1
     unit: teen
-  - name: verse tijm
+  - name: verse tijm tak
     quantity: 2
-    unit: tak
+    unit: stuk
   - name: balsamicoazijn
     quantity: 1
     unit: el
   - name: luikse stroop
     quantity: 1.5
     unit: tl
-  - name: laurier
+  - name: laurierblad
     quantity: 2
-    unit: blad
+    unit: stuk
   - name: kippenbouillon
     quantity: 1
     unit: stuk

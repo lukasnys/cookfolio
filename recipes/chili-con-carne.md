@@ -22,12 +22,12 @@ ingredients:
   - name: knoflook
     quantity: 4
     unit: teen
-  - name: laurier
+  - name: laurierblad
     quantity: 1
-    unit: blad
-  - name: verse tijm
+    unit: stuk
+  - name: verse tijm tak
     quantity: 1
-    unit: tak
+    unit: stuk
   - name: olijfolie
     quantity: 2
     unit: el

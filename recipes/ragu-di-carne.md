@@ -19,12 +19,12 @@ ingredients:
   - name: knoflook
     quantity: 2
     unit: teen
-  - name: verse tijm
+  - name: verse tijm tak
     quantity: 2
-    unit: tak
-  - name: laurier
+    unit: stuk
+  - name: laurierblad
     quantity: 2
-    unit: blad
+    unit: stuk
   - name: rozemarijn
     quantity: 1
     unit: snuf
