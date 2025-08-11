@@ -46,15 +46,6 @@ defineProps<{ id: string; recipe: Recipe }>();
   border-radius: calc(var(--spacing) * 2);
 }
 
-& ul {
-  margin: 0;
-  font-size: 0.875rem;
-}
-
-& li + li {
-  margin-top: 0;
-}
-
 @position-try --top {
   inset: auto;
   margin: 0;

@@ -6,14 +6,36 @@
   padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4);
 }
 
+.btn-icon {
+  padding: calc(var(--spacing) * 2);
+}
+
 .btn-brand {
   border-color: var(--vp-button-brand-border);
   color: var(--vp-button-brand-text);
   background-color: var(--vp-button-brand-bg);
+
+  &:hover {
+    border-color: var(--vp-button-brand-hover-border);
+    color: var(--vp-button-brand-hover-text);
+    background-color: var(--vp-button-brand-hover-bg);
+  }
+
+  &:active {
+    border-color: var(--vp-button-brand-active-border);
+    color: var(--vp-button-brand-active-text);
+    background-color: var(--vp-button-brand-active-bg);
+  }
 }
 
-.btn-alt {
+.btn-alt.btn-alt {
   border-color: var(--vp-button-alt-border);
   color: var(--vp-button-alt-text);
   background-color: var(--vp-button-alt-bg);
+
+  &:hover {
+    border-color: var(--vp-button-alt-hover-border);
+    color: var(--vp-button-alt-hover-text);
+    background-color: var(--vp-button-alt-hover-bg);
+  }
 }

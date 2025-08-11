@@ -5,20 +5,42 @@ import {
   type Ingredient,
   type Recipe,
 } from "./recipes.data.ts";
+import { google } from "calendar-link";
+import dayjs from "dayjs";
 
 import RecipeSelect from "./RecipeSelect.vue";
+import { Dayjs } from "dayjs";
+import { CalendarIcon } from "@heroicons/vue/24/solid";
 
-const weekData = ref<{ id: string; label: string; recipe: string | null }[]>([
-  { id: "friday", label: "Friday", recipe: null },
-  { id: "saturday", label: "Saturday", recipe: null },
-  { id: "sunday", label: "Sunday", recipe: null },
-  { id: "monday", label: "Monday", recipe: null },
-  { id: "tuesday", label: "Tuesday", recipe: null },
-  { id: "wednesday", label: "Wednesday", recipe: null },
-  { id: "thursday", label: "Thursday", recipe: null },
-]);
+const NUMBER_OF_DAYS = 7;
 
-let ingredientsRequired = ref<Ingredient[] | undefined>(undefined);
+interface WeekDataEntry {
+  id: string;
+  label: string;
+  recipe: string | null;
+}
+
+const startDate = ref<Dayjs>(dayjs());
+
+const weekData = ref<WeekDataEntry[]>([]);
+const generateWeekData = () => {
+  weekData.value = Array.from({ length: NUMBER_OF_DAYS }).reduce<
+    WeekDataEntry[]
+  >((acc, _, index) => {
+    const current = startDate.value.add(index, "day");
+
+    acc.push({
+      id: current.format("YYYY-MM-DD"),
+      label: current.format("dddd DD/MM/YYYY"),
+      recipe: null,
+    });
+
+    return acc;
+  }, []);
+};
+generateWeekData();
+
+const ingredientsRequired = ref<Ingredient[] | undefined>(undefined);
 
 const recipesByName = recipes.reduce<Record<string, Recipe>>((acc, recipe) => {
   acc[recipe.title] = recipe;
@@ -46,27 +68,65 @@ const saveWeek = () => {
     return acc;
   }, []);
 };
+
+const getLinkToAddToGcal = (weekDataEntry: WeekDataEntry) => {
+  if (!weekDataEntry.recipe) return;
+
+  type Duration = Parameters<typeof google>[0]["duration"];
+
+  const event = {
+    title: weekDataEntry.recipe,
+    start: dayjs(weekDataEntry.id).hour(19),
+    duration: [1, "hour"] satisfies Duration,
+    url: "https://github.com/lukasnys/cookfolio",
+  };
+
+  return google(event);
+};
+
+const onStartDateChange = (event: Event) => {
+  if (!event.target) return;
+  startDate.value = dayjs((event.target as HTMLInputElement).value);
+  generateWeekData();
+};
 </script>
 
 <template>
   <h2>Week Planner</h2>
 
-  <div class="week-planner">
-    <div v-for="(day, index) in weekData" :key="day.id" class="day-field">
-      <label class="day-field__label" :for="day.id">{{ day.label }}</label>
-      <div class="flex justify-end flex-wrap items-center gap-4">
-        <RecipeSelect
-          :selectedRecipe="day.recipe"
-          :dayId="day.id"
-          @update:recipe="(value) => (weekData[index].recipe = value)"
-          class="flex-1"
-        />
+  <input
+    type="date"
+    :value="startDate.format('YYYY-MM-DD')"
+    @change="onStartDateChange"
+  />
 
-        <IngredientsPopover
-          v-if="day.recipe"
-          :id="day.id"
-          :recipe="recipesByName[day.recipe]"
-        />
+  <div class="week-planner">
+    <div class="week-planner__days">
+      <div v-for="(day, index) in weekData" :key="day.id" class="day-field">
+        <label class="day-field__label" :for="day.id">{{ day.label }}</label>
+        <div class="flex justify-end flex-wrap items-center gap-2">
+          <RecipeSelect
+            :selectedRecipe="day.recipe"
+            :dayId="day.id"
+            @update:recipe="(value) => (weekData[index].recipe = value)"
+            class="flex-1"
+          />
+
+          <div v-if="day.recipe" class="flex items-center gap-2">
+            <IngredientsPopover
+              :id="day.id"
+              :recipe="recipesByName[day.recipe]"
+            />
+
+            <a
+              class="btn btn-alt btn-icon"
+              target="_blank"
+              :href="getLinkToAddToGcal(day)"
+            >
+              <CalendarIcon class="size-6" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -84,6 +144,15 @@ const saveWeek = () => {
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacing) * 4);
+}
+
+.week-planner__days {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 2);
+  background-color: var(--vp-c-bg-alt);
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+  border-radius: calc(var(--spacing) * 2);
 }
 
 .day-field {
