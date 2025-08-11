@@ -9,13 +9,13 @@ import {
 import RecipeSelect from "./RecipeSelect.vue";
 
 const weekData = ref<{ id: string; label: string; recipe: string | null }[]>([
+  { id: "friday", label: "Friday", recipe: null },
+  { id: "saturday", label: "Saturday", recipe: null },
+  { id: "sunday", label: "Sunday", recipe: null },
   { id: "monday", label: "Monday", recipe: null },
   { id: "tuesday", label: "Tuesday", recipe: null },
   { id: "wednesday", label: "Wednesday", recipe: null },
   { id: "thursday", label: "Thursday", recipe: null },
-  { id: "friday", label: "Friday", recipe: null },
-  { id: "saturday", label: "Saturday", recipe: null },
-  { id: "sunday", label: "Sunday", recipe: null },
 ]);
 
 let ingredientsRequired = ref<Ingredient[] | undefined>(undefined);
