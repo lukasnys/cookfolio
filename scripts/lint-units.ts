@@ -2,20 +2,14 @@ import { getRecipes } from "./utils/get-recipes.js";
 
 export const ALLOWED_UNITS = [
   "g",
-  "portie",
-  "snuf",
-  "el",
-  "teen",
-  "tl",
-  "stuk",
-  "blad",
-  "tak",
   "ml",
+  "el",
+  "tl",
   "kl",
-  "scheut",
-  "reep",
   "dl",
-  "squirt",
+  "teen",
+  "stuk",
+  "beetje",
 ];
 
 let hasErrors = false;
