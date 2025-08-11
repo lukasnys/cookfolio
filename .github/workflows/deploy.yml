@@ -40,6 +40,26 @@ jobs:
       - name: Prettier check
         run: pnpm run prettier:check
 
+  lint-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9 # Not needed if you've set "packageManager" in package.json
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: lint-units
+        run: pnpm run lint:units
+      - name: lint-recipes
+        run: pnpm run lint:recipes
+
   build:
     runs-on: ubuntu-latest
     steps:
