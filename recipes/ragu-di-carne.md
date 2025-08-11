@@ -10,9 +10,9 @@ ingredients:
   - name: wortel
     quantity: 1
     unit: stuk
-  - name: selder
+  - name: selderstengel
     quantity: 2
-    unit: tak
+    unit: stuk
   - name: ui
     quantity: 1
     unit: stuk
