@@ -17,6 +17,7 @@
     "@types/node": "^24.2.1",
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",
+    "prettier": "3.6.2",
     "tsx": "^4.20.3",
     "typescript": "^5.9.2",
     "vitepress": "^1.6.4",

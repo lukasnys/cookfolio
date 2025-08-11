@@ -24,6 +24,9 @@ importers:
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
+      prettier:
+        specifier: 3.6.2
+        version: 3.6.2
       tsx:
         specifier: ^4.20.3
         version: 4.20.3
@@ -1124,6 +1127,11 @@ packages:
 
   preact@10.27.0:
     resolution: {integrity: sha512-/DTYoB6mwwgPytiqQTh/7SFRL98ZdiD8Sk8zIUVOxtwq4oWcwrcd1uno9fE/zZmUaUrFNYzbH14CPebOz9tZQw==}
+
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   property-information@7.1.0:
     resolution: {integrity: sha512-TwEZ+X+yCJmYfL7TPUOcvBZ4QfoT5YenQiJuX//0th53DE6w0xxLEtfK3iyryQFddXuvkIk51EEgrJQ0WJkOmQ==}
@@ -2275,6 +2283,8 @@ snapshots:
       source-map-js: 1.2.1
 
   preact@10.27.0: {}
+
+  prettier@3.6.2: {}
 
   property-information@7.1.0: {}
 
