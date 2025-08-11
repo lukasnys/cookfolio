@@ -25,5 +25,3 @@ ingredients:
 ---
 
 <Recipe />
-
-

@@ -1,5 +1,5 @@
 <script setup>
-import { useData } from 'vitepress'
+import { useData } from "vitepress";
 
 const { frontmatter } = useData();
 const ingredients = frontmatter.value.ingredients;
@@ -11,7 +11,7 @@ const ingredients = frontmatter.value.ingredients;
   <h2>Ingredients</h2>
   <ul>
     <li v-for="ingredient in ingredients" :key="ingredient.name">
-      {{ ingredient.quantity }} {{ ingredient.unit }} {{ ingredient.name }} 
+      {{ ingredient.quantity }} {{ ingredient.unit }} {{ ingredient.name }}
     </li>
   </ul>
 </template>

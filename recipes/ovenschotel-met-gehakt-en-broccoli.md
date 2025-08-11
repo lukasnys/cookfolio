@@ -10,8 +10,6 @@ ingredients:
   - name: aardappel
     quantity: 500
     unit: g
-
 ---
 
 <Recipe />
-

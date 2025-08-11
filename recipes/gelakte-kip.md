@@ -1,6 +1,6 @@
 ---
 title: Gelakte kip
-ingredients: 
+ingredients:
   - name: kip filet
     quantity: 500
     unit: g
@@ -30,12 +30,10 @@ ingredients:
 <Recipe />
 
 ## Instructions
-  - Kook de boontjes samen met de knoflookteentjes (in hun geheel) in water met een beetje zout, peper en een scheutje olijfolie tot ze gaar zijn.
-  - Snijd intussen de kip in reepjes.
-  - Giet de sojasaus, de balsamicoazijn en een eetlepel olijfolie in een pan.
-  - Bak de kippenreepjes hierin tot al het vocht is opgenomen.
-  - Blijf constant roeren, zeker op het laatste moment.
-  - Serveer de kip met de boontjes.
 
-
-
+- Kook de boontjes samen met de knoflookteentjes (in hun geheel) in water met een beetje zout, peper en een scheutje olijfolie tot ze gaar zijn.
+- Snijd intussen de kip in reepjes.
+- Giet de sojasaus, de balsamicoazijn en een eetlepel olijfolie in een pan.
+- Bak de kippenreepjes hierin tot al het vocht is opgenomen.
+- Blijf constant roeren, zeker op het laatste moment.
+- Serveer de kip met de boontjes.

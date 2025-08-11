@@ -51,8 +51,9 @@ ingredients:
 <Recipe />
 
 ## Instructions
-  - Alles heel fijn snijden, bakken in boter, spaghkruiden op doen en 5min laten stoven. 
-  - Look, ketchup, sriracha toevoegen: 1min laten doorbakken
-  - Passata toeveogen + bouillonblokje en water. 10min pruttelen en dan mixen.
-  - Gehakt bakken en spagh kruiden op doen
-  - Toevoegen aan saus samen met de room, nadien nog kruiden met peper en zout
+
+- Alles heel fijn snijden, bakken in boter, spaghkruiden op doen en 5min laten stoven.
+- Look, ketchup, sriracha toevoegen: 1min laten doorbakken
+- Passata toeveogen + bouillonblokje en water. 10min pruttelen en dan mixen.
+- Gehakt bakken en spagh kruiden op doen
+- Toevoegen aan saus samen met de room, nadien nog kruiden met peper en zout

@@ -42,12 +42,13 @@ ingredients:
 <Recipe />
 
 ## Ingredients
+
     - Pel de uien en snipper ze grof.
     - Verhit een ruime stoofpot en smelt er een klontje boter in. Stoof daarin de uien op een matig vuur. Laat de uien niet bruin bakken.
-    - Schroei de stukken vlees toe in de pot, tot ze een goudbruin korstje hebben. Kruid het vlees tijdens het bakken met wat peper van de molen en een snuifje zout. 
-    - Doe de stukjes vlees in een apart bord. 
+    - Schroei de stukken vlees toe in de pot, tot ze een goudbruin korstje hebben. Kruid het vlees tijdens het bakken met wat peper van de molen en een snuifje zout.
+    - Doe de stukjes vlees in een apart bord.
     - Schenk het bruin bier in de pan met ui en de aanbaksels. Roer alle aanbaksels van het vlees los, terwijl het bier aan de kook gebracht wordt. (deglaceren)
-    - Zodra het bier kookt, voeg het vlees weer toe. (Giet nooit koud bier rechtstreeks bij het vlees.) 
+    - Zodra het bier kookt, voeg het vlees weer toe. (Giet nooit koud bier rechtstreeks bij het vlees.)
     - Bind enkele blaadjes laurier, een paar takjes verse tijm en enkele peterseliestengels samen met een eindje keukentouw. Laat het ‘bouquet garni’ meestoven in de pot.
     - Voeg de kruidnagel(s) toe en de appel-perenstroop.
     - Besmeer een grote snee bruin brood royaal met scherpe mosterd. (Je kan gerust ook twee kleine boterhammen gebruiken.) Leg de boterham in de pot, bovenop het vlees, met de besmeerde zijde naar onder.

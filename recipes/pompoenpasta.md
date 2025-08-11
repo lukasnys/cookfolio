@@ -28,9 +28,9 @@ ingredients:
 
 ## Instructions
 
-  - Butternut in 2 en pitten eruit
-  - Uien in 2
-  - Look, het puntje afsnijden en de pel afpellen
-  - Alles op een bakplaat, olie en zout en peper erop, 30 min op 200 graden
-  - Alles in soepmaker/blender (look uitpersen, moet nu zacht zijn)
-  - Blenden en kijken of consistentie zoals gewenst is
+- Butternut in 2 en pitten eruit
+- Uien in 2
+- Look, het puntje afsnijden en de pel afpellen
+- Alles op een bakplaat, olie en zout en peper erop, 30 min op 200 graden
+- Alles in soepmaker/blender (look uitpersen, moet nu zacht zijn)
+- Blenden en kijken of consistentie zoals gewenst is

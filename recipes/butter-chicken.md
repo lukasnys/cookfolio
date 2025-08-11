@@ -52,11 +52,11 @@ ingredients:
 
 ## Instructions
 
-  - Snijd de kip in blokjes en doe deze in een kom.
-  - Voeg de knoflook, griekse yoghurt, zout, peper, chili, komijn, garam masala, kurkuma, gember en limoensap toe aan de kip. Meng goed door elkaar en laat minimaal 30 minuten marineren.
-  - Snipper ondertussen de rode ui en hak de cashewnoten grof.
-  - Verhit wat olie in een pan en fruit de ui totdat deze glazig is.
-  - Voeg de gemarineerde kip toe aan de pan en bak deze rondom bruin.
-  - Voeg de tomatenpassata en tomatenpuree toe aan de pan en roer goed door.
-  - Laat de saus 15-20 minuten sudderen op laag vuur, totdat de kip gaar is en de smaken goed zijn gemengd.
-  - Serveer de butter chicken met rijst of naanbrood en garneer met de gehakte cashewnoten.
+- Snijd de kip in blokjes en doe deze in een kom.
+- Voeg de knoflook, griekse yoghurt, zout, peper, chili, komijn, garam masala, kurkuma, gember en limoensap toe aan de kip. Meng goed door elkaar en laat minimaal 30 minuten marineren.
+- Snipper ondertussen de rode ui en hak de cashewnoten grof.
+- Verhit wat olie in een pan en fruit de ui totdat deze glazig is.
+- Voeg de gemarineerde kip toe aan de pan en bak deze rondom bruin.
+- Voeg de tomatenpassata en tomatenpuree toe aan de pan en roer goed door.
+- Laat de saus 15-20 minuten sudderen op laag vuur, totdat de kip gaar is en de smaken goed zijn gemengd.
+- Serveer de butter chicken met rijst of naanbrood en garneer met de gehakte cashewnoten.

@@ -1,4 +1,4 @@
-import { createContentLoader } from 'vitepress'
+import { createContentLoader } from "vitepress";
 
 export interface Ingredient {
   name: string;
@@ -15,12 +15,12 @@ export interface Recipe {
 declare const data: Recipe[];
 export { data };
 
-export default createContentLoader('recipes/*.md', {
+export default createContentLoader("recipes/*.md", {
   transform: (content) => {
     return content.map((page) => ({
       title: page.frontmatter.title,
-      url: page.url.replace('/', ''),
+      url: page.url.replace("/", ""),
       ingredients: page.frontmatter.ingredients,
     }));
-  }
-})
+  },
+});

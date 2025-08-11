@@ -39,14 +39,15 @@ ingredients:
 <Recipe />
 
 ## Instructions
-  - Snij de ui in kleine stukken de aardappel en wortel in grove stukken
-  - Rasp de halve appel
-  - Voeg de ui, geplette knoflook, aardappel en wortel toe aan een pan
-  - Voeg water toe tot dat de groenten bedekt zijn
-  - Voeg de appel en de sauzen toe
-  - Laat simmeren tot gaar
 
-  - Snij de kip in stukken
-  - Mix de kruiden & het ei
-  - Dip de kip in het eimengsel, vervolgens in de pank
-  - Bak de kip in een pan met olie
+- Snij de ui in kleine stukken de aardappel en wortel in grove stukken
+- Rasp de halve appel
+- Voeg de ui, geplette knoflook, aardappel en wortel toe aan een pan
+- Voeg water toe tot dat de groenten bedekt zijn
+- Voeg de appel en de sauzen toe
+- Laat simmeren tot gaar
+
+- Snij de kip in stukken
+- Mix de kruiden & het ei
+- Dip de kip in het eimengsel, vervolgens in de pank
+- Bak de kip in een pan met olie

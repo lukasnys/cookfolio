@@ -51,10 +51,11 @@ ingredients:
 <Recipe />
 
 ## Instructions
-  - Verwarm de oven voor op 200°C.
-  - Maak de marinade door olijfolie, yoghurt, paprikapoeder, komijn, zout, uienpoeder, gember, zwarte peper, kurkuma, fijngehakte knoflook, peterselie en koriander in een kleine kom te mengen.
-  - Doe de kip, aardappeltjes en citroen in een grote ovenschaal.
-  - Giet de marinade erover en hussel de aardappeltjes en kip zodat alles gelijkmatig gekruid is. Zorg er ook voor dat er wat marinade onder de kippenhuid komt voor extra smaak.
-  - Bak in de oven, onafgedekt, gedurende 50 tot 60 minuten, tot de kip helemaal gaar is tot in het midden.
-  - Voor extra goudbruine en knapperige kip kun je de oven nog 3 tot 5 minuten op de grillstand zetten.
-  - Haal uit de oven en voeg de olijven en ingelegde citroen toe voordat je serveert.
+
+- Verwarm de oven voor op 200°C.
+- Maak de marinade door olijfolie, yoghurt, paprikapoeder, komijn, zout, uienpoeder, gember, zwarte peper, kurkuma, fijngehakte knoflook, peterselie en koriander in een kleine kom te mengen.
+- Doe de kip, aardappeltjes en citroen in een grote ovenschaal.
+- Giet de marinade erover en hussel de aardappeltjes en kip zodat alles gelijkmatig gekruid is. Zorg er ook voor dat er wat marinade onder de kippenhuid komt voor extra smaak.
+- Bak in de oven, onafgedekt, gedurende 50 tot 60 minuten, tot de kip helemaal gaar is tot in het midden.
+- Voor extra goudbruine en knapperige kip kun je de oven nog 3 tot 5 minuten op de grillstand zetten.
+- Haal uit de oven en voeg de olijven en ingelegde citroen toe voordat je serveert.

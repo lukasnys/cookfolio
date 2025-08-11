@@ -37,20 +37,20 @@ ingredients:
   - name: gemberpoeder
     quantity: 1
     unit: el
-
 ---
 
 <Recipe />
 
 ## Instructions
-  - Voor kipkruiden:
-    - Cornflakes
-    - Zout en peper
-    - Knoflookpoeder
-    - Uienpoeder
-    - Paprikapoeder
-  - Voor de teriyakisaus:
-    - Sojasaus
-    - Water
-    - Honing
-    - Gemberpoeder
+
+- Voor kipkruiden:
+  - Cornflakes
+  - Zout en peper
+  - Knoflookpoeder
+  - Uienpoeder
+  - Paprikapoeder
+- Voor de teriyakisaus:
+  - Sojasaus
+  - Water
+  - Honing
+  - Gemberpoeder

@@ -30,7 +30,8 @@ ingredients:
 <Recipe />
 
 ## Instructions
-  - Paprika, rode ui en champignons in stukjes snijden & op de pizza leggen
-  - Geitenkaas op de pizza leggen
-  - Geraspte kaas op de pizza leggen
-  - Pizzakruiden op de pizza strooien
+
+- Paprika, rode ui en champignons in stukjes snijden & op de pizza leggen
+- Geitenkaas op de pizza leggen
+- Geraspte kaas op de pizza leggen
+- Pizzakruiden op de pizza strooien

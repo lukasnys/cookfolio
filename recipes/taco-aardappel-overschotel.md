@@ -34,7 +34,6 @@ ingredients:
   - name: zure room
     quantity: 200
     unit: ml
-
 ---
 
 <Recipe />
