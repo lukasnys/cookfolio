@@ -17,8 +17,8 @@ ingredients:
     quantity: 200
     unit: g
   - name: ijsbergsla
-    quantity: 1
-    unit: zak
+    quantity: 300
+    unit: g
 ---
 
 <Recipe />

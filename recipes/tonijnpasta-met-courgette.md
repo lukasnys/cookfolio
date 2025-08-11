@@ -4,24 +4,24 @@ ingredients:
   - name: courgette
     quantity: 1
     unit: stuk
-  - name: tonijn uit blik
+  - name: tonijn
     quantity: 400
     unit: g
   - name: kruidenkaas
-    quantity: 0.5
-    unit: blik
+    quantity: 150
+    unit: g
   - name: ui
     quantity: 1
     unit: stuk
-  - name: look
+  - name: knoflook
     quantity: 3
     unit: teen
   - name: room
-    quantity: 1
-    unit: snuf
+    quantity: 150
+    unit: ml
   - name: geraspte kaas
-    quantity: 1
-    unit: snuf
+    quantity: 100
+    unit: g
 ---
 
 <Recipe />

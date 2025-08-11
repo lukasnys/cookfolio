@@ -2,8 +2,8 @@
 title: Pizza burrata & gerookte hesp
 ingredients:
   - name: pizzasaus
-    quantity: 1
-    unit: blik
+    quantity: 250
+    unit: g
   - name: geraspte kaas
     quantity: 200
     unit: g
@@ -11,8 +11,8 @@ ingredients:
     quantity: 1
     unit: pak
   - name: rucola
-    quantity: 1
-    unit: zak
+    quantity: 100
+    unit: g
   - name: groene pesto
     quantity: 1
     unit: pot

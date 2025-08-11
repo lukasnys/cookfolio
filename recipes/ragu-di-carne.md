@@ -19,7 +19,7 @@ ingredients:
   - name: knoflook
     quantity: 2
     unit: teen
-  - name: tijm
+  - name: verse tijm
     quantity: 2
     unit: tak
   - name: laurier

@@ -16,10 +16,10 @@ ingredients:
   - name: paprikapoeder
     quantity: 2
     unit: eetlepel
-  - name: oregano
+  - name: gedroogde oregano
     quantity: 1
     unit: eetlepel
-  - name: komijn
+  - name: gemalen komijn
     quantity: 1
     unit: eetlepel
   - name: lookpoeder

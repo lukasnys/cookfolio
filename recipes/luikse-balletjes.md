@@ -19,7 +19,7 @@ ingredients:
   - name: knoflook
     quantity: 1
     unit: teen
-  - name: tijm
+  - name: verse tijm
     quantity: 2
     unit: tak
   - name: balsamicoazijn
@@ -33,7 +33,7 @@ ingredients:
     unit: blad
   - name: kippenbouillon
     quantity: 1
-    unit: blokje
+    unit: stuk
 ---
 
 <Recipe />

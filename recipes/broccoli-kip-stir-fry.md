@@ -19,7 +19,7 @@ ingredients:
   - name: knoflook
     quantity: 3
     unit: teen
-  - name: gember
+  - name: gemberpoeder
     quantity: 1
     unit: theelepel
 ---

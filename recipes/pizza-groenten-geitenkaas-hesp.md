@@ -2,8 +2,8 @@
 title: Pizza groenten & geitenkaas & hesp
 ingredients:
   - name: pizzasaus
-    quantity: 1
-    unit: blik
+    quantity: 250
+    unit: g
   - name: paprika
     quantity: 1
     unit: stuk

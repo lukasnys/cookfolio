@@ -14,11 +14,11 @@ ingredients:
     quantity: 1
     unit: stuk
   - name: tomatenpuree
-    quantity: 1
-    unit: blik
+    quantity: 70
+    unit: g
   - name: mais
-    quantity: 1
-    unit: blik
+    quantity: 150
+    unit: g
   - name: zure room
     quantity: 1
     unit: pot

@@ -24,16 +24,16 @@ ingredients:
     unit: stuk
   - name: kippenbouillon
     quantity: 1
-    unit: blokje
+    unit: stuk
   - name: citroen
     quantity: 1
     unit: stuk
-  - name: tijm
+  - name: gedroogde tijm
     quantity: 0.5
     unit: theelepel
-  - name: lichte room
-    quantity: 1
-    unit: brik
+  - name: room
+    quantity: 250
+    unit: ml
   - name: mozzarella
     quantity: 1
     unit: bol

@@ -8,11 +8,11 @@ ingredients:
     quantity: 500
     unit: g
   - name: ui
-    quantity: 500
-    unit: g
+    quantity: 4
+    unit: stuk
   - name: ijsbergsla
-    quantity: 1
-    unit: zak
+    quantity: 300
+    unit: g
   - name: sriracha
     quantity: 1
     unit: portie

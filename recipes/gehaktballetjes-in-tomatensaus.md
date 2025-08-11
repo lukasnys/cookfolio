@@ -13,9 +13,9 @@ ingredients:
   - name: melk
     quantity: 700
     unit: ml
-  - name: tomatempuree
-    quantity: 1
-    unit: blik
+  - name: tomatenpuree
+    quantity: 70
+    unit: g
   - name: ketchup
     quantity: 1
     unit: scheut
@@ -24,10 +24,10 @@ ingredients:
     unit: g
   - name: kippenbouillon
     quantity: 1
-    unit: blok
+    unit: stuk
   - name: planta
     quantity: 3
-    unit: eetlepels
+    unit: eetlepel
   - name: ei
     quantity: 1
     unit: stuk

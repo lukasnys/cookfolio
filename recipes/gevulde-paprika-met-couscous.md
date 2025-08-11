@@ -13,9 +13,9 @@ ingredients:
   - name: ui
     quantity: 1
     unit: stuk
-  - name: teentjes look
+  - name: knoflook
     quantity: 3
-    unit: stuk
+    unit: teen
   - name: passata
     quantity: 500
     unit: g
@@ -36,7 +36,7 @@ ingredients:
     unit: snuf
   - name: groentenbouillon
     quantity: 1
-    unit: kubus
+    unit: stuk
   - name: geraspte kaas
     quantity: 200
     unit: g

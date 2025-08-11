@@ -11,9 +11,12 @@ ingredients:
     quantity: 2
     unit: teen
   - name: kokosmelk
-    quantity: 0.5
-    unit: blik
+    quantity: 200
+    unit: ml
   - name: groentebouillon
+    quantity: 1
+    unit: stuk
+  - name: water
     quantity: 500
     unit: ml
   - name: parmezaanse kaas

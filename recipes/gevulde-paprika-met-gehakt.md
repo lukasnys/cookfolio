@@ -29,8 +29,8 @@ ingredients:
    quantity: 1
    unit: theelepel
  - name: tomatenpuree
-   quantity: 1
-   unit: blik
+   quantity: 70
+   unit: g
  - name: peper
    quantity: 1
    unit: snuf

@@ -14,14 +14,14 @@ ingredients:
     quantity: 1
     unit: stuk
   - name: ananas
-    quantity: 1
-    unit: blik
+    quantity: 227
+    unit: g
   - name: kokosmelk
     quantity: 400
     unit: ml
   - name: kippenbouillon
     quantity: 1
-    unit: blok
+    unit: stuk
   - name: kippenkruiden
     quantity: 1
     unit: eetlepel

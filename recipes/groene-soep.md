@@ -23,8 +23,8 @@ ingredients:
     quantity: 1
     unit: eetlepel
   - name: water
-    quantity: 1
-    unit: blik
+    quantity: 400
+    unit: ml
 ---
 
 <Recipe />

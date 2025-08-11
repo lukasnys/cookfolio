@@ -13,15 +13,15 @@ ingredients:
   - name: sojasaus
     quantity: 1
     unit: eetlepel
-  - name: tomatenpuree (blik)
-    quantity: 1
-    unit: blik
+  - name: tomatenpuree
+    quantity: 70
+    unit: g
   - name: sriracha
     quantity: 1
     unit: koffielepel
   - name: zalm
     quantity: 2
-    unit: stuks
+    unit: stuk
 ---
 
 <Recipe />

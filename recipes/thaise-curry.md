@@ -18,7 +18,7 @@ ingredients:
     unit: koffielepel
   - name: kippenbouillon
     quantity: 1
-    unit: blok
+    unit: stuk
   - name: sojasaus
     quantity: 1
     unit: scheut

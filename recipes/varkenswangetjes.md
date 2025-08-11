@@ -17,7 +17,7 @@ ingredients:
   - name: laurier
     quantity: 2
     unit: blad
-  - name: tijm
+  - name: verse tijm
     quantity: 2
     unit: tak
   - name: kruidnagel

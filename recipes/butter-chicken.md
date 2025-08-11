@@ -16,22 +16,22 @@ ingredients:
   - name: peper
     quantity: 1
     unit: theelepel
-  - name: chili
+  - name: chilivlokken
     quantity: 1
     unit: theelepel
-  - name: komijn
+  - name: gemalen komijn
     quantity: 1
     unit: theelepel
   - name: garam masala
     quantity: 1
     unit: theelepel
-  - name: kurkuma
+  - name: kurkumapoeder
     quantity: 1
     unit: theelepel
-  - name: gember
+  - name: gemberpoeder
     quantity: 1
     unit: theelepel
-  - name: limoensap
+  - name: citroensap
     quantity: 1
     unit: eetlepel
   - name: rode ui
@@ -40,12 +40,12 @@ ingredients:
   - name: cashewnoten
     quantity: 100
     unit: g
-  - name: tomatenpasata
+  - name: tomatenpassata
     quantity: 500
     unit: g
   - name: tomatenpuree
-    quantity: 1
-    unit: brik
+    quantity: 70
+    unit: g
 ---
 
 <Recipe />

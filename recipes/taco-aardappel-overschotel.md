@@ -21,8 +21,8 @@ ingredients:
     quantity: 400
     unit: g
   - name: taco kruiden
-    quantity: 1
-    unit: zakje
+    quantity: 40
+    unit: g
   - name: rode paprika
     quantity: 1
     unit: stuk

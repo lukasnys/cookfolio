@@ -11,8 +11,8 @@ ingredients:
     quantity: 213
     unit: g
   - name: vanillesuiker
-    quantity: 1
-    unit: zakje
+    quantity: 8
+    unit: g
   - name: ei
     quantity: 2
     unit: stuk

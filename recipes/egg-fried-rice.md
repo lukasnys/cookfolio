@@ -4,13 +4,13 @@ ingredients:
   - name: rijst
     quantity: 300
     unit: g
-  - name: erwten
+  - name: erwt
     quantity: 200
     unit: g
-  - name: eieren
+  - name: ei
     quantity: 2
     unit: stuk
-  - name: wortels
+  - name: wortel
     quantity: 3
     unit: stuk
   - name: sojasaus

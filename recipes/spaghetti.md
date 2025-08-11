@@ -14,14 +14,14 @@ ingredients:
     quantity: 3
     unit: stuk
   - name: tomatenpuree
-    quantity: 2
-    unit: blik
+    quantity: 140
+    unit: g
   - name: tomatenpassata
-    quantity: 2
-    unit: brik
+    quantity: 1000
+    unit: g
   - name: knoflook
     quantity: 4
-    unit: teentje
+    unit: teen
   - name: ui
     quantity: 2
     unit: stuk
@@ -36,7 +36,7 @@ ingredients:
     unit: snuf
   - name: vleesbouillon
     quantity: 1
-    unit: blok
+    unit: stuk
   - name: sriracha
     quantity: 1
     unit: snuf

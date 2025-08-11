@@ -6,7 +6,7 @@ ingredients:
     unit: g
   - name: olijfolie
     quantity: 2
-    unit: eetlepels
+    unit: eetlepel
   - name: kippengehakt
     quantity: 500
     unit: g
@@ -26,8 +26,8 @@ ingredients:
     quantity: 150
     unit: g
   - name: kippenbouillon
-    quantity: 50
-    unit: ml
+    quantity: 1
+    unit: stuk
   - name: geraspte kaas
     quantity: 200
     unit: g

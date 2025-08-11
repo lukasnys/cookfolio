@@ -10,7 +10,7 @@ ingredients:
   - name: paprikapoeder
     quantity: 2
     unit: theelepel
-  - name: komijnpoeder
+  - name: gemalen komijn
     quantity: 2
     unit: theelepel
   - name: zout
@@ -36,8 +36,8 @@ ingredients:
     unit: eetlepel
   - name: koriander
     quantity: 2
-    unit: eetlepels
-  - name: kip drumsticks
+    unit: eetlepel
+  - name: kip drumstick
     quantity: 9
     unit: stuk
   - name: krielaardappelen
