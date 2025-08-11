@@ -1,17 +1,7 @@
 import fs from "fs";
 import fg from "fast-glob";
 import matter from "gray-matter";
-
-export interface Ingredient {
-  name: string;
-  quantity: number;
-  unit: string;
-}
-
-export interface Recipe {
-  title: string;
-  ingredients: Ingredient[];
-}
+import type { Recipe } from "./constants.js";
 
 export function getRecipes(): Recipe[] {
   const recipeFiles = fg.sync("recipes/**/*.md", { absolute: true });
