@@ -2,7 +2,7 @@
 title: Pizza burrata & gerookte hesp
 ingredients:
   - name: pizzasaus
-    quantity: 0.5
+    quantity: 1
     unit: blik
   - name: geraspte kaas
     quantity: 200
