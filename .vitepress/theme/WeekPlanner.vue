@@ -153,7 +153,8 @@ const onStartDateChange = (event: Event) => {
   flex-direction: column;
   gap: calc(var(--spacing) * 2);
   background-color: var(--vp-c-bg-alt);
-  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+  padding: calc(var(--spacing) * 6);
+  padding-top: calc(var(--spacing) * 5);
   border-radius: calc(var(--spacing) * 2);
 }
 
