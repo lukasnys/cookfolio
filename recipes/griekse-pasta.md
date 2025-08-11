@@ -12,10 +12,10 @@ ingredients:
     unit: stuk
   - name: sojasaus
     quantity: 6
-    unit: eetlepel
+    unit: el
   - name: straffe olijfolie
     quantity: 4
-    unit: eetlepel
+    unit: el
   - name: griekse pasta
     quantity: 300
     unit: g

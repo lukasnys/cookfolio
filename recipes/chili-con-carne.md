@@ -30,16 +30,16 @@ ingredients:
     unit: tak
   - name: olijfolie
     quantity: 2
-    unit: eetlepel
+    unit: el
   - name: cayennepoeder
     quantity: 0.125
-    unit: theelepel
+    unit: tl
   - name: gemalen komijn
     quantity: 0.25
-    unit: theelepel
+    unit: tl
   - name: korianderzaad
     quantity: 0.25
-    unit: theelepel
+    unit: tl
   - name: chilivlokken
     quantity: 1
     unit: snuf

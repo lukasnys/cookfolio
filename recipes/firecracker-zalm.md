@@ -3,22 +3,22 @@ title: Firecracker zalm
 ingredients:
   - name: knoflookpoeder
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: gemberpoeder
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: chilivlokken
     quantity: 0.5
-    unit: theelepel
+    unit: tl
   - name: sojasaus
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: tomatenpuree
     quantity: 70
     unit: g
   - name: sriracha
     quantity: 1
-    unit: koffielepel
+    unit: kl
   - name: zalm
     quantity: 2
     unit: stuk

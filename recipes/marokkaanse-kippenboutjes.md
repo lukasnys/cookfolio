@@ -9,34 +9,34 @@ ingredients:
     unit: ml
   - name: paprikapoeder
     quantity: 2
-    unit: theelepel
+    unit: tl
   - name: gemalen komijn
     quantity: 2
-    unit: theelepel
+    unit: tl
   - name: zout
     quantity: 2
-    unit: theelepel
+    unit: tl
   - name: uienpoeder
     quantity: 0.5
-    unit: theelepel
+    unit: tl
   - name: gemberpoeder
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: zwarte peper
     quantity: 0.5
-    unit: theelepel
+    unit: tl
   - name: kurkuma
     quantity: 0.5
-    unit: theelepel
+    unit: tl
   - name: knoflook
     quantity: 2.5
-    unit: theelepel
+    unit: tl
   - name: peterselie
     quantity: 2
-    unit: eetlepel
+    unit: el
   - name: koriander
     quantity: 2
-    unit: eetlepel
+    unit: el
   - name: kip drumstick
     quantity: 9
     unit: stuk

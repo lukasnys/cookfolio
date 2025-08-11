@@ -15,25 +15,25 @@ ingredients:
     unit: stuk
   - name: paprikapoeder
     quantity: 2
-    unit: eetlepel
+    unit: el
   - name: gedroogde oregano
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: gemalen komijn
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: lookpoeder
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: chilivlokken
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: koriander
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: suiker
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: peper en zout
     quantity: 1
     unit: snuf

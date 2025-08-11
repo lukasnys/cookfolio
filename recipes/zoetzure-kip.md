@@ -24,10 +24,10 @@ ingredients:
     unit: g
   - name: ketchup
     quantity: 6
-    unit: eetlepel
+    unit: el
   - name: zoete chili saus
     quantity: 6
-    unit: eetlepel
+    unit: el
   - name: appelazijn
     quantity: 1
     unit: dl

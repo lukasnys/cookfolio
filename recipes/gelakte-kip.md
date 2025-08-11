@@ -12,13 +12,13 @@ ingredients:
     unit: teen
   - name: balsamicoazijn
     quantity: 3
-    unit: eetlepel
+    unit: el
   - name: sojasaus
     quantity: 3
-    unit: eetlepel
+    unit: el
   - name: olijfolie
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: zout
     quantity: 1
     unit: snuf

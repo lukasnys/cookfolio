@@ -18,13 +18,13 @@ ingredients:
     unit: teen
   - name: ketchup
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: sojasaus
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: honing
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: japanese curry blokjes
     quantity: 3
     unit: stuk

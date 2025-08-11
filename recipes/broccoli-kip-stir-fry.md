@@ -12,16 +12,16 @@ ingredients:
     unit: g
   - name: sojasaus
     quantity: 5
-    unit: eetlepel
+    unit: el
   - name: bruine suiker
     quantity: 2
-    unit: eetlepel
+    unit: el
   - name: knoflook
     quantity: 3
     unit: teen
   - name: gemberpoeder
     quantity: 1
-    unit: theelepel
+    unit: tl
 ---
 
 <Recipe />

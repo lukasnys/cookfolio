@@ -12,7 +12,7 @@ ingredients:
     unit: ml
   - name: basilicum
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: mozzarella
     quantity: 1
     unit: stuk

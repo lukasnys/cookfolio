@@ -21,7 +21,7 @@ ingredients:
     unit: snuf
   - name: olie
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: water
     quantity: 400
     unit: ml

@@ -18,7 +18,7 @@ ingredients:
     unit: g
   - name: zout
     quantity: 0.5
-    unit: theelepel
+    unit: tl
 ---
 
 <Recipe />

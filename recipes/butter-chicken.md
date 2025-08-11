@@ -12,28 +12,28 @@ ingredients:
     unit: g
   - name: zout
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: peper
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: chilivlokken
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: gemalen komijn
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: garam masala
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: kurkumapoeder
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: gemberpoeder
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: citroensap
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: rode ui
     quantity: 1
     unit: stuk

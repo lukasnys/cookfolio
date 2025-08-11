@@ -15,7 +15,7 @@ ingredients:
     unit: ml
   - name: rode curry
     quantity: 6
-    unit: koffielepel
+    unit: kl
   - name: kippenbouillon
     quantity: 1
     unit: stuk

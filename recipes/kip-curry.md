@@ -24,13 +24,13 @@ ingredients:
     unit: stuk
   - name: kippenkruiden
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: kerriepoeder
     quantity: 2
-    unit: eetlepel
+    unit: el
   - name: kurkuma
     quantity: 0.5
-    unit: eetlepel
+    unit: el
 ---
 
 <Recipe />

@@ -27,7 +27,7 @@ ingredients:
     unit: stuk
   - name: planta
     quantity: 3
-    unit: eetlepel
+    unit: el
   - name: ei
     quantity: 1
     unit: stuk

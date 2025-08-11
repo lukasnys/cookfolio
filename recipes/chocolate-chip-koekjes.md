@@ -21,13 +21,13 @@ ingredients:
     unit: g
   - name: baksoda
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: bakpoeder
     quantity: 1/2
-    unit: theelepel
+    unit: tl
   - name: zout
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: witte chocolade
     quantity: 125
     unit: g

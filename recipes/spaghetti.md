@@ -30,7 +30,7 @@ ingredients:
     unit: stuk
   - name: spaghettikruiden
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: chili
     quantity: 1
     unit: snuf

@@ -6,7 +6,7 @@ ingredients:
     unit: g
   - name: olijfolie
     quantity: 2
-    unit: eetlepel
+    unit: el
   - name: kippengehakt
     quantity: 500
     unit: g

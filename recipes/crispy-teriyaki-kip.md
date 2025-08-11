@@ -18,13 +18,13 @@ ingredients:
     unit: g
   - name: knoflookpoeder
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: uienpoeder
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: paprikapoeder
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: sojasaus
     quantity: 70
     unit: ml
@@ -33,10 +33,10 @@ ingredients:
     unit: ml
   - name: honing
     quantity: 4
-    unit: eetlepel
+    unit: el
   - name: gemberpoeder
     quantity: 1
-    unit: eetlepel
+    unit: el
 
 ---
 

@@ -15,10 +15,10 @@ ingredients:
     unit: stuk
   - name: sojasaus
     quantity: 3
-    unit: eetlepel
+    unit: el
   - name: ketjapsaus
     quantity: 3
-    unit: eetlepel
+    unit: el
 ---
 
 <Recipe />

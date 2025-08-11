@@ -6,7 +6,7 @@ ingredients:
     unit: g
   - name: citroenzest
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: boter
     quantity: 110
     unit: g
@@ -18,22 +18,22 @@ ingredients:
     unit: stuk
   - name: citroensap
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: vanille extract
     quantity: 2
-    unit: theelepel
+    unit: tl
   - name: bloem
     quantity: 160
     unit: g
   - name: zout
     quantity: 1/4
-    unit: theelepel
+    unit: tl
   - name: poedersuiker
     quantity: 125
     unit: g
   - name: citroensap
     quantity: 2
-    unit: eetlepel
+    unit: el
 ---
 
 <Recipe />

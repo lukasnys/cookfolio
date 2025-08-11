@@ -25,13 +25,13 @@ ingredients:
     unit: stuk
   - name: Luikse stroop
     quantity: 2
-    unit: eetlepel
+    unit: el
   - name: boterham
     quantity: 1
     unit: stuk
   - name: mosterd
     quantity: 2
-    unit: eetlepel
+    unit: el
   - name: natuurazijn
     quantity: 1
     unit: scheut

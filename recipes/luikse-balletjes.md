@@ -12,7 +12,7 @@ ingredients:
     unit: stuk
   - name: paneermeel
     quantity: 2
-    unit: theelepel
+    unit: tl
   - name: ui
     quantity: 1
     unit: stuk
@@ -24,10 +24,10 @@ ingredients:
     unit: tak
   - name: balsamicoazijn
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: luikse stroop
     quantity: 1.5
-    unit: theelepel
+    unit: tl
   - name: laurier
     quantity: 2
     unit: blad

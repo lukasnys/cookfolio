@@ -21,13 +21,13 @@ ingredients:
    unit: stuk
  - name: kippenkruiden
    quantity: 1.5
-   unit: theelepel
+   unit: tl
  - name: cayennepeper
    quantity: 0.5
-   unit: theelepel
+   unit: tl
  - name: paprikapoeder
    quantity: 1
-   unit: theelepel
+   unit: tl
  - name: tomatenpuree
    quantity: 70
    unit: g

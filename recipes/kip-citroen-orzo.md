@@ -6,10 +6,10 @@ ingredients:
     unit: g
   - name: paprikapoeder
     quantity: 0.5
-    unit: theelepel
+    unit: tl
   - name: boter
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: ui
     quantity: 1
     unit: stuk
@@ -30,7 +30,7 @@ ingredients:
     unit: stuk
   - name: gedroogde tijm
     quantity: 0.5
-    unit: theelepel
+    unit: tl
   - name: room
     quantity: 250
     unit: ml

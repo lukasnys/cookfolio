@@ -10,10 +10,10 @@ ingredients:
     unit: g
   - name: paprikapoeder
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: olijfolie
     quantity: 1
-    unit: eetlepel
+    unit: el
   - name: gemengd gehakt
     quantity: 500
     unit: g
