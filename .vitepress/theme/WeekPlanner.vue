@@ -6,11 +6,12 @@ import {
   type Recipe,
 } from "./recipes.data.ts";
 import { google } from "calendar-link";
+import * as ics from "ics";
 import dayjs from "dayjs";
 
 import RecipeSelect from "./RecipeSelect.vue";
 import { Dayjs } from "dayjs";
-import { CalendarIcon } from "@heroicons/vue/24/solid";
+import { ArrowDownTrayIcon, CalendarIcon } from "@heroicons/vue/24/solid";
 
 const NUMBER_OF_DAYS = 7;
 
@@ -84,6 +85,44 @@ const getLinkToAddToGcal = (weekDataEntry: WeekDataEntry) => {
   return google(event);
 };
 
+const downloadIcsFile = () => {
+  type Start = ReturnType<typeof ics.convertTimestampToArray>;
+
+  const events = weekData.value
+    .map((entry) => {
+      if (!entry.recipe) return;
+
+      const recipe = recipesByName[entry.recipe];
+
+      const date = dayjs(entry.id).hour(19);
+      const start = [
+        date.year(),
+        date.month() + 1,
+        date.date(),
+        date.hour(),
+        date.minute(),
+      ] satisfies Start;
+
+      return {
+        title: recipe.title,
+        description: `https://lukasnys.github.io/cookfolio/${recipe.url}`,
+        start,
+        duration: { hours: 1 },
+      };
+    })
+    .filter((event) => !!event);
+
+  const icsEvents = ics.createEvents(events);
+
+  const blob = new Blob([icsEvents.value!], { type: "text/calendar" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "week-planner.ics";
+  a.click();
+  URL.revokeObjectURL(url);
+};
+
 const onStartDateChange = (event: Event) => {
   if (!event.target) return;
   startDate.value = dayjs((event.target as HTMLInputElement).value);
@@ -135,7 +174,12 @@ const onStartDateChange = (event: Event) => {
     <button class="btn btn-brand" @click="saveWeek">Save</button>
 
     <div v-if="ingredientsRequired">
-      <h3>Ingredients Required</h3>
+      <div class="flex justify-between items-center gap-2">
+        <h3>Ingredients Required</h3>
+        <button class="btn btn-alt btn-icon" @click="downloadIcsFile">
+          <ArrowDownTrayIcon class="size-5" />
+        </button>
+      </div>
       <IngredientsList :ingredients="ingredientsRequired" />
     </div>
   </div>
