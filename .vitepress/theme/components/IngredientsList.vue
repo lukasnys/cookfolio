@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Ingredient } from "./recipes.data";
+import type { Ingredient } from "../recipes.data";
 
 defineProps<{ ingredients: Ingredient[] }>();
 </script>

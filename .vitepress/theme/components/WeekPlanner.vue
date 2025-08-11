@@ -4,7 +4,7 @@ import {
   data as recipes,
   type Ingredient,
   type Recipe,
-} from "./recipes.data.ts";
+} from "../recipes.data.ts";
 import { google } from "calendar-link";
 import * as ics from "ics";
 import dayjs from "dayjs";

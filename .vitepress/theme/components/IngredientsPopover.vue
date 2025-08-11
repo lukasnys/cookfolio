@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import IngredientsList from "./IngredientsList.vue";
-import type { Recipe } from "./recipes.data";
+import type { Recipe } from "../recipes.data";
 
 defineProps<{ id: string; recipe: Recipe }>();
 </script>
