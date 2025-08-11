@@ -22,6 +22,22 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  prettier-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Prettier check
+        run: pnpm run prettier:check
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -53,7 +69,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
+    needs: [prettier-check, build]
     runs-on: ubuntu-latest
     name: Deploy
     steps:
