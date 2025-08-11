@@ -9,6 +9,7 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
+    "lint:units": "pnpm tsx ./scripts/lint-units.ts",
     "prettier:write": "pnpm exec prettier . --write",
     "prettier:check": "pnpm exec prettier . --check",
     "prepare": "husky"
