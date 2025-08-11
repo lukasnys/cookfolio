@@ -26,7 +26,7 @@ ingredients:
     quantity: 160
     unit: g
   - name: zout
-    quantity: 1/4
+    quantity: 0.25
     unit: tl
   - name: bloemsuiker
     quantity: 125

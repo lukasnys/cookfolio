@@ -23,7 +23,7 @@ ingredients:
     quantity: 1
     unit: tl
   - name: bakpoeder
-    quantity: 1/2
+    quantity: 0.5
     unit: tl
   - name: zout
     quantity: 1
