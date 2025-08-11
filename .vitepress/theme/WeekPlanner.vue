@@ -87,6 +87,8 @@ const getLinkToAddToGcal = (weekDataEntry: WeekDataEntry) => {
 const onStartDateChange = (event: Event) => {
   if (!event.target) return;
   startDate.value = dayjs((event.target as HTMLInputElement).value);
+
+  ingredientsRequired.value = undefined;
   generateWeekData();
 };
 </script>
