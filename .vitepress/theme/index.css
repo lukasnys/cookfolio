@@ -48,8 +48,16 @@
   }
 }
 
+.vp-doc ul {
+  margin: 0;
+}
+
 .vp-doc li + li {
   margin-top: calc(var(--spacing) * 1);
+}
+
+.vp-doc h3 {
+  margin: 0;
 }
 
 input,
