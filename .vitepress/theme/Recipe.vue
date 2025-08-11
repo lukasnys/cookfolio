@@ -9,9 +9,5 @@ const ingredients = frontmatter.value.ingredients;
   <h1>{{ $frontmatter.title }}</h1>
 
   <h2>Ingredients</h2>
-  <ul>
-    <li v-for="ingredient in ingredients" :key="ingredient.name">
-      {{ ingredient.quantity }} {{ ingredient.unit }} {{ ingredient.name }}
-    </li>
-  </ul>
+  <IngredientsList :ingredients="ingredients" />
 </template>
