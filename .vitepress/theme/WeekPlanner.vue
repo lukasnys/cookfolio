@@ -74,11 +74,7 @@ const saveWeek = () => {
 
     <div v-if="ingredientsRequired">
       <h3>Ingredients Required</h3>
-      <ul>
-        <li v-for="ingredient in ingredientsRequired" :key="ingredient.name">
-          {{ ingredient.quantity }} {{ ingredient.unit }} {{ ingredient.name }}
-        </li>
-      </ul>
+      <IngredientsList :ingredients="ingredientsRequired" />
     </div>
   </div>
 </template>

@@ -3,12 +3,14 @@ import Recipe from "./Recipe.vue";
 import RecipeList from "./RecipeList.vue";
 import WeekPlanner from "./WeekPlanner.vue";
 import IngredientsPopover from "./IngredientsPopover.vue";
+import IngredientsList from "./IngredientsList.vue";
 
 import "./index.css";
 
 export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
+    app.component("IngredientsList", IngredientsList);
     app.component("Recipe", Recipe);
     app.component("WeekPlanner", WeekPlanner);
     app.component("RecipeList", RecipeList);

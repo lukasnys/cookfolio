@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import IngredientsList from "./IngredientsList.vue";
 import type { Recipe } from "./recipes.data";
 
 defineProps<{ id: string; recipe: Recipe }>();
@@ -19,12 +20,7 @@ defineProps<{ id: string; recipe: Recipe }>();
     :id="'popover-' + id"
     :anchor="'popover-toggle-' + id"
   >
-    <ul>
-      <li v-for="ingredient in recipe.ingredients" :key="ingredient.name">
-        {{ ingredient.quantity }} {{ ingredient.unit }}
-        {{ ingredient.name }}
-      </li>
-    </ul>
+    <IngredientsList :ingredients="recipe.ingredients" />
   </div>
 </template>
 
