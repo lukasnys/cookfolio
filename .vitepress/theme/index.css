@@ -38,4 +38,10 @@
     color: var(--vp-button-alt-hover-text);
     background-color: var(--vp-button-alt-hover-bg);
   }
+
+  &:active {
+    border-color: var(--vp-button-alt-active-border);
+    color: var(--vp-button-alt-active-text);
+    background-color: var(--vp-button-alt-active-bg);
+  }
 }
