@@ -37,6 +37,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "calendar-link": "^2.11.0",
     "dayjs": "^1.11.13",
+    "ics": "^3.8.1",
     "tailwindcss": "^4.1.11"
   }
 }
