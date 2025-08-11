@@ -5,13 +5,12 @@ import {
   type Ingredient,
   type Recipe,
 } from "../recipes.data.ts";
-import { google } from "calendar-link";
 import * as ics from "ics";
 import dayjs from "dayjs";
 
 import RecipeSelect from "./RecipeSelect.vue";
 import { Dayjs } from "dayjs";
-import { ArrowDownTrayIcon, CalendarIcon } from "@heroicons/vue/24/solid";
+import { ArrowDownTrayIcon } from "@heroicons/vue/24/solid";
 
 const NUMBER_OF_DAYS = 7;
 
@@ -68,21 +67,6 @@ const saveWeek = () => {
 
     return acc;
   }, []);
-};
-
-const getLinkToAddToGcal = (weekDataEntry: WeekDataEntry) => {
-  if (!weekDataEntry.recipe) return;
-
-  type Duration = Parameters<typeof google>[0]["duration"];
-
-  const event = {
-    title: weekDataEntry.recipe,
-    start: dayjs(weekDataEntry.id).hour(19),
-    duration: [1, "hour"] satisfies Duration,
-    url: "https://github.com/lukasnys/cookfolio",
-  };
-
-  return google(event);
 };
 
 const downloadIcsFile = () => {
@@ -153,20 +137,11 @@ const onStartDateChange = (event: Event) => {
             class="flex-1"
           />
 
-          <div v-if="day.recipe" class="flex items-center gap-2">
-            <IngredientsPopover
-              :id="day.id"
-              :recipe="recipesByName[day.recipe]"
-            />
-
-            <a
-              class="btn btn-alt btn-icon"
-              target="_blank"
-              :href="getLinkToAddToGcal(day)"
-            >
-              <CalendarIcon class="size-5" />
-            </a>
-          </div>
+          <IngredientsPopover
+            v-if="day.recipe"
+            :id="day.id"
+            :recipe="recipesByName[day.recipe]"
+          />
         </div>
       </div>
     </div>
