@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import {data as recipes, Ingredient, Recipe } from './recipes.data.ts';
+import {data as recipes, type Ingredient, type Recipe } from './recipes.data.ts';
   
 import RecipeSelect from './RecipeSelect.vue';
 
@@ -33,7 +33,7 @@ const saveWeek = () => {
       if (existing) {
         existing.quantity += ingredient.quantity;
       } else {
-        acc.push(ingredient);
+        acc.push({ ...ingredient });
       }
     });
       
