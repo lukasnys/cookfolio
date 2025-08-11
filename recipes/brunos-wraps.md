@@ -15,7 +15,7 @@ ingredients:
     unit: g
   - name: sriracha
     quantity: 1
-    unit: portie
+    unit: squirt
 ---
 
 <Recipe />

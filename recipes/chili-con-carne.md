@@ -48,7 +48,7 @@ ingredients:
     unit: g
   - name: looksaus
     quantity: 1
-    unit: portie
+    unit: squirt
   - name: tomaat
     quantity: 2
     unit: stuk

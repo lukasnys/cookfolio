@@ -18,7 +18,7 @@ ingredients:
     unit: g
   - name: citroensap
     quantity: 1
-    unit: portie
+    unit: el
   - name: kaneel
     quantity: 1
     unit: snuf
