@@ -35,11 +35,11 @@ ingredients:
     quantity: 40
     unit: g
   - name: tomatenpassata
-    quantity: 2
-    unit: dl
+    quantity: 200
+    unit: ml
   - name: rode wijn
-    quantity: 2.50
-    unit: dl
+    quantity: 250
+    unit: ml
   - name: geraspte kaas
     quantity: 200
     unit: g

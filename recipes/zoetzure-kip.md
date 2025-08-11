@@ -29,8 +29,8 @@ ingredients:
     quantity: 6
     unit: el
   - name: appelazijn
-    quantity: 1
-    unit: dl
+    quantity: 100
+    unit: ml
 ---
 
 <Recipe />
