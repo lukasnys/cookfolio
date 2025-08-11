@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "prettier:write": "pnpm exec prettier . --write",
+    "prettier:check": "pnpm exec prettier . --check"
   },
   "keywords": [],
   "author": "",
