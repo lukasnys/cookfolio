@@ -3,7 +3,7 @@ title: x
 ingredients:
   - name: x
     quantity: <number>
-    unit: stuk/blik/g/snuf/brik/teen/blad/tak/eetlepel/theelepel
+    unit: g/ml/el/tl/kl/teen/stuk/beetje
 ---
 
 <Recipe />
