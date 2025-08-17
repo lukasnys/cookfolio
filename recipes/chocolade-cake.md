@@ -24,7 +24,7 @@ ingredients:
     unit: g
   - name: zout
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: ei
     quantity: 3
     unit: stuk

@@ -18,7 +18,7 @@ ingredients:
     unit: g
   - name: vanille extract
     quantity: 1
-    unit: snuf
+    unit: beetje
 ---
 
 <Recipe />
