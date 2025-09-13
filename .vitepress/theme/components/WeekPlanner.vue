@@ -40,13 +40,11 @@ const generateWeekData = () => {
 };
 generateWeekData();
 
-const weekResult = ref<
-  | {
-      ingredients: Ingredient[];
-      customRecipes: string[];
-    }
-  | undefined
->(undefined);
+interface WeekResult {
+  ingredients: Ingredient[];
+  customRecipes: string[];
+}
+const weekResult = ref<WeekResult | undefined>(undefined);
 
 const recipesByName = recipes.reduce<Record<string, Recipe>>((acc, recipe) => {
   acc[recipe.title] = recipe;
