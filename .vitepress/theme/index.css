@@ -56,7 +56,7 @@
   margin-top: calc(var(--spacing) * 1);
 }
 
-.vp-doc h3 {
+.vp-doc :is(h3, h4) {
   margin: 0;
 }
 

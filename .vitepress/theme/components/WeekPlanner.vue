@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import {
-  data as recipes,
-  type Ingredient,
-  type Recipe,
-} from "../recipes.data.ts";
+import { data as recipes, type Ingredient, type Recipe } from "../recipes.data.ts";
 import * as ics from "ics";
 import dayjs from "dayjs";
 
@@ -18,29 +14,37 @@ interface WeekDataEntry {
   id: string;
   label: string;
   recipe: string | null;
+  customRecipeTitle?: string;
 }
 
 const startDate = ref<Dayjs>(dayjs());
 
 const weekData = ref<WeekDataEntry[]>([]);
 const generateWeekData = () => {
-  weekData.value = Array.from({ length: NUMBER_OF_DAYS }).reduce<
-    WeekDataEntry[]
-  >((acc, _, index) => {
-    const current = startDate.value.add(index, "day");
+  weekData.value = Array.from({ length: NUMBER_OF_DAYS }).reduce<WeekDataEntry[]>(
+    (acc, _, index) => {
+      const current = startDate.value.add(index, "day");
 
-    acc.push({
-      id: current.format("YYYY-MM-DD"),
-      label: current.format("dddd DD/MM/YYYY"),
-      recipe: null,
-    });
+      acc.push({
+        id: current.format("YYYY-MM-DD"),
+        label: current.format("dddd DD/MM/YYYY"),
+        recipe: null,
+      });
 
-    return acc;
-  }, []);
+      return acc;
+    },
+    [],
+  );
 };
 generateWeekData();
 
-const ingredientsRequired = ref<Ingredient[] | undefined>(undefined);
+const weekResult = ref<
+  | {
+      ingredients: Ingredient[];
+      customRecipes: string[];
+    }
+  | undefined
+>(undefined);
 
 const recipesByName = recipes.reduce<Record<string, Recipe>>((acc, recipe) => {
   acc[recipe.title] = recipe;
@@ -48,16 +52,16 @@ const recipesByName = recipes.reduce<Record<string, Recipe>>((acc, recipe) => {
 }, {});
 
 const saveWeek = () => {
-  const recipes = weekData.value
-    .map((day) => day.recipe)
-    .filter((value) => value !== null)
-    .map((day) => recipesByName[day]);
+  const customRecipes = weekData.value
+    .map((day) => day.customRecipeTitle)
+    .filter((customTitle): customTitle is string => !!customTitle);
 
-  ingredientsRequired.value = recipes.reduce<Ingredient[]>((acc, recipe) => {
+  const recipes = weekData.value
+    .filter((day) => day.recipe !== null)
+    .map((day) => recipesByName[day.recipe!]);
+  const ingredients = recipes.reduce<Ingredient[]>((acc, recipe) => {
     recipe.ingredients.forEach((ingredient) => {
-      const existing = acc.find(
-        (i) => i.name === ingredient.name && i.unit === ingredient.unit,
-      );
+      const existing = acc.find((i) => i.name === ingredient.name && i.unit === ingredient.unit);
       if (existing) {
         existing.quantity += ingredient.quantity;
       } else {
@@ -67,17 +71,19 @@ const saveWeek = () => {
 
     return acc;
   }, []);
+
+  weekResult.value = {
+    ingredients,
+    customRecipes,
+  };
 };
 
 const downloadIcsFile = () => {
   type Start = ReturnType<typeof ics.convertTimestampToArray>;
 
   const events = weekData.value
+    .filter((entry) => entry.recipe || entry.customRecipeTitle)
     .map((entry) => {
-      if (!entry.recipe) return;
-
-      const recipe = recipesByName[entry.recipe];
-
       const date = dayjs(entry.id).hour(19);
       const start = [
         date.year(),
@@ -87,6 +93,15 @@ const downloadIcsFile = () => {
         date.minute(),
       ] satisfies Start;
 
+      if (entry.customRecipeTitle) {
+        return {
+          title: entry.customRecipeTitle,
+          start,
+          duration: { hours: 1 },
+        };
+      }
+
+      const recipe = recipesByName[entry.recipe!];
       return {
         title: recipe.title,
         description: `https://lukasnys.github.io/cookfolio/${recipe.url}`,
@@ -111,8 +126,19 @@ const onStartDateChange = (event: Event) => {
   if (!event.target) return;
   startDate.value = dayjs((event.target as HTMLInputElement).value);
 
-  ingredientsRequired.value = undefined;
+  weekResult.value = undefined;
   generateWeekData();
+};
+
+const updateRecipe = (index: number, recipe: string | null) => {
+  weekData.value[index].recipe = recipe;
+};
+
+const updateCustom = (index: number, customRecipeTitle: string | undefined) => {
+  weekData.value[index] = {
+    ...weekData.value[index],
+    customRecipeTitle: customRecipeTitle,
+  };
 };
 </script>
 
@@ -120,11 +146,7 @@ const onStartDateChange = (event: Event) => {
   <h2>Week Planner</h2>
 
   <div class="week-planner">
-    <input
-      type="date"
-      :value="startDate.format('YYYY-MM-DD')"
-      @change="onStartDateChange"
-    />
+    <input type="date" :value="startDate.format('YYYY-MM-DD')" @change="onStartDateChange" />
 
     <div class="week-planner__days">
       <div v-for="(day, index) in weekData" :key="day.id" class="day-field">
@@ -132,30 +154,42 @@ const onStartDateChange = (event: Event) => {
         <div class="flex justify-end flex-wrap items-center gap-2">
           <RecipeSelect
             :selectedRecipe="day.recipe"
+            :customRecipeTitle="day.customRecipeTitle"
             :dayId="day.id"
-            @update:recipe="(value) => (weekData[index].recipe = value)"
+            @update:recipe="(recipe: string | null) => updateRecipe(index, recipe)"
+            @update:custom="(customTitle: string | undefined) => updateCustom(index, customTitle)"
             class="flex-1"
           />
 
-          <IngredientsPopover
-            v-if="day.recipe"
-            :id="day.id"
-            :recipe="recipesByName[day.recipe]"
-          />
+          <IngredientsPopover v-if="day.recipe" :id="day.id" :recipe="recipesByName[day.recipe]" />
         </div>
       </div>
     </div>
 
     <button class="btn btn-brand" @click="saveWeek">Save</button>
 
-    <div v-if="ingredientsRequired">
+    <div v-if="weekResult" class="flex flex-col gap-4">
       <div class="flex justify-between items-center gap-2">
         <h3>Ingredients Required</h3>
         <button class="btn btn-alt btn-icon" @click="downloadIcsFile">
           <ArrowDownTrayIcon class="size-5" />
         </button>
       </div>
-      <IngredientsList :ingredients="ingredientsRequired" />
+
+      <IngredientsList :ingredients="weekResult.ingredients" />
+
+      <div
+        v-if="weekResult.customRecipes && weekResult.customRecipes.length > 0"
+        class="custom-recipes-reminder"
+      >
+        <h4>Custom Recipes Reminder</h4>
+        <p>Don't forget to add the ingredients of these recipe(s) to your shopping list:</p>
+        <ul>
+          <li v-for="customRecipe in weekResult.customRecipes" :key="customRecipe">
+            <strong>{{ customRecipe }}</strong>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -184,6 +218,23 @@ const onStartDateChange = (event: Event) => {
 
   & .day-field__label {
     font-weight: 600;
+  }
+}
+
+.custom-recipes-reminder {
+  background-color: var(--vp-custom-block-warning-bg);
+  border: 1px solid var(--vp-custom-block-warning-border);
+  border-radius: calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 4);
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 2);
+
+  & p,
+  ul,
+  li {
+    margin: 0;
   }
 }
 </style>
