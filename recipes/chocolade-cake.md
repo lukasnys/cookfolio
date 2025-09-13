@@ -1,5 +1,6 @@
 ---
 title: Chocoladecake
+category: dessert
 ingredients:
   - name: ongezouten boter
     quantity: 200

@@ -1,5 +1,6 @@
 ---
 title: Scrambled pancakes
+category: dessert
 ingredients:
   - name: bloem
     quantity: 170

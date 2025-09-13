@@ -1,5 +1,6 @@
 ---
 title: Flan
+category: dessert
 ingredients:
   - name: suiker
     quantity: 1

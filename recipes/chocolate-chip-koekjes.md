@@ -1,5 +1,6 @@
 ---
 title: Chocolate chip koekjes
+category: dessert
 ingredients:
   - name: boter
     quantity: 227

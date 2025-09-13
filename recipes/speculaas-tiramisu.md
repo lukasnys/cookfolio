@@ -1,5 +1,6 @@
 ---
 title: Speculaas tiramisu
+category: dessert
 ingredients:
   - name: speculaas koeken
     quantity: 125

@@ -1,5 +1,6 @@
 ---
 title: Banketbakkersroom
+category: dessert
 ingredients:
   - name: melk
     quantity: 250

@@ -1,5 +1,6 @@
 ---
 title: Mousse van witte chocolade met munt
+category: dessert
 ingredients:
   - name: witte chocolade
     quantity: 250

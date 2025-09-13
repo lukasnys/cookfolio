@@ -1,5 +1,6 @@
 ---
 title: Appel crumble
+category: dessert
 ingredients:
   - name: appel
     quantity: 575

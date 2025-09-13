@@ -1,5 +1,6 @@
 ---
 title: Citroen blondies
+category: dessert
 ingredients:
   - name: kristalsuiker
     quantity: 200
