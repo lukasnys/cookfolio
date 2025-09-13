@@ -1,7 +1,7 @@
 ---
 title: Kip tomaat in de oven
 ingredients:
-  - name: kip filet
+  - name: kipfilet
     quantity: 500
     unit: g
   - name: groene pesto

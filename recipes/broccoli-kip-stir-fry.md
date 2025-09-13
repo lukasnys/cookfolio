@@ -1,7 +1,7 @@
 ---
 title: Broccoli kip stir fry
 ingredients:
-  - name: kip filet
+  - name: kipfilet
     quantity: 500
     unit: g
   - name: broccoli

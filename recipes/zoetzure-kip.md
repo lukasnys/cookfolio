@@ -4,7 +4,7 @@ ingredients:
   - name: ui
     quantity: 2
     unit: stuk
-  - name: kip filet
+  - name: kipfilet
     quantity: 600
     unit: g
   - name: rode paprika

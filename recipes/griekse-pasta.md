@@ -4,7 +4,7 @@ ingredients:
   - name: kerstomaat
     quantity: 500
     unit: g
-  - name: kip filet
+  - name: kipfilet
     quantity: 500
     unit: g
   - name: feta

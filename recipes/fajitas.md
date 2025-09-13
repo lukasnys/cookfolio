@@ -1,7 +1,7 @@
 ---
 title: Fajitas
 ingredients:
-  - name: kip filet
+  - name: kipfilet
     quantity: 200
     unit: g
   - name: rode paprika
