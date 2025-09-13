@@ -9,6 +9,8 @@ import { Dayjs } from "dayjs";
 import { ArrowDownTrayIcon } from "@heroicons/vue/24/solid";
 
 const NUMBER_OF_DAYS = 7;
+const DINNER_HOUR = 19;
+const EVENT_DURATION_HOURS = 1;
 
 interface WeekDataEntry {
   id: string;
@@ -84,7 +86,7 @@ const downloadIcsFile = () => {
   const events = weekData.value
     .filter((entry) => entry.recipe || entry.customRecipeTitle)
     .map((entry) => {
-      const date = dayjs(entry.id).hour(19);
+      const date = dayjs(entry.id).hour(DINNER_HOUR);
       const start = [
         date.year(),
         date.month() + 1,
@@ -97,7 +99,7 @@ const downloadIcsFile = () => {
         return {
           title: entry.customRecipeTitle,
           start,
-          duration: { hours: 1 },
+          duration: { hours: EVENT_DURATION_HOURS },
         };
       }
 
