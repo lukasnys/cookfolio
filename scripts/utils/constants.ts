@@ -1,12 +1,4 @@
-import {
-  object,
-  string,
-  number,
-  array,
-  type InferInput,
-  optional,
-  picklist,
-} from "valibot";
+import { object, string, number, array, type InferInput, optional, picklist } from "valibot";
 
 export const IngredientSchema = object({
   name: string(),

@@ -1,15 +1,6 @@
 import { getRecipes } from "./utils/get-recipes.js";
 
-export const ALLOWED_UNITS = [
-  "g",
-  "ml",
-  "el",
-  "tl",
-  "kl",
-  "teen",
-  "stuk",
-  "beetje",
-];
+export const ALLOWED_UNITS = ["g", "ml", "el", "tl", "kl", "teen", "stuk", "beetje"];
 
 let hasErrors = false;
 

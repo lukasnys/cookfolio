@@ -14,12 +14,7 @@ defineProps<{ id: string; recipe: Recipe }>();
     Check ingredients
   </button>
 
-  <div
-    popover
-    class="ingredients-popover"
-    :id="'popover-' + id"
-    :anchor="'popover-toggle-' + id"
-  >
+  <div popover class="ingredients-popover" :id="'popover-' + id" :anchor="'popover-toggle-' + id">
     <IngredientsList :ingredients="recipe.ingredients" />
   </div>
 </template>
