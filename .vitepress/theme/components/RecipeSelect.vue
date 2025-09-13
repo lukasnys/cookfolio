@@ -1,4 +1,5 @@
 <script setup>
+import { computed } from "vue";
 import { data as recipes } from "../recipes.data.ts";
 
 defineProps({
@@ -7,6 +8,10 @@ defineProps({
 });
 
 const emit = defineEmits(["update:recipe"]);
+
+const mainRecipes = computed(() =>
+  recipes.filter((recipe) => recipe.category === "main"),
+);
 </script>
 
 <template>
@@ -18,7 +23,7 @@ const emit = defineEmits(["update:recipe"]);
     @change="emit('update:recipe', $event.target.value)"
   >
     <option value="">Select a recipe</option>
-    <option v-for="recipe in recipes" :value="recipe.title">
+    <option v-for="recipe in mainRecipes" :value="recipe.title">
       {{ recipe.title }}
     </option>
   </select>

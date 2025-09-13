@@ -10,6 +10,7 @@ export interface Recipe {
   title: string;
   url: string;
   ingredients: Ingredient[];
+  category: "main" | "dessert";
 }
 
 declare const data: Recipe[];
@@ -21,6 +22,7 @@ export default createContentLoader("recipes/*.md", {
       title: page.frontmatter.title,
       url: page.url.replace("/", ""),
       ingredients: page.frontmatter.ingredients,
+      category: page.frontmatter.category || "main",
     }));
   },
 });
