@@ -43,6 +43,9 @@ ingredients:
   - name: geraspte kaas
     quantity: 200
     unit: g
+  - name: kippengehakt
+    quantity: 500
+    unit: g
 ---
 
 <Recipe />
