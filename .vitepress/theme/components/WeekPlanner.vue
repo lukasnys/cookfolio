@@ -11,6 +11,7 @@ import { ArrowDownTrayIcon } from "@heroicons/vue/24/solid";
 const NUMBER_OF_DAYS = 7;
 const DINNER_HOUR = 19;
 const MINCED_MEAT_REMINDER_HOUR = 10;
+const CHICKEN_REMINDER_HOUR = 21;
 const EVENT_DURATION_HOURS = 1;
 const REMINDER_DURATION_MINUTES = 15;
 
@@ -125,7 +126,7 @@ const downloadIcsFile = () => {
   const chickenReminderEvents = weekData.value
     .filter((entry) => entry.recipe && hasChickenIngredient(recipesByName[entry.recipe]))
     .map((entry) => {
-      const reminderDate = dayjs(entry.id).subtract(1, "day").hour(DINNER_HOUR);
+      const reminderDate = dayjs(entry.id).subtract(1, "day").hour(CHICKEN_REMINDER_HOUR);
       const icsStart = getIcsDateArray(reminderDate);
 
       return {
