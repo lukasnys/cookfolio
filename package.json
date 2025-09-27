@@ -12,11 +12,7 @@
     "lint:units": "pnpm tsx ./scripts/lint-units.ts",
     "lint:recipes": "pnpm tsx ./scripts/lint-recipes.ts",
     "prettier:write": "pnpm exec prettier . --write",
-    "prettier:check": "pnpm exec prettier . --check",
-    "prepare": "husky"
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "prettier:check": "pnpm exec prettier . --check"
   },
   "keywords": [],
   "author": "",
@@ -25,8 +21,6 @@
     "@types/node": "^24.2.1",
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.1.5",
     "prettier": "3.6.2",
     "tsx": "^4.20.3",
     "typescript": "^5.9.2",
