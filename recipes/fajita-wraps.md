@@ -1,15 +1,15 @@
 ---
-title: Fajitas
+title: Fajita wraps
 category: main
 ingredients:
   - name: kipfilet
-    quantity: 200
+    quantity: 400
     unit: g
   - name: rode paprika
-    quantity: 1
+    quantity: 2
     unit: stuk
   - name: gele paprika
-    quantity: 1
+    quantity: 2
     unit: stuk
   - name: rode ui
     quantity: 1
@@ -41,6 +41,26 @@ ingredients:
   - name: zout
     quantity: 1
     unit: beetje
+  - name: looksaus
+    quantity: 1
+    unit: beetje
+  - name: avocado
+    quantity: 2
+    unit: stuk
+  - name: tomaat
+    quantity: 2
+    unit: stuk
+  - name: wraps
+    quantity: 6
+    unit: stuk
 ---
 
 <Recipe />
+
+## Instructions
+
+- Snij alle groenten en kip
+- Voeg toe aan ovenschotel en kruid
+- Zet in de oven voor 30 minuten op 180 graden
+- Snij tomaten en maak guacamole
+- Assemble op de wraps
