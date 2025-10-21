@@ -1,5 +1,6 @@
 ---
 title: x
+category: x
 ingredients:
   - name: x
     quantity: <number>
