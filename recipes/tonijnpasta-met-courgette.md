@@ -1,5 +1,6 @@
 ---
 title: Tonijnpasta met courgette
+category: main
 ingredients:
   - name: courgette
     quantity: 1

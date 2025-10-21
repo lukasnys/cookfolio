@@ -1,5 +1,6 @@
 ---
 title: Groene soep
+category: side
 ingredients:
   - name: ui
     quantity: 2

@@ -1,5 +1,6 @@
 ---
 title: Spaghetti
+category: main
 ingredients:
   - name: rode paprika
     quantity: 2

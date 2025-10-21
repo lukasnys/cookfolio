@@ -1,5 +1,6 @@
 ---
 title: Chili con carne
+category: main
 ingredients:
   - name: gemengd gehakt
     quantity: 500

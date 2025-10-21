@@ -1,5 +1,6 @@
 ---
 title: Gehaktballetjes in tomatensaus
+category: main
 ingredients:
   - name: gemengd gehakt
     quantity: 500

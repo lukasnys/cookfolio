@@ -1,5 +1,6 @@
 ---
 title: Krullekes in kaassaus
+category: main
 ingredients:
   - name: spirelli
     quantity: 500

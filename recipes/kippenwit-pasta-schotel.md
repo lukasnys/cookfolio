@@ -1,5 +1,6 @@
 ---
 title: Pastaschotel met kippenwit
+category: main
 ingredients:
   - name: kippenwit
     quantity: 200

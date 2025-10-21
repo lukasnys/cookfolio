@@ -1,5 +1,6 @@
 ---
 title: Varkenshaasje met spruitjes in de oven
+category: main
 ingredients:
   - name: spruiten
     quantity: 500

@@ -1,5 +1,6 @@
 ---
 title: Kip curry
+category: main
 ingredients:
   - name: kipfilet
     quantity: 500

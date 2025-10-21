@@ -1,5 +1,6 @@
 ---
 title: Crispy teriyaki kip
+category: main
 ingredients:
   - name: broccoli
     quantity: 500

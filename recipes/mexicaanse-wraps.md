@@ -1,5 +1,6 @@
 ---
 title: Mexicaanse wraps
+category: main
 ingredients:
   - name: rode paprika
     quantity: 2
@@ -27,6 +28,9 @@ ingredients:
     unit: g
   - name: geraspte kaas
     quantity: 200
+    unit: g
+  - name: kidneybonen
+    quantity: 310
     unit: g
 ---
 

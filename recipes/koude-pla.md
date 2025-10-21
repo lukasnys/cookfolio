@@ -1,5 +1,6 @@
 ---
 title: Koude pla
+category: main
 ingredients:
   - name: hesp
     quantity: 150

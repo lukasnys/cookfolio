@@ -1,5 +1,6 @@
 ---
 title: Risotto met erwt en spek
+category: main
 ingredients:
   - name: risotto rijst
     quantity: 250

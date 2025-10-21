@@ -1,5 +1,6 @@
 ---
 title: Fitte schotel
+category: main
 ingredients:
   - name: quinoa
     quantity: 125

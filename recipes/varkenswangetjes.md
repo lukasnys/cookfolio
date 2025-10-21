@@ -1,5 +1,6 @@
 ---
 title: Varkenswangetjes
+category: main
 ingredients:
   - name: ui
     quantity: 2

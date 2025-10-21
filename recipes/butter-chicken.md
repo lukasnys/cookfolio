@@ -1,5 +1,6 @@
 ---
 title: Butter chicken
+category: main
 ingredients:
   - name: kipfilet
     quantity: 500

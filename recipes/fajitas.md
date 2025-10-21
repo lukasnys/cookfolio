@@ -1,5 +1,6 @@
 ---
 title: Fajitas
+category: main
 ingredients:
   - name: kipfilet
     quantity: 200

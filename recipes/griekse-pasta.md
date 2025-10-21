@@ -1,5 +1,6 @@
 ---
 title: Griekse pasta
+category: main
 ingredients:
   - name: kerstomaat
     quantity: 500

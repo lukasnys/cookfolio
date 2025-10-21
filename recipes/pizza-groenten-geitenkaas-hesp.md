@@ -1,5 +1,6 @@
 ---
 title: Pizza groenten & geitenkaas & hesp
+category: main
 ingredients:
   - name: pizzasaus
     quantity: 250

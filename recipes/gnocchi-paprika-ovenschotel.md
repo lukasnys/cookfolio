@@ -1,5 +1,6 @@
 ---
 title: Gnocchi paprika ovenschotel
+category: main
 ingredients:
   - name: gnocchi
     quantity: 400

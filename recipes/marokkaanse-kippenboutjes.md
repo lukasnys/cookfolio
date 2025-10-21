@@ -1,5 +1,6 @@
 ---
 title: Marokkaanse kippenboutjes
+category: main
 ingredients:
   - name: olijfolie
     quantity: 60

@@ -1,5 +1,6 @@
 ---
 title: Thaise curry
+category: main
 ingredients:
   - name: rode paprika
     quantity: 1

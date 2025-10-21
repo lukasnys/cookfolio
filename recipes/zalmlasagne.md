@@ -1,5 +1,6 @@
 ---
 title: Zalmlasagne
+category: main
 ingredients:
   - name: spinazie
     quantity: 600

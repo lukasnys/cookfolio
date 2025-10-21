@@ -1,5 +1,6 @@
 ---
 title: Katsu curry
+category: main
 ingredients:
   - name: ui
     quantity: 1

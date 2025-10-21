@@ -1,5 +1,6 @@
 ---
 title: Pasta pesto met wortel
+category: main
 ingredients:
   - name: cappelini
     quantity: 300

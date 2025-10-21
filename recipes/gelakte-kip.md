@@ -1,5 +1,6 @@
 ---
 title: Gelakte kip
+category: main
 ingredients:
   - name: kipfilet
     quantity: 500

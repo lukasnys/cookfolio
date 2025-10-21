@@ -1,5 +1,6 @@
 ---
 title: Luikse balletjes
+category: main
 ingredients:
   - name: gemengd gehakt
     quantity: 400

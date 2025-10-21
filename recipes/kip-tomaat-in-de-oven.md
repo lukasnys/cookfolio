@@ -1,5 +1,6 @@
 ---
 title: Kip tomaat in de oven
+category: main
 ingredients:
   - name: kipfilet
     quantity: 500

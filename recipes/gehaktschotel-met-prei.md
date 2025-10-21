@@ -1,5 +1,6 @@
 ---
 title: Gehaktschotel met prei
+category: main
 ingredients:
   - name: ui
     quantity: 1

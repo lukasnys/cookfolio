@@ -1,5 +1,6 @@
 ---
 title: Firecracker zalm
+category: main
 ingredients:
   - name: knoflookpoeder
     quantity: 1

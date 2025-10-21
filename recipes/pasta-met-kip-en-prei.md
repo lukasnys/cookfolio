@@ -1,5 +1,6 @@
 ---
 title: Pasta met kip en prei
+category: main
 ingredients:
   - name: ui
     quantity: 1

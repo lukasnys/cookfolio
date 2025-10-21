@@ -1,5 +1,6 @@
 ---
 title: Ragu di carne
+category: main
 ingredients:
   - name: gemengd gehakt
     quantity: 350

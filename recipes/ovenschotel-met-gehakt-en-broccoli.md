@@ -1,5 +1,6 @@
 ---
 title: Ovenschotel met gehakt en broccoli
+category: main
 ingredients:
   - name: gemengd gehakt
     quantity: 500

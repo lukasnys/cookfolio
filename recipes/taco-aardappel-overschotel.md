@@ -1,5 +1,6 @@
 ---
 title: Taco aardappel overschotel
+category: main
 ingredients:
   - name: aardappel
     quantity: 600

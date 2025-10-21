@@ -1,5 +1,6 @@
 ---
 title: Pompoenpasta
+category: main
 ingredients:
   - name: butternut
     quantity: 1

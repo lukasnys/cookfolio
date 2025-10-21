@@ -1,5 +1,6 @@
 ---
 title: Bruno's wraps
+category: main
 ingredients:
   - name: avocado
     quantity: 2

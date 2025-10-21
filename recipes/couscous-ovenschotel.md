@@ -1,5 +1,6 @@
 ---
-title: Gevulde paprika met couscous
+title: Couscous ovenschotel
+category: main
 ingredients:
   - name: rode paprika
     quantity: 2

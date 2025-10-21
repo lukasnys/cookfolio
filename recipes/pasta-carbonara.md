@@ -1,5 +1,6 @@
 ---
 title: Pasta carbonara
+category: main
 ingredients:
   - name: cappelini
     quantity: 400

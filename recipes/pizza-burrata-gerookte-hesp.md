@@ -1,5 +1,6 @@
 ---
 title: Pizza burrata & gerookte hesp
+category: main
 ingredients:
   - name: pizzasaus
     quantity: 250

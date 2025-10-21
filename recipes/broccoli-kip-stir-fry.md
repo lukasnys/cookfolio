@@ -1,5 +1,6 @@
 ---
 title: Broccoli kip stir fry
+category: main
 ingredients:
   - name: kipfilet
     quantity: 500

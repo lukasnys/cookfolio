@@ -1,5 +1,6 @@
 ---
 title: Gevulde paprika met gehakt
+category: main
 ingredients:
   - name: rode paprika
     quantity: 3

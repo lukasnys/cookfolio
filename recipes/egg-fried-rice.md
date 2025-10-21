@@ -1,5 +1,6 @@
 ---
 title: Egg fried rice
+category: main
 ingredients:
   - name: rijst
     quantity: 300

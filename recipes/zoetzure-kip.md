@@ -1,5 +1,6 @@
 ---
 title: Zoetzure kip
+category: main
 ingredients:
   - name: ui
     quantity: 2
