@@ -9,7 +9,7 @@ export type Ingredient = InferInput<typeof IngredientSchema>;
 
 export const RecipeSchema = object({
   title: string(),
-  category: optional(picklist(["dessert", "main"] as const)),
+  category: optional(picklist(["dessert", "main", "side"] as const)),
   ingredients: array(IngredientSchema),
 });
 export type Recipe = InferInput<typeof RecipeSchema>;
