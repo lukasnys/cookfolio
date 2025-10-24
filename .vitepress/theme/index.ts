@@ -5,7 +5,7 @@ import WeekPlanner from "@/components/WeekPlanner.vue";
 import IngredientsPopover from "@/components/IngredientsPopover.vue";
 import IngredientsList from "@/components/IngredientsList.vue";
 
-import "./index.css";
+import "@/styles/index.css";
 
 export default {
   extends: DefaultTheme,
