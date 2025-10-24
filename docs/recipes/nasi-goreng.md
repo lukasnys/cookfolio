@@ -28,10 +28,10 @@ ingredients:
     unit: beetje
   - name: sesamzaad
     quantity: 1
-    unit: theelepel
+    unit: tl
   - name: sriracha
     quantity: 1
-    unit: theelepel
+    unit: tl
 ---
 
 <Recipe />

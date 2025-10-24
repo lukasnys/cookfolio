@@ -13,7 +13,7 @@ ingredients:
     unit: g
   - name: sojasaus
     quantity: 1
-    unit: scheut
+    unit: beetje
   - name: kippenbouilon
     quantity: 1
     unit: stuk

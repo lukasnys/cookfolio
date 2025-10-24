@@ -15,8 +15,8 @@ ingredients:
     quantity: 3
     unit: stuk
   - name: room
-    quantity: 2
-    unit: dl
+    quantity: 200
+    unit: ml
   - name: geraspte kaas
     quantity: 150
     unit: g

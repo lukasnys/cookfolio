@@ -19,7 +19,7 @@ ingredients:
     unit: g
   - name: room
     quantity: 1
-    unit: scheut
+    unit: beetje
 ---
 
 <Recipe />

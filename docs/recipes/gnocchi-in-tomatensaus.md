@@ -1,31 +1,31 @@
 ---
-title: Gnocchi in tomatemsaus
+title: Gnocchi in tomatensaus
 category: main
 ingredients:
-  - name: platte peterselie
+  - name: peterselie
     quantity: 4
-    unit: stammen
+    unit: tak
   - name: gedroogde oregano
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: rozemarijn
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: basilicum
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: ui
     quantity: 1
     unit: stuk
   - name: knoflook
     quantity: 3
     unit: teen
-  - name: tomaten in blik
-    quantity: 1
-    unit: blik
+  - name: tomatenstukjes
+    quantity: 400
+    unit: g
   - name: chilivlokken
     quantity: 1
-    unit: snuf
+    unit: beetje
   - name: room
     quantity: 1
     unit: scheut

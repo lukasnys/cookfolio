@@ -16,7 +16,7 @@ ingredients:
     unit: stuk
   - name: bloem
     quantity: 2
-    unit: eetlepel
+    unit: el
   - name: vanillesuiker
     quantity: 1
     unit: stuk
