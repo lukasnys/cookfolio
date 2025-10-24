@@ -9,6 +9,7 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
+    "lint": "pnpm lint:types && pnpm lint:units && pnpm lint:recipes && pnpm prettier:check",
     "lint:types": "tsc --noEmit",
     "lint:units": "pnpm tsx ./scripts/lint-units.ts",
     "lint:recipes": "pnpm tsx ./scripts/lint-recipes.ts",
