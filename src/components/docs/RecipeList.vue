@@ -1,5 +1,5 @@
 <script setup>
-import { data as recipes } from "../recipes.data.ts";
+import { data as recipes } from "../../recipes.data.ts";
 </script>
 
 <template>
