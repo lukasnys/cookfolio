@@ -1,9 +1,9 @@
 import DefaultTheme from "vitepress/theme";
-import Recipe from "./components/Recipe.vue";
-import RecipeList from "./components/RecipeList.vue";
-import WeekPlanner from "./components/WeekPlanner.vue";
-import IngredientsPopover from "./components/IngredientsPopover.vue";
-import IngredientsList from "./components/IngredientsList.vue";
+import Recipe from "../../src/components/Recipe.vue";
+import RecipeList from "../../src/components/RecipeList.vue";
+import WeekPlanner from "../../src/components/WeekPlanner.vue";
+import IngredientsPopover from "../../src/components/IngredientsPopover.vue";
+import IngredientsList from "../../src/components/IngredientsList.vue";
 
 import "./index.css";
 
