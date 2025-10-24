@@ -4,6 +4,7 @@ import { resolve } from "path";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  srcDir: "docs",
   base: "/cookfolio/",
   title: "Cookfolio",
   description: "A cookfolio for recipes",

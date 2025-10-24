@@ -1,4 +1,5 @@
-@import "tailwindcss";
+@import "tailwindcss"; 
+@source "../../**/*.vue";
 
 .btn {
   font-size: 0.875rem;
