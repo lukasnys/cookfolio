@@ -4,7 +4,7 @@ category: main
 ingredients:
   - name: peterselie
     quantity: 4
-    unit: tak
+    unit: beetje
   - name: gedroogde oregano
     quantity: 1
     unit: beetje
@@ -28,7 +28,7 @@ ingredients:
     unit: beetje
   - name: room
     quantity: 1
-    unit: scheut
+    unit: beetje
   - name: gnocchi
     quantity: 400
     unit: g
