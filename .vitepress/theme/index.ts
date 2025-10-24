@@ -4,6 +4,7 @@ import RecipeList from "@/components/docs/RecipeList.vue";
 import WeekPlanner from "@/components/WeekPlanner.vue";
 import IngredientsPopover from "@/components/IngredientsPopover.vue";
 import IngredientsList from "@/components/IngredientsList.vue";
+import WeekResult from "@/components/WeekResult.vue";
 
 import "@/styles/index.css";
 
@@ -13,6 +14,7 @@ export default {
     app.component("IngredientsList", IngredientsList);
     app.component("Recipe", Recipe);
     app.component("WeekPlanner", WeekPlanner);
+    app.component("WeekResult", WeekResult);
     app.component("RecipeList", RecipeList);
     app.component("IngredientsPopover", IngredientsPopover);
   },
