@@ -1,0 +1,11 @@
+.vp-doc ul {
+  margin: 0;
+}
+
+.vp-doc li + li {
+  margin-top: calc(var(--spacing) * 1);
+}
+
+.vp-doc :is(h3, h4) {
+  margin: 0;
+}
