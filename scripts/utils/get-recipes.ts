@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import type { Recipe } from "./constants.js";
 
 export function getRecipes(): Recipe[] {
-  const recipeFiles = fg.sync("recipes/**/*.md", { absolute: true });
+  const recipeFiles = fg.sync("docs/recipes/**/*.md", { absolute: true });
 
   return recipeFiles.map((filePath) => {
     const content = fs.readFileSync(filePath, "utf-8");
