@@ -7,30 +7,9 @@ import dayjs from "dayjs";
 import RecipeSelect from "./RecipeSelect.vue";
 import { Dayjs } from "dayjs";
 import { ArrowDownTrayIcon } from "@heroicons/vue/24/solid";
+import { getIcsBlob } from "@/utils/calendar-events";
 
 const NUMBER_OF_DAYS = 7;
-const DINNER_HOUR = 19;
-const MINCED_MEAT_REMINDER_HOUR = 10;
-const CHICKEN_REMINDER_HOUR = 21;
-const EVENT_DURATION_HOURS = 1;
-const REMINDER_DURATION_MINUTES = 15;
-
-const hasChickenIngredient = (recipe: Recipe): boolean => {
-  return recipe.ingredients.some((ingredient) =>
-    ingredient.name.toLowerCase().includes("kipfilet"),
-  );
-};
-
-const hasMincedMeatIngredient = (recipe: Recipe): boolean => {
-  return recipe.ingredients.some((ingredient) =>
-    ingredient.name.toLowerCase().includes("gemengd gehakt"),
-  );
-};
-
-type getIcsDateArray = ReturnType<typeof ics.convertTimestampToArray>;
-const getIcsDateArray = (date: Dayjs): getIcsDateArray => {
-  return [date.year(), date.month() + 1, date.date(), date.hour(), date.minute()];
-};
 
 interface WeekDataEntry {
   id: string;
@@ -99,66 +78,9 @@ const saveWeek = () => {
 };
 
 const downloadIcsFile = () => {
-  const recipeEvents = weekData.value
-    .filter((entry) => entry.recipe || entry.customRecipeTitle)
-    .map((entry) => {
-      const date = dayjs(entry.id).hour(DINNER_HOUR);
-      const icsStart = getIcsDateArray(date);
+  const icsBlob = getIcsBlob(weekData.value);
 
-      if (entry.customRecipeTitle) {
-        return {
-          title: entry.customRecipeTitle,
-          start: icsStart,
-          duration: { hours: EVENT_DURATION_HOURS },
-        };
-      }
-
-      const recipe = recipesByName[entry.recipe!];
-      return {
-        title: recipe.title,
-        description: `https://lukasnys.github.io/cookfolio/${recipe.url}`,
-        start: icsStart,
-        duration: { hours: EVENT_DURATION_HOURS },
-      };
-    })
-    .filter((event) => !!event);
-
-  const chickenReminderEvents = weekData.value
-    .filter((entry) => entry.recipe && hasChickenIngredient(recipesByName[entry.recipe]))
-    .map((entry) => {
-      const reminderDate = dayjs(entry.id).subtract(1, "day").hour(CHICKEN_REMINDER_HOUR);
-      const icsStart = getIcsDateArray(reminderDate);
-
-      return {
-        title: "Kip uithalen",
-        description: `Reminder: Take out chicken for tomorrow's recipe (${recipesByName[entry.recipe!].title})`,
-        start: icsStart,
-        duration: { minutes: REMINDER_DURATION_MINUTES },
-      };
-    });
-
-  const mincedMeatReminderEvents = weekData.value
-    .filter((entry) => entry.recipe && hasMincedMeatIngredient(recipesByName[entry.recipe]))
-    .map((entry) => {
-      const reminderDate = dayjs(entry.id).hour(MINCED_MEAT_REMINDER_HOUR);
-      const icsStart = getIcsDateArray(reminderDate);
-
-      return {
-        title: "Gehakt halen",
-        description: `Reminder: Buy minced meat for today's recipe (${recipesByName[entry.recipe!].title})`,
-        start: icsStart,
-        duration: { minutes: REMINDER_DURATION_MINUTES },
-      };
-    });
-
-  const icsEvents = ics.createEvents([
-    ...recipeEvents,
-    ...chickenReminderEvents,
-    ...mincedMeatReminderEvents,
-  ]);
-
-  const blob = new Blob([icsEvents.value!], { type: "text/calendar" });
-  const url = URL.createObjectURL(blob);
+  const url = URL.createObjectURL(icsBlob);
   const a = document.createElement("a");
   a.href = url;
   a.download = "week-planner.ics";
