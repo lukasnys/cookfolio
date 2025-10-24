@@ -2,7 +2,7 @@
 title: Varkenshaasje met spruitjes in de oven
 category: main
 ingredients:
-  - name: spruiten
+  - name: spruit
     quantity: 500
     unit: g
   - name: knoflookpoeder
