@@ -20,7 +20,7 @@ ingredients:
   - name: princessenbonen
     quantity: 200
     unit: g
-  - name: erwten
+  - name: erwt
     quantity: 200
     unit: g
   - name: ketjap

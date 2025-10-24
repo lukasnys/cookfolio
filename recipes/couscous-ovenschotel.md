@@ -47,6 +47,9 @@ ingredients:
   - name: kippengehakt
     quantity: 500
     unit: g
+  - name: kidneybonen
+    quantity: 310
+    unit: g
 ---
 
 <Recipe />

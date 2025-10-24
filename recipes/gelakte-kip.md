@@ -5,7 +5,7 @@ ingredients:
   - name: kipfilet
     quantity: 500
     unit: g
-  - name: bonen
+  - name: princessenbonen
     quantity: 300
     unit: g
   - name: knoflook

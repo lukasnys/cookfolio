@@ -53,6 +53,9 @@ ingredients:
   - name: wraps
     quantity: 6
     unit: stuk
+  - name: kidneybonen
+    quantity: 310
+    unit: g
 ---
 
 <Recipe />
