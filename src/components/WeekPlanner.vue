@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { data as recipes, type Ingredient, type Recipe } from "../recipes.data.ts";
+import { data as recipes, type Ingredient, type Recipe } from "../recipes.data";
 import * as ics from "ics";
 import dayjs from "dayjs";
 

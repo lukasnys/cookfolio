@@ -9,7 +9,7 @@ import "@/styles/index.css";
 
 export default {
   extends: DefaultTheme,
-  enhanceApp({ app }) {
+  enhanceApp({ app }: { app: any }) {
     app.component("IngredientsList", IngredientsList);
     app.component("Recipe", Recipe);
     app.component("WeekPlanner", WeekPlanner);
