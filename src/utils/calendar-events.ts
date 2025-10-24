@@ -5,6 +5,7 @@ import type { Dayjs } from "dayjs";
 
 import type { Recipe } from "@/recipes.data.js";
 import { recipeHasIngredient } from "./recipe-has-ingredient.js";
+import type { WeekPlannerEntry } from "@/types/week-planner-entry.js";
 
 const EVENT_DINNER_TIME_HOUR = 19;
 const EVENT_DINNER_TIME_DURATION_MINUTES = 60;
@@ -14,23 +15,6 @@ const EVENT_CHICKEN_REMINDER_DURATION_MINUTES = 15;
 
 const EVENT_MINCED_MEAT_REMINDER_HOUR = 10;
 const EVENT_MINCED_MEAT_REMINDER_DURATION_MINUTES = 15;
-
-interface WeekPlannerEntry {
-  /**
-   * YYYY-MM-DD
-   */
-  id: string;
-  /**
-   * The recipe assigned to this day, or null if none.
-   * Can be null if no recipe is assigned or if a custom entry title is used.
-   */
-  recipe: Recipe | null;
-  /**
-   * Custom title for the entry.
-   * Null if no custom title is set.
-   */
-  customEntryTitle?: string;
-}
 
 type getIcsDateArray = ReturnType<typeof ics.convertTimestampToArray>;
 /**
@@ -53,8 +37,8 @@ function getIcsEvents(weekPlannerEntries: WeekPlannerEntry[]): ics.EventAttribut
   return weekPlannerEntries.reduce<ics.EventAttributes[]>((acc, entry) => {
     const date = dayjs(entry.id);
 
-    if (entry.customEntryTitle) {
-      acc.push(getIcsEventForCustomEntry(date, entry.customEntryTitle));
+    if (entry.customRecipeTitle) {
+      acc.push(getIcsEventForCustomEntry(date, entry.customRecipeTitle));
       return acc;
     }
 
@@ -107,7 +91,7 @@ function getIcsEventForChickenReminder(date: Dayjs): ics.EventAttributes {
  * When a recipe with minced meat is scheduled, add a reminder event on the same day to fetch the minced meat.
  */
 function getIcsEventForMincedMeatReminder(date: Dayjs): ics.EventAttributes {
-  const reminderDateStart = date.subtract(1, "day").hour(EVENT_MINCED_MEAT_REMINDER_HOUR);
+  const reminderDateStart = date.hour(EVENT_MINCED_MEAT_REMINDER_HOUR);
 
   return {
     title: "Fetch Minced Meat",
