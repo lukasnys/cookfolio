@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
-import { data as recipes, type Recipe } from "../recipes.data";
+import { ref } from "vue";
+import { type Recipe } from "../recipes.data";
 import dayjs from "dayjs";
 
 import RecipeSelect from "./RecipeSelect.vue";
@@ -9,26 +9,20 @@ import type { WeekPlannerEntry } from "@/types/week-planner-entry";
 
 const NUMBER_OF_DAYS = 7;
 
-export interface WeekDataEntry {
-  id: string;
+const startDate = ref<Dayjs>(dayjs());
+const weekData = ref<WeekPlannerEntryWithLabel[]>([]);
+const isResultShown = ref(false);
+
+interface WeekPlannerEntryWithLabel extends WeekPlannerEntry {
   label: string;
-  recipe: string | null;
-  customRecipeTitle?: string;
 }
 
-const startDate = ref<Dayjs>(dayjs());
-
-const weekData = ref<WeekDataEntry[]>([]);
 const generateWeekData = () => {
-  weekData.value = Array.from({ length: NUMBER_OF_DAYS }).reduce<WeekDataEntry[]>(
+  weekData.value = Array.from({ length: NUMBER_OF_DAYS }).reduce<WeekPlannerEntryWithLabel[]>(
     (acc, _, index) => {
       const current = startDate.value.add(index, "day");
 
-      acc.push({
-        id: current.format("YYYY-MM-DD"),
-        label: current.format("dddd DD/MM/YYYY"),
-        recipe: null,
-      });
+      acc.push({ id: current.format("YYYY-MM-DD"), label: current.format("dddd, MMM D") });
 
       return acc;
     },
@@ -36,23 +30,6 @@ const generateWeekData = () => {
   );
 };
 generateWeekData();
-
-function getRecipeByTitle(title: string): Recipe | undefined {
-  return recipes.find((recipe) => recipe.title === title);
-}
-
-const weekDataWithRecipes = computed(() => {
-  return weekData.value.map((day) => {
-    const recipe = day.recipe ? getRecipeByTitle(day.recipe) : undefined;
-
-    return {
-      ...day,
-      recipe,
-    };
-  });
-});
-
-const isResultShown = ref(false);
 
 const onSaveClick = () => {
   isResultShown.value = true;
@@ -66,19 +43,17 @@ const onStartDateChange = (event: Event) => {
   generateWeekData();
 };
 
-const updateRecipe = (index: number, recipe: string | null) => {
+const onUpdateWeekEntry = (
+  index: number,
+  value: { recipe?: Recipe; customRecipeTitle?: string },
+) => {
   isResultShown.value = false;
 
-  weekData.value[index].recipe = recipe;
-};
+  const entry = weekData.value[index];
+  if (!entry) return;
 
-const updateCustom = (index: number, customRecipeTitle: string | undefined) => {
-  isResultShown.value = false;
-
-  weekData.value[index] = {
-    ...weekData.value[index],
-    customRecipeTitle: customRecipeTitle,
-  };
+  entry.recipe = value.recipe;
+  entry.customRecipeTitle = value.customRecipeTitle;
 };
 </script>
 
@@ -93,26 +68,21 @@ const updateCustom = (index: number, customRecipeTitle: string | undefined) => {
         <label class="day-field__label" :for="day.id">{{ day.label }}</label>
         <div class="flex justify-end flex-wrap items-center gap-2">
           <RecipeSelect
-            :selectedRecipe="day.recipe"
+            :id="day.id"
+            :recipe="day.recipe"
             :customRecipeTitle="day.customRecipeTitle"
-            :dayId="day.id"
-            @update:recipe="(recipe: string | null) => updateRecipe(index, recipe)"
-            @update:custom="(customTitle: string | undefined) => updateCustom(index, customTitle)"
+            @update="(value) => onUpdateWeekEntry(index, value)"
             class="flex-1"
           />
 
-          <IngredientsPopover
-            v-if="day.recipe"
-            :id="day.id"
-            :recipe="getRecipeByTitle(day.recipe)"
-          />
+          <IngredientsPopover v-if="day.recipe" :id="day.id" :recipe="day.recipe" />
         </div>
       </div>
     </div>
 
     <button class="btn btn-brand" @click="onSaveClick">Save</button>
 
-    <WeekResult v-if="isResultShown" :weekData="weekDataWithRecipes" />
+    <WeekResult v-if="isResultShown" :weekData="weekData" />
   </div>
 </template>
 

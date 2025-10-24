@@ -1,43 +1,49 @@
-<script setup>
+<script setup lang="ts">
 import { computed } from "vue";
-import { data as recipes } from "../recipes.data.ts";
-
-const { selectedRecipe, customRecipeTitle, dayId } = defineProps({
-  selectedRecipe: String | null,
-  customRecipeTitle: String | undefined,
-  dayId: String,
-});
+import { data as recipes, type Recipe } from "../recipes.data";
+import type { WeekPlannerEntry } from "@/types/week-planner-entry";
 
 const CUSTOM_RECIPE_ID = "-1";
 
-const emit = defineEmits(["update:recipe", "update:custom"]);
+const { id, recipe, customRecipeTitle } = defineProps<WeekPlannerEntry>();
+const emit = defineEmits<{
+  (e: "update", value: { recipe?: Recipe; customRecipeTitle?: string }): void;
+}>();
 
 const mainRecipes = computed(() => recipes.filter((recipe) => recipe.category === "main"));
 
-const isCustomMode = computed(() => {
-  return customRecipeTitle !== undefined && customRecipeTitle !== null;
+const selectValue = computed(() => {
+  if (customRecipeTitle !== undefined) return CUSTOM_RECIPE_ID;
+
+  return recipe ? recipe.title : "";
 });
 
-const handleSelectChange = (value) => {
+const handleCustomTitleInput = (event: Event) => {
+  const value = (event.target as HTMLInputElement).value;
+  emit("update", { customRecipeTitle: value });
+};
+
+const handleSelectChange = (event: Event) => {
+  const value = (event.target as HTMLSelectElement).value;
+
   if (value === CUSTOM_RECIPE_ID) {
-    emit("update:recipe", null);
-    emit("update:custom", "");
+    emit("update", { customRecipeTitle: "" });
     return;
   }
 
-  emit("update:recipe", value);
-  emit("update:custom", undefined);
+  const recipe = mainRecipes.value.find((r) => r.title === value);
+  emit("update", { recipe });
 };
 </script>
 
 <template>
-  <div v-if="!isCustomMode">
+  <div v-if="customRecipeTitle === undefined">
     <select
-      :id="dayId"
-      :name="dayId"
-      :value="selectedRecipe"
+      :id="id"
+      :name="id"
+      :value="selectValue"
       class="w-full"
-      @change="handleSelectChange($event.target.value)"
+      @change="handleSelectChange($event)"
     >
       <option value="">Select a recipe</option>
       <option :value="CUSTOM_RECIPE_ID">Other (Custom)</option>
@@ -49,14 +55,18 @@ const handleSelectChange = (value) => {
   <div v-else class="custom-recipe-input">
     <input
       type="text"
-      :id="dayId + '-custom'"
-      :name="dayId + '-custom'"
+      :id="id + '-custom'"
+      :name="id + '-custom'"
       placeholder="Enter custom recipe name..."
       :value="customRecipeTitle"
       class="w-full"
-      @input="emit('update:custom', $event.target.value)"
+      @input="handleCustomTitleInput($event)"
     />
-    <button type="button" @click="emit('update:custom', undefined)" class="btn btn-alt">
+    <button
+      type="button"
+      @click="emit('update', { customRecipeTitle: undefined })"
+      class="btn btn-alt"
+    >
       Cancel
     </button>
   </div>
