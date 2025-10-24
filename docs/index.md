@@ -2,10 +2,8 @@
 layout: home
 
 hero:
-  name: "My Cookfolio"
+  name: "Cookfolio"
   tagline: An awesome recipe book
 ---
-
-<WeekPlanner />
 
 <RecipeList />

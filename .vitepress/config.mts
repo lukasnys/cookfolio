@@ -10,7 +10,10 @@ export default defineConfig({
   description: "A cookfolio for recipes",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "Home", link: "/" }],
+    nav: [
+      { text: "Home", link: "/" },
+      { text: "Weekly Planner", link: "/weekly-planner" },
+    ],
 
     socialLinks: [{ icon: "github", link: "https://github.com/lukasnys/cookfolio" }],
   },
