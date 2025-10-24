@@ -33,6 +33,9 @@ interface WeekPlannerEntry {
 }
 
 type getIcsDateArray = ReturnType<typeof ics.convertTimestampToArray>;
+/**
+ * Converts a Dayjs date to an array format compatible with ICS events.
+ */
 const getIcsDateArray = (date: Dayjs): getIcsDateArray => {
   return [date.year(), date.month() + 1, date.date(), date.hour(), date.minute()];
 };
@@ -86,6 +89,9 @@ function getIcsEventForRecipe(entryDate: Dayjs, recipe: Recipe): ics.EventAttrib
   };
 }
 
+/**
+ * When a recipe with chicken is scheduled, add a reminder event the day before to defrost the chicken.
+ */
 function getIcsEventForChickenReminder(date: Dayjs): ics.EventAttributes {
   const reminderDateStart = date.subtract(1, "day").hour(EVENT_CHICKEN_REMINDER_HOUR);
 
@@ -97,6 +103,9 @@ function getIcsEventForChickenReminder(date: Dayjs): ics.EventAttributes {
   };
 }
 
+/**
+ * When a recipe with minced meat is scheduled, add a reminder event on the same day to fetch the minced meat.
+ */
 function getIcsEventForMincedMeatReminder(date: Dayjs): ics.EventAttributes {
   const reminderDateStart = date.subtract(1, "day").hour(EVENT_MINCED_MEAT_REMINDER_HOUR);
 
