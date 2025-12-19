@@ -35,3 +35,11 @@ ingredients:
 ---
 
 <Recipe />
+
+## Instructions
+
+- Stoof de rode ui, gember en curry paste aan in wat vetstof tot de ui glazig is. (voeg een scheutje water toe als het te hard aanbakt).
+- Voeg tomaten, linzen, kokosmelk en bouillon toe en laat +15 minuten zachtjes stoven.
+- Meng de spinazie erdoor en laat nog 5 minuten meekoken.
+- Check of de linzen gaar zijn en voeg eventueel wat water toe.
+- Haal van het vuur en werk af met kokosroom of Griekse yoghurt
