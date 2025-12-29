@@ -1,5 +1,5 @@
 ---
-title: Pompoen gnocch
+title: Pompoen gnocchi
 category: main
 ingredients:
   - name: gnocchi
