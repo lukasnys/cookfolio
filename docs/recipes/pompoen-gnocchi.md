@@ -43,7 +43,7 @@ ingredients:
     unit: tl
 ---
 
-# Gnocchi met pompoen, cranberries en feta
+<Recipe />
 
 ## Bereidingswijze
 
