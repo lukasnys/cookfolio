@@ -32,6 +32,7 @@ pnpm prettier:write
 - **WeekPlanner** (`src/components/WeekPlanner.tsx`): 7-day meal planner with recipe selection or custom entries — single React island
 - **WeekResult** (`src/components/WeekResult.tsx`): aggregated shopping list + ICS calendar export
 - **Calendar export** (`src/utils/calendar-events.ts`): generates ICS events with smart reminders (chicken defrost day before, minced meat morning-of)
+- **Recipe search** (`src/pages/index.astro`): client-side search input filters recipes by title/category — vanilla JS inline script
 - **Recipe pages**: Astro renders frontmatter ingredients + markdown instructions — zero JS
 
 ### Recipe format
