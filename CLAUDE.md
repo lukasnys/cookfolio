@@ -41,4 +41,4 @@ Allowed units: g, ml, el, tl, kl, teen, stuk, beetje (Dutch). Validated by Zod s
 
 ## CI/CD
 
-GitHub Actions deploys to GitHub Pages on push to `main`. Jobs: prettier check, type check, build, deploy.
+Netlify deploys on push to `main`. GitHub Actions runs CI checks (prettier, types, build).
