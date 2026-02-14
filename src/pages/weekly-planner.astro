@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { WeekPlanner } from "@/components/WeekPlanner.js";
+import type { Recipe } from "@/types/recipe.js";
+
+const entries = await getCollection("recipes");
+const recipes: Recipe[] = entries.map((entry) => ({
+  title: entry.data.title,
+  slug: entry.id.replace(/\.md$/, ""),
+  ingredients: entry.data.ingredients,
+  category: entry.data.category,
+}));
+---
+
+<BaseLayout title="Weekly Planner">
+  <div class="mb-10">
+    <h1 class="font-display text-5xl mb-2">Weekly Planner</h1>
+    <p class="text-ink-light text-lg">Plan your meals for the week</p>
+  </div>
+
+  <WeekPlanner client:load recipes={recipes} />
+</BaseLayout>
