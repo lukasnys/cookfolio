@@ -30,7 +30,7 @@ const { title, ingredients } = recipe.data;
     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1">
       {
         ingredients.map((ingredient) => (
-          <li class="flex items-baseline gap-2 py-1 border-b border-border-subtle/60 last:border-0">
+          <li class="flex items-baseline gap-2 py-1 border-b border-border-subtle/60 last:border-0 sm:[&:nth-last-child(-n+2)]:border-0">
             <span class="font-medium text-accent tabular-nums shrink-0">
               {ingredient.quantity} {ingredient.unit}
             </span>
