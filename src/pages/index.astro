@@ -2,14 +2,13 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
-const recipes = await getCollection("recipes");
-const sorted = recipes.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const recipes = (await getCollection("recipes")).sort((a, b) => a.data.title.localeCompare(b.data.title));
 ---
 
 <BaseLayout title="Recipes">
   <div class="mb-10">
     <h1 class="font-display text-5xl mb-2">Recipes</h1>
-    <p class="text-text-secondary text-lg">{sorted.length} recipes in the collection</p>
+    <p class="text-text-secondary text-lg">{recipes.length} recipes in the collection</p>
   </div>
 
   <input
@@ -22,7 +21,7 @@ const sorted = recipes.sort((a, b) => a.data.title.localeCompare(b.data.title));
 
   <div id="recipe-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
     {
-      sorted.map((recipe) => (
+      recipes.map((recipe) => (
         <a
           href={`${import.meta.env.BASE_URL}recipes/${recipe.id}/`}
           class="group block rounded-xl border border-border bg-bg-surface/50 px-5 py-4 transition-all hover:border-accent/30 hover:bg-accent-subtle hover:shadow-sm"
