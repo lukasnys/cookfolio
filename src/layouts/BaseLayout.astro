@@ -25,8 +25,8 @@ const base = import.meta.env.BASE_URL;
     {/* Inline script to set theme before paint — avoids flash */}
     <script is:inline>
       (function () {
-        var saved = localStorage.getItem("theme");
-        var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const saved = localStorage.getItem("theme");
+        const theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
         document.documentElement.setAttribute("data-theme", theme);
       })();
     </script>
@@ -92,26 +92,25 @@ const base = import.meta.env.BASE_URL;
 
     <script is:inline>
       (function () {
-        var toggle = document.getElementById("theme-toggle");
-        var sunIcon = toggle.querySelector(".sun-icon");
-        var moonIcon = toggle.querySelector(".moon-icon");
+        const toggle = document.getElementById("theme-toggle");
+        const sunIcon = toggle.querySelector(".sun-icon");
+        const moonIcon = toggle.querySelector(".moon-icon");
 
         function getEffectiveTheme() {
-          var saved = localStorage.getItem("theme");
+          const saved = localStorage.getItem("theme");
           if (saved) return saved;
           return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
         }
 
         function updateIcons() {
-          var theme = getEffectiveTheme();
-          // Show sun when dark (click to go light), moon when light (click to go dark)
+          const theme = getEffectiveTheme();
           sunIcon.style.display = theme === "dark" ? "block" : "none";
           moonIcon.style.display = theme === "light" ? "block" : "none";
         }
 
         toggle.addEventListener("click", function () {
-          var current = getEffectiveTheme();
-          var next = current === "dark" ? "light" : "dark";
+          const current = getEffectiveTheme();
+          const next = current === "dark" ? "light" : "dark";
           document.documentElement.setAttribute("data-theme", next);
           localStorage.setItem("theme", next);
           updateIcons();

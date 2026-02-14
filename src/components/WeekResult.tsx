@@ -27,21 +27,21 @@ export function WeekResult({ weekData }: WeekResultProps): React.ReactElement {
   );
 
   const ingredients = useMemo(() => {
-    const recipes = weekData
+    const grouped = weekData
       .map((day) => day.recipe)
-      .filter((recipe): recipe is Recipe => !!recipe);
-    const allIngredients = recipes.flatMap((recipe) => recipe.ingredients);
+      .filter((recipe): recipe is Recipe => !!recipe)
+      .flatMap((recipe) => recipe.ingredients)
+      .reduce<Map<string, Ingredient>>((acc, ingredient) => {
+        const key = `${ingredient.name}|${ingredient.unit}`;
+        const prev = acc.get(key);
+        acc.set(
+          key,
+          prev ? { ...prev, quantity: prev.quantity + ingredient.quantity } : { ...ingredient },
+        );
+        return acc;
+      }, new Map());
 
-    return allIngredients.reduce<Ingredient[]>((acc, ingredient) => {
-      const existing = acc.find((i) => i.name === ingredient.name && i.unit === ingredient.unit);
-      if (existing) {
-        const idx = acc.indexOf(existing);
-        acc[idx] = { ...existing, quantity: existing.quantity + ingredient.quantity };
-      } else {
-        acc.push({ ...ingredient });
-      }
-      return acc;
-    }, []);
+    return [...grouped.values()];
   }, [weekData]);
 
   return (
