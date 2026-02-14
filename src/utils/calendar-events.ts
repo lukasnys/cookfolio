@@ -1,9 +1,8 @@
-import assert from "assert";
 import * as ics from "ics";
 import dayjs from "dayjs";
 import type { Dayjs } from "dayjs";
 
-import type { Recipe } from "@/recipes.data.js";
+import type { Recipe } from "@/types/recipe.js";
 import { recipeHasIngredient } from "./recipe-has-ingredient.js";
 import type { WeekPlannerEntry } from "@/types/week-planner-entry.js";
 
@@ -16,11 +15,11 @@ const EVENT_CHICKEN_REMINDER_DURATION_MINUTES = 15;
 const EVENT_MINCED_MEAT_REMINDER_HOUR = 10;
 const EVENT_MINCED_MEAT_REMINDER_DURATION_MINUTES = 15;
 
-type getIcsDateArray = ReturnType<typeof ics.convertTimestampToArray>;
+type IcsDateArray = ReturnType<typeof ics.convertTimestampToArray>;
 /**
  * Converts a Dayjs date to an array format compatible with ICS events.
  */
-const getIcsDateArray = (date: Dayjs): getIcsDateArray => {
+const getIcsDateArray = (date: Dayjs): IcsDateArray => {
   return [date.year(), date.month() + 1, date.date(), date.hour(), date.minute()];
 };
 
@@ -29,8 +28,9 @@ const getIcsDateArray = (date: Dayjs): getIcsDateArray => {
  */
 export function getIcsBlob(weekPlannerEntries: WeekPlannerEntry[]): Blob {
   const recipeEvents = getIcsEvents(weekPlannerEntries);
-  const icsEvents = ics.createEvents(recipeEvents);
-  return new Blob([icsEvents.value!], { type: "text/calendar" });
+  const { error, value } = ics.createEvents(recipeEvents);
+  if (error || !value) throw new Error("Failed to create ICS events");
+  return new Blob([value], { type: "text/calendar" });
 }
 
 function getIcsEvents(weekPlannerEntries: WeekPlannerEntry[]): ics.EventAttributes[] {
@@ -67,7 +67,7 @@ function getIcsEventForCustomEntry(entryDate: Dayjs, customTitle: string): ics.E
 function getIcsEventForRecipe(entryDate: Dayjs, recipe: Recipe): ics.EventAttributes {
   return {
     title: recipe.title,
-    description: `https://lukasnys.github.io/cookfolio/${recipe.url}`,
+    description: `https://lukasnys.github.io/cookfolio/recipes/${recipe.slug}`,
     start: getIcsDateArray(entryDate.hour(EVENT_DINNER_TIME_HOUR)),
     duration: { minutes: EVENT_DINNER_TIME_DURATION_MINUTES },
   };
@@ -95,7 +95,7 @@ function getIcsEventForMincedMeatReminder(date: Dayjs): ics.EventAttributes {
 
   return {
     title: "Fetch Minced Meat",
-    description: "Reminder: Fetch the minced meat for tomorrow's recipe.",
+    description: "Reminder: Fetch the minced meat for today's recipe.",
     start: getIcsDateArray(reminderDateStart),
     duration: { minutes: EVENT_MINCED_MEAT_REMINDER_DURATION_MINUTES },
   };

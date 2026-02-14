@@ -1,0 +1,47 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const recipes = await getCollection("recipes");
+  return recipes.map((recipe) => ({
+    params: { slug: recipe.id },
+    props: { recipe },
+  }));
+}
+
+const { recipe } = Astro.props;
+const { Content } = await render(recipe);
+const { title, ingredients } = recipe.data;
+---
+
+<BaseLayout title={title}>
+  <a
+    href={import.meta.env.BASE_URL}
+    class="inline-block mb-6 text-sm text-text-muted hover:text-accent transition-colors"
+  >
+    &larr; All recipes
+  </a>
+
+  <h1 class="font-display text-4xl sm:text-5xl mb-8">{title}</h1>
+
+  <section class="mb-10 rounded-xl border border-border bg-bg-surface/50 p-6">
+    <h2 class="font-display text-2xl mb-4">Ingredients</h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1">
+      {
+        ingredients.map((ingredient) => (
+          <li class="flex items-baseline gap-2 py-1 border-b border-border-subtle/60 last:border-0 sm:[&:nth-last-child(-n+2)]:border-0">
+            <span class="font-medium text-accent tabular-nums shrink-0">
+              {ingredient.quantity} {ingredient.unit}
+            </span>
+            <span class="text-text">{ingredient.name}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <div class="recipe-content">
+    <Content />
+  </div>
+</BaseLayout>
