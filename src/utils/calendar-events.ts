@@ -1,9 +1,8 @@
-import assert from "assert";
 import * as ics from "ics";
 import dayjs from "dayjs";
 import type { Dayjs } from "dayjs";
 
-import type { Recipe } from "@/recipes.data.js";
+import type { Recipe } from "@/types/recipe.js";
 import { recipeHasIngredient } from "./recipe-has-ingredient.js";
 import type { WeekPlannerEntry } from "@/types/week-planner-entry.js";
 
@@ -67,7 +66,7 @@ function getIcsEventForCustomEntry(entryDate: Dayjs, customTitle: string): ics.E
 function getIcsEventForRecipe(entryDate: Dayjs, recipe: Recipe): ics.EventAttributes {
   return {
     title: recipe.title,
-    description: `https://lukasnys.github.io/cookfolio/${recipe.url}`,
+    description: `https://lukasnys.github.io/cookfolio/recipes/${recipe.slug}`,
     start: getIcsDateArray(entryDate.hour(EVENT_DINNER_TIME_HOUR)),
     duration: { minutes: EVENT_DINNER_TIME_DURATION_MINUTES },
   };

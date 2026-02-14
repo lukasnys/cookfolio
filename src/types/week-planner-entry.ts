@@ -1,14 +1,8 @@
-import type { Recipe } from "@/recipes.data.js";
+import type { Recipe } from "@/types/recipe.js";
 
 export interface WeekPlannerEntry {
   /** YYYY-MM-DD */
-  id: string;
-  /**
-   * The name of the selected recipe, or null if none is selected.
-   */
+  readonly id: string;
   recipe?: Recipe;
-  /**
-   * The title of the custom recipe, or null if none is selected.
-   */
   customRecipeTitle?: string;
 }
