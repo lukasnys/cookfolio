@@ -40,14 +40,14 @@ export function RecipeSelect({
 
   if (customRecipeTitle !== undefined) {
     return (
-      <div className="custom-recipe-input">
+      <div className="custom-recipe-input w-full">
         <input
           type="text"
           id={`${id}-custom`}
           name={`${id}-custom`}
           placeholder="Enter custom recipe name..."
           value={customRecipeTitle}
-          className="w-full"
+          className="flex-1 min-w-0"
           onChange={handleCustomTitleInput}
         />
         <button
