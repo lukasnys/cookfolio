@@ -7,7 +7,7 @@ import type { Recipe } from "@/types/recipe.js";
 const entries = await getCollection("recipes");
 const recipes: Recipe[] = entries.map((entry) => ({
   title: entry.data.title,
-  slug: entry.id.replace(/\.md$/, ""),
+  slug: entry.id,
   ingredients: entry.data.ingredients,
   category: entry.data.category,
 }));
