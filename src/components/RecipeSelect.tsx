@@ -20,7 +20,7 @@ export function RecipeSelect({
 }: RecipeSelectProps): React.ReactElement {
   const mainRecipes = useMemo(() => recipes.filter((r) => r.category === "main"), [recipes]);
 
-  const selectValue = customRecipeTitle !== undefined ? CUSTOM_RECIPE_ID : (recipe?.title ?? "");
+  const selectValue = customRecipeTitle !== undefined ? CUSTOM_RECIPE_ID : (recipe?.slug ?? "");
 
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>): void => {
     const value = event.target.value;
@@ -30,7 +30,7 @@ export function RecipeSelect({
       return;
     }
 
-    const selected = mainRecipes.find((r) => r.title === value);
+    const selected = mainRecipes.find((r) => r.slug === value);
     onUpdate({ recipe: selected });
   };
 
@@ -66,7 +66,7 @@ export function RecipeSelect({
       <option value="">Select a recipe</option>
       <option value={CUSTOM_RECIPE_ID}>Other (Custom)</option>
       {mainRecipes.map((r) => (
-        <option key={r.title} value={r.title}>
+        <option key={r.slug} value={r.slug}>
           {r.title}
         </option>
       ))}

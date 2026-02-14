@@ -17,7 +17,7 @@ const { title, ingredients } = recipe.data;
 
 <BaseLayout title={title}>
   <a
-    href="/cookfolio/"
+    href={import.meta.env.BASE_URL}
     class="inline-block mb-6 text-sm text-text-muted hover:text-accent transition-colors"
   >
     &larr; All recipes

@@ -35,7 +35,8 @@ export function WeekResult({ weekData }: WeekResultProps): React.ReactElement {
     return allIngredients.reduce<Ingredient[]>((acc, ingredient) => {
       const existing = acc.find((i) => i.name === ingredient.name && i.unit === ingredient.unit);
       if (existing) {
-        existing.quantity += ingredient.quantity;
+        const idx = acc.indexOf(existing);
+        acc[idx] = { ...existing, quantity: existing.quantity + ingredient.quantity };
       } else {
         acc.push({ ...ingredient });
       }
@@ -47,7 +48,11 @@ export function WeekResult({ weekData }: WeekResultProps): React.ReactElement {
     <div className="flex flex-col gap-4">
       <div className="flex justify-between items-center gap-2">
         <h3>Ingredients Required</h3>
-        <button className="btn btn-alt btn-icon" onClick={downloadIcsFile}>
+        <button
+          className="btn btn-alt btn-icon"
+          onClick={downloadIcsFile}
+          aria-label="Download calendar file"
+        >
           <ArrowDownTrayIcon className="size-5" />
         </button>
       </div>

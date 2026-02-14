@@ -61,27 +61,6 @@
   color-scheme: dark;
 }
 
-/* System preference when no explicit theme */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --_bg: #1a1a1a;
-    --_bg-surface: #242424;
-    --_bg-elevated: #2e2e2e;
-    --_border: #3a3a3a;
-    --_border-subtle: #333333;
-    --_text: #f0ece4;
-    --_text-secondary: #bfb9ad;
-    --_text-muted: #8a8479;
-    --_accent: #d4a24e;
-    --_accent-hover: #e4b96a;
-    --_accent-subtle: rgba(212, 162, 78, 0.08);
-    --_input-bg: #2e2e2e;
-    --_warning-bg: #2e2a22;
-    --_warning-border: #5a4d33;
-    color-scheme: dark;
-  }
-}
-
 @layer base {
   body {
     font-family: var(--font-body);

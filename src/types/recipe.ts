@@ -1,7 +1,9 @@
+export type IngredientUnit = "g" | "ml" | "el" | "tl" | "kl" | "teen" | "stuk" | "beetje";
+
 export interface Ingredient {
   readonly name: string;
   readonly quantity: number;
-  readonly unit: string;
+  readonly unit: IngredientUnit;
 }
 
 export interface Recipe {

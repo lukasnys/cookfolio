@@ -54,7 +54,12 @@ export function WeekPlanner({ recipes }: WeekPlannerProps): React.ReactElement {
 
   return (
     <div className="week-planner">
-      <input type="date" value={startDate.format("YYYY-MM-DD")} onChange={onStartDateChange} />
+      <input
+        type="date"
+        aria-label="Start date"
+        value={startDate.format("YYYY-MM-DD")}
+        onChange={onStartDateChange}
+      />
 
       <div className="week-planner__days">
         {weekData.map((day, index) => (
@@ -77,8 +82,8 @@ export function WeekPlanner({ recipes }: WeekPlannerProps): React.ReactElement {
         ))}
       </div>
 
-      <button className="btn btn-brand" onClick={() => setIsResultShown(true)}>
-        Save
+      <button type="button" className="btn btn-brand" onClick={() => setIsResultShown(true)}>
+        Show results
       </button>
 
       {isResultShown && <WeekResult weekData={weekData} />}
