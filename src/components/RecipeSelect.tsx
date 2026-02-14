@@ -1,7 +1,14 @@
 import { useMemo } from "react";
+import { Combobox } from "@base-ui/react/combobox";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 import type { Recipe } from "@/types/recipe.js";
 
-const CUSTOM_RECIPE_ID = "-1";
+interface ComboboxItem {
+  readonly slug: string;
+  readonly title: string;
+}
+
+const CUSTOM_ITEM: ComboboxItem = { slug: "-1", title: "Custom" };
 
 interface RecipeSelectProps {
   readonly id: string;
@@ -20,17 +27,27 @@ export function RecipeSelect({
 }: RecipeSelectProps): React.ReactElement {
   const mainRecipes = useMemo(() => recipes.filter((r) => r.category === "main"), [recipes]);
 
-  const selectValue = customRecipeTitle !== undefined ? CUSTOM_RECIPE_ID : (recipe?.slug ?? "");
+  const items: ComboboxItem[] = useMemo(
+    () => [CUSTOM_ITEM, ...mainRecipes.map((r) => ({ slug: r.slug, title: r.title }))],
+    [mainRecipes],
+  );
 
-  const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>): void => {
-    const value = event.target.value;
+  const selectedValue = useMemo(() => {
+    if (customRecipeTitle !== undefined) return CUSTOM_ITEM;
+    if (recipe) return { slug: recipe.slug, title: recipe.title };
+    return null;
+  }, [customRecipeTitle, recipe]);
 
-    if (value === CUSTOM_RECIPE_ID) {
-      onUpdate({ customRecipeTitle: "" });
-      return;
+  const handleValueChange = (value: ComboboxItem | null): void => {
+    if (!value) {
+      return onUpdate({});
     }
 
-    const selected = mainRecipes.find((r) => r.slug === value);
+    if (value.slug === CUSTOM_ITEM.slug) {
+      return onUpdate({ customRecipeTitle: "" });
+    }
+
+    const selected = mainRecipes.find((r) => r.slug === value.slug);
     onUpdate({ recipe: selected });
   };
 
@@ -50,11 +67,7 @@ export function RecipeSelect({
           className="flex-1 min-w-0"
           onChange={handleCustomTitleInput}
         />
-        <button
-          type="button"
-          onClick={() => onUpdate({ customRecipeTitle: undefined })}
-          className="btn btn-alt"
-        >
+        <button type="button" onClick={() => onUpdate({})} className="btn btn-alt">
           Cancel
         </button>
       </div>
@@ -62,14 +75,37 @@ export function RecipeSelect({
   }
 
   return (
-    <select id={id} name={id} value={selectValue} className="w-full" onChange={handleSelectChange}>
-      <option value="">Select a recipe</option>
-      <option value={CUSTOM_RECIPE_ID}>Other (Custom)</option>
-      {mainRecipes.map((r) => (
-        <option key={r.slug} value={r.slug}>
-          {r.title}
-        </option>
-      ))}
-    </select>
+    <Combobox.Root
+      items={items}
+      value={selectedValue}
+      onValueChange={handleValueChange}
+      isItemEqualToValue={(a, b) => a.slug === b.slug}
+      itemToStringLabel={(item) => item.title}
+      autoHighlight
+    >
+      <div className="combobox-trigger w-full">
+        <Combobox.Input id={id} placeholder="Search recipes..." className="combobox-input" />
+        <Combobox.Clear className="combobox-clear" aria-label="Clear selection">
+          <XMarkIcon className="size-3" />
+        </Combobox.Clear>
+      </div>
+      <Combobox.Portal>
+        <Combobox.Positioner sideOffset={4}>
+          <Combobox.Popup className="combobox-popup">
+            <Combobox.Empty className="combobox-empty">No recipes found.</Combobox.Empty>
+            <Combobox.List className="combobox-list">
+              {(item: ComboboxItem) => (
+                <Combobox.Item key={item.slug} value={item} className="combobox-item">
+                  <Combobox.ItemIndicator className="combobox-item-indicator">
+                    ✓
+                  </Combobox.ItemIndicator>
+                  <span>{item.title}</span>
+                </Combobox.Item>
+              )}
+            </Combobox.List>
+          </Combobox.Popup>
+        </Combobox.Positioner>
+      </Combobox.Portal>
+    </Combobox.Root>
   );
 }
