@@ -23,7 +23,7 @@ ingredients:
   - name: gemalen komijn
     quantity: 1
     unit: el
-  - name: lookpoeder
+  - name: knoflookpoeder
     quantity: 1
     unit: el
   - name: chilivlokken

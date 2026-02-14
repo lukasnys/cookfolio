@@ -8,7 +8,7 @@ ingredients:
   - name: prei
     quantity: 2
     unit: stuk
-  - name: look
+  - name: knoflook
     quantity: 2
     unit: teen
   - name: kipfilet

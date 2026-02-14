@@ -8,13 +8,13 @@ ingredients:
   - name: salami milano
     quantity: 150
     unit: g
-  - name: krielaardappelen
+  - name: krielaardappel
     quantity: 250
     unit: g
   - name: stokbrood
     quantity: 250
     unit: g
-  - name: champignons
+  - name: champignon
     quantity: 500
     unit: g
 ---

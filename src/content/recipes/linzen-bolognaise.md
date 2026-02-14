@@ -5,7 +5,7 @@ ingredients:
   - name: ui
     quantity: 1
     unit: stuk
-  - name: look
+  - name: knoflook
     quantity: 4
     unit: teen
   - name: gedroogde oregano

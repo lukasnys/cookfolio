@@ -2,7 +2,7 @@
 title: Brownies
 category: dessert
 ingredients:
-  - name: chocolate
+  - name: chocolade
     quantity: 200
     unit: g
   - name: suiker
