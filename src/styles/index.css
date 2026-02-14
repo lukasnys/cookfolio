@@ -2,29 +2,96 @@
 @source "../**/*.{astro,tsx}";
 
 @theme {
-  --font-display: "Instrument Serif", Georgia, serif;
-  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-body: "Inter Tight", system-ui, sans-serif;
 
-  --color-cream: #faf6f0;
-  --color-cream-dark: #f0e9de;
-  --color-parchment: #ede4d4;
-  --color-ink: #2c2416;
-  --color-ink-light: #5a4d3a;
-  --color-terracotta: #c4603a;
-  --color-terracotta-light: #d4784e;
-  --color-terracotta-dark: #a84e2e;
-  --color-olive: #6b7c4e;
-  --color-olive-light: #8a9e68;
-  --color-warm-gray: #9c9080;
+  /* Semantic tokens — resolved by [data-theme] below */
+  --color-bg: var(--_bg);
+  --color-bg-surface: var(--_bg-surface);
+  --color-bg-elevated: var(--_bg-elevated);
+  --color-border: var(--_border);
+  --color-border-subtle: var(--_border-subtle);
+  --color-text: var(--_text);
+  --color-text-secondary: var(--_text-secondary);
+  --color-text-muted: var(--_text-muted);
+  --color-accent: var(--_accent);
+  --color-accent-hover: var(--_accent-hover);
+  --color-accent-subtle: var(--_accent-subtle);
+  --color-input-bg: var(--_input-bg);
+  --color-warning-bg: var(--_warning-bg);
+  --color-warning-border: var(--_warning-border);
+}
+
+/* Light theme (warm cream) */
+:root,
+[data-theme="light"] {
+  --_bg: #faf6f0;
+  --_bg-surface: #f0e9de;
+  --_bg-elevated: #e6ddd0;
+  --_border: #ddd3c3;
+  --_border-subtle: #ede4d4;
+  --_text: #2c2416;
+  --_text-secondary: #5a4d3a;
+  --_text-muted: #9c9080;
+  --_accent: #c4603a;
+  --_accent-hover: #a84e2e;
+  --_accent-subtle: rgba(196, 96, 58, 0.06);
+  --_input-bg: #ffffff;
+  --_warning-bg: #fdf6e3;
+  --_warning-border: #e8d5a3;
+  color-scheme: light;
+}
+
+/* Dark theme (Rustic Bistro) */
+[data-theme="dark"] {
+  --_bg: #1a1a1a;
+  --_bg-surface: #242424;
+  --_bg-elevated: #2e2e2e;
+  --_border: #3a3a3a;
+  --_border-subtle: #333333;
+  --_text: #f0ece4;
+  --_text-secondary: #bfb9ad;
+  --_text-muted: #8a8479;
+  --_accent: #d4a24e;
+  --_accent-hover: #e4b96a;
+  --_accent-subtle: rgba(212, 162, 78, 0.08);
+  --_input-bg: #2e2e2e;
+  --_warning-bg: #2e2a22;
+  --_warning-border: #5a4d33;
+  color-scheme: dark;
+}
+
+/* System preference when no explicit theme */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --_bg: #1a1a1a;
+    --_bg-surface: #242424;
+    --_bg-elevated: #2e2e2e;
+    --_border: #3a3a3a;
+    --_border-subtle: #333333;
+    --_text: #f0ece4;
+    --_text-secondary: #bfb9ad;
+    --_text-muted: #8a8479;
+    --_accent: #d4a24e;
+    --_accent-hover: #e4b96a;
+    --_accent-subtle: rgba(212, 162, 78, 0.08);
+    --_input-bg: #2e2e2e;
+    --_warning-bg: #2e2a22;
+    --_warning-border: #5a4d33;
+    color-scheme: dark;
+  }
 }
 
 @layer base {
   body {
     font-family: var(--font-body);
-    background-color: var(--color-cream);
-    color: var(--color-ink);
+    background-color: var(--color-bg);
+    color: var(--color-text);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    transition:
+      background-color 0.2s,
+      color 0.2s;
   }
 
   h1,
@@ -32,13 +99,13 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.15;
-    color: var(--color-ink);
+    color: var(--color-text);
   }
 }
 
-/* Component styles used by React */
+/* Buttons */
 
 .btn {
   font-family: var(--font-body);
@@ -67,24 +134,25 @@
 }
 
 .btn-brand {
-  background-color: var(--color-terracotta);
-  color: var(--color-cream);
-  border-color: var(--color-terracotta);
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+  font-weight: 600;
 
   &:hover {
-    background-color: var(--color-terracotta-dark);
-    border-color: var(--color-terracotta-dark);
+    background-color: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
   }
 }
 
 .btn-alt {
-  background-color: var(--color-cream-dark);
-  color: var(--color-ink);
-  border-color: var(--color-parchment);
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text);
+  border-color: var(--color-border);
 
   &:hover {
-    background-color: var(--color-parchment);
-    border-color: var(--color-warm-gray);
+    background-color: var(--color-border);
+    border-color: var(--color-text-muted);
   }
 }
 
@@ -100,8 +168,8 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: var(--color-cream-dark);
-  border: 1.5px solid var(--color-parchment);
+  background-color: var(--color-bg-surface);
+  border: 1.5px solid var(--color-border);
   padding: 1.5rem;
   border-radius: 12px;
 }
@@ -115,7 +183,8 @@
 .day-field__label {
   font-family: var(--font-display);
   font-size: 1.05rem;
-  color: var(--color-ink-light);
+  font-weight: 500;
+  color: var(--color-text-secondary);
 }
 
 .custom-recipe-input {
@@ -125,8 +194,8 @@
 }
 
 .custom-recipes-reminder {
-  background-color: #fdf6e3;
-  border: 1.5px solid #e8d5a3;
+  background-color: var(--color-warning-bg);
+  border: 1.5px solid var(--color-warning-border);
   border-radius: 10px;
   padding: 1rem 1.25rem;
   display: flex;
@@ -136,7 +205,7 @@
   & h4 {
     font-size: 1rem;
     margin: 0;
-    color: var(--color-terracotta);
+    color: var(--color-accent);
   }
 
   & p,
@@ -153,17 +222,21 @@ input,
 select {
   font-family: var(--font-body);
   font-size: 0.875rem;
-  background-color: white;
-  border: 1.5px solid var(--color-parchment);
+  background-color: var(--color-input-bg);
+  border: 1.5px solid var(--color-border);
   border-radius: 8px;
   padding: 0.375rem 0.625rem;
-  color: var(--color-ink);
+  color: var(--color-text);
   transition: border-color 0.15s;
 
   &:focus-visible {
-    outline: 2px solid var(--color-terracotta-light);
+    outline: 2px solid var(--color-accent);
     outline-offset: 1px;
-    border-color: var(--color-terracotta-light);
+    border-color: var(--color-accent);
+  }
+
+  &::placeholder {
+    color: var(--color-text-muted);
   }
 }
 
@@ -182,13 +255,14 @@ select {
   right: anchor(right);
   margin-block-start: 8px;
 
-  background: white;
+  background: var(--color-bg-surface);
   box-shadow:
-    0 4px 24px rgba(44, 36, 22, 0.1),
-    0 1px 4px rgba(44, 36, 22, 0.06);
+    0 4px 24px rgba(0, 0, 0, 0.12),
+    0 1px 4px rgba(0, 0, 0, 0.06);
   padding: 0.75rem 1.25rem 0.75rem 0.75rem;
-  border: 1.5px solid var(--color-parchment);
+  border: 1.5px solid var(--color-border);
   border-radius: 10px;
+  color: var(--color-text);
 }
 
 @position-try --top {
@@ -199,7 +273,7 @@ select {
   margin-block-end: 8px;
 }
 
-/* Markdown content rendered by Astro */
+/* Markdown content */
 
 .recipe-content {
   & h2 {
@@ -207,7 +281,7 @@ select {
     margin-top: 2rem;
     margin-bottom: 0.75rem;
     padding-bottom: 0.375rem;
-    border-bottom: 1px solid var(--color-parchment);
+    border-bottom: 1px solid var(--color-border);
   }
 
   & ul,
@@ -222,7 +296,7 @@ select {
   }
 
   & li::marker {
-    color: var(--color-terracotta);
+    color: var(--color-accent);
   }
 
   & p {

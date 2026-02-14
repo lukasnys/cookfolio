@@ -18,23 +18,23 @@ const { title, ingredients } = recipe.data;
 <BaseLayout title={title}>
   <a
     href="/cookfolio/"
-    class="inline-block mb-6 text-sm text-warm-gray hover:text-terracotta transition-colors"
+    class="inline-block mb-6 text-sm text-text-muted hover:text-accent transition-colors"
   >
     &larr; All recipes
   </a>
 
   <h1 class="font-display text-4xl sm:text-5xl mb-8">{title}</h1>
 
-  <section class="mb-10 rounded-xl border border-parchment bg-cream-dark/50 p-6">
+  <section class="mb-10 rounded-xl border border-border bg-bg-surface/50 p-6">
     <h2 class="font-display text-2xl mb-4">Ingredients</h2>
     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1">
       {
         ingredients.map((ingredient) => (
-          <li class="flex items-baseline gap-2 py-1 border-b border-parchment/60 last:border-0">
-            <span class="font-medium text-terracotta tabular-nums shrink-0">
+          <li class="flex items-baseline gap-2 py-1 border-b border-border-subtle/60 last:border-0">
+            <span class="font-medium text-accent tabular-nums shrink-0">
               {ingredient.quantity} {ingredient.unit}
             </span>
-            <span class="text-ink">{ingredient.name}</span>
+            <span class="text-text">{ingredient.name}</span>
           </li>
         ))
       }
