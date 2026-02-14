@@ -4,7 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   srcDir: "src",
-  base: "/cookfolio/",
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()],

@@ -24,7 +24,7 @@ pnpm prettier:write
 - **Data loading**: Astro content collections with Zod schema in `src/content.config.ts` — validates frontmatter at build time
 - **Components**: React TSX in `src/components/`, rendered as Astro islands with `client:load`
 - **Styling**: Tailwind v4 via `@tailwindcss/vite` plugin + custom CSS in `src/styles/index.css`
-- **Astro config**: `astro.config.mts`, source dir is `src/`, base path `/cookfolio/`
+- **Astro config**: `astro.config.mts`, source dir is `src/`
 - **Path alias**: `@` → `src/`
 
 ### Key features

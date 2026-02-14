@@ -67,7 +67,7 @@ function getIcsEventForCustomEntry(entryDate: Dayjs, customTitle: string): ics.E
 function getIcsEventForRecipe(entryDate: Dayjs, recipe: Recipe): ics.EventAttributes {
   return {
     title: recipe.title,
-    description: `https://lukasnys.github.io/cookfolio/recipes/${recipe.slug}`,
+    description: `https://cookfolio-recipes.netlify.app/recipes/${recipe.slug}`,
     start: getIcsDateArray(entryDate.hour(EVENT_DINNER_TIME_HOUR)),
     duration: { minutes: EVENT_DINNER_TIME_DURATION_MINUTES },
   };
