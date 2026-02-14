@@ -63,7 +63,7 @@ export function WeekPlanner({ recipes }: WeekPlannerProps): React.ReactElement {
         {weekData.map((day, index) => (
           <div
             key={day.id}
-            className={`day-field ${day.recipe ?? day.customRecipeTitle ? "day-field--active" : ""}`}
+            className={`day-field ${(day.recipe ?? day.customRecipeTitle) ? "day-field--active" : ""}`}
           >
             <label className="day-field__label" htmlFor={day.id}>
               {day.label}

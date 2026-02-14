@@ -14,7 +14,7 @@ ingredients:
   - name: sojasaus
     quantity: 1
     unit: beetje
-  - name: kippenbouilon
+  - name: kippenbouillon
     quantity: 1
     unit: stuk
   - name: ui

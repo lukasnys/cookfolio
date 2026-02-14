@@ -225,6 +225,18 @@
 
   .week-result__body {
     padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .week-result__category-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin: 0 0 0.25rem;
   }
 
   .week-result__ingredients {

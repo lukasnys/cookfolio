@@ -4,6 +4,7 @@ import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 import type { Ingredient, Recipe } from "@/types/recipe.js";
 import { getIcsBlob } from "@/utils/calendar-events.js";
 import type { WeekPlannerEntry } from "@/types/week-planner-entry.js";
+import { ShoppingList } from "./ShoppingList.js";
 
 interface WeekResultProps {
   readonly weekData: readonly WeekPlannerEntry[];
@@ -57,23 +58,7 @@ export function WeekResult({ weekData }: WeekResultProps): React.ReactElement {
           </button>
         </div>
 
-        {ingredients.length > 0 && (
-          <div className="week-result__body">
-            <ul className="week-result__ingredients">
-              {ingredients.map((ingredient) => (
-                <li
-                  key={`${ingredient.name}-${ingredient.unit}`}
-                  className="week-result__ingredient"
-                >
-                  <span className="week-result__ingredient-qty">
-                    {ingredient.quantity} {ingredient.unit}
-                  </span>
-                  {ingredient.name}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+        <ShoppingList ingredients={ingredients} />
       </div>
 
       {customRecipes.length > 0 && (
