@@ -29,18 +29,14 @@ export function WeekPlanner({ recipes }: WeekPlannerProps): React.ReactElement {
   const [weekData, setWeekData] = useState<WeekPlannerEntryWithLabel[]>(() =>
     generateWeekData(dayjs()),
   );
-  const [isResultShown, setIsResultShown] = useState(false);
-
   const onStartDateChange = useCallback((event: React.ChangeEvent<HTMLInputElement>): void => {
     const newDate = dayjs(event.target.value);
     setStartDate(newDate);
     setWeekData(generateWeekData(newDate));
-    setIsResultShown(false);
   }, []);
 
   const onUpdateWeekEntry = useCallback(
     (index: number, value: { recipe?: Recipe; customRecipeTitle?: string }): void => {
-      setIsResultShown(false);
       setWeekData((prev) =>
         prev.map((entry, i) =>
           i === index
@@ -51,6 +47,8 @@ export function WeekPlanner({ recipes }: WeekPlannerProps): React.ReactElement {
     },
     [],
   );
+
+  const hasEntries = weekData.some((day) => day.recipe ?? day.customRecipeTitle);
 
   return (
     <div className="week-planner">
@@ -63,7 +61,10 @@ export function WeekPlanner({ recipes }: WeekPlannerProps): React.ReactElement {
 
       <div className="week-planner__days">
         {weekData.map((day, index) => (
-          <div key={day.id} className="day-field">
+          <div
+            key={day.id}
+            className={`day-field ${day.recipe ?? day.customRecipeTitle ? "day-field--active" : ""}`}
+          >
             <label className="day-field__label" htmlFor={day.id}>
               {day.label}
             </label>
@@ -82,11 +83,7 @@ export function WeekPlanner({ recipes }: WeekPlannerProps): React.ReactElement {
         ))}
       </div>
 
-      <button type="button" className="btn btn-brand" onClick={() => setIsResultShown(true)}>
-        Show results
-      </button>
-
-      {isResultShown && <WeekResult weekData={weekData} />}
+      {hasEntries && <WeekResult weekData={weekData} />}
     </div>
   );
 }

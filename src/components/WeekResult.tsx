@@ -4,7 +4,6 @@ import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 import type { Ingredient, Recipe } from "@/types/recipe.js";
 import { getIcsBlob } from "@/utils/calendar-events.js";
 import type { WeekPlannerEntry } from "@/types/week-planner-entry.js";
-import { IngredientsList } from "./IngredientsList.js";
 
 interface WeekResultProps {
   readonly weekData: readonly WeekPlannerEntry[];
@@ -46,18 +45,36 @@ export function WeekResult({ weekData }: WeekResultProps): React.ReactElement {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex justify-between items-center gap-2">
-        <h3>Ingredients Required</h3>
-        <button
-          className="btn btn-alt btn-icon"
-          onClick={downloadIcsFile}
-          aria-label="Download calendar file"
-        >
-          <ArrowDownTrayIcon className="size-5" />
-        </button>
-      </div>
+      <div className="week-result">
+        <div className="week-result__header">
+          <h3>Shopping List</h3>
+          <button
+            className="btn btn-icon"
+            onClick={downloadIcsFile}
+            aria-label="Download calendar file"
+          >
+            <ArrowDownTrayIcon className="size-5" />
+          </button>
+        </div>
 
-      <IngredientsList ingredients={ingredients} />
+        {ingredients.length > 0 && (
+          <div className="week-result__body">
+            <ul className="week-result__ingredients">
+              {ingredients.map((ingredient) => (
+                <li
+                  key={`${ingredient.name}-${ingredient.unit}`}
+                  className="week-result__ingredient"
+                >
+                  <span className="week-result__ingredient-qty">
+                    {ingredient.quantity} {ingredient.unit}
+                  </span>
+                  {ingredient.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
 
       {customRecipes.length > 0 && (
         <div className="custom-recipes-reminder">

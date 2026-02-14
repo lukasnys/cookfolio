@@ -166,6 +166,13 @@
     display: flex;
     flex-direction: column;
     gap: 0.375rem;
+    padding-left: 0.75rem;
+    border-left: 2.5px solid transparent;
+    transition: border-color var(--_duration-normal);
+  }
+
+  .day-field--active {
+    border-left-color: var(--color-accent);
   }
 
   .day-field__label {
@@ -179,6 +186,71 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
+  }
+
+  /* Week result */
+
+  .week-result {
+    background-color: var(--color-bg-surface);
+    border: var(--_border-width) solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  .week-result__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+
+    & h3 {
+      color: inherit;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    & .btn {
+      color: inherit;
+      border-color: color-mix(in srgb, var(--color-bg) 25%, transparent);
+      background-color: color-mix(in srgb, var(--color-bg) 10%, transparent);
+
+      &:hover {
+        background-color: color-mix(in srgb, var(--color-bg) 20%, transparent);
+      }
+    }
+  }
+
+  .week-result__body {
+    padding: 1rem 1.25rem;
+  }
+
+  .week-result__ingredients {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0;
+  }
+
+  .week-result__ingredient {
+    display: flex;
+    gap: 0.375rem;
+    align-items: baseline;
+    padding: 0.375rem 0;
+    border-bottom: 1px solid var(--color-border-subtle);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .week-result__ingredient-qty {
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+    color: var(--color-accent);
+    white-space: nowrap;
   }
 
   .custom-recipes-reminder {
