@@ -14,6 +14,7 @@ Make a todo list for all the tasks in this workflow and work on them one after a
 ### 1. Understand the Recipe
 
 Read whatever the user has provided — an image, handwritten notes, or a description. Extract:
+
 - Ingredients (names, quantities, units)
 - Cooking method and temperature
 - What dish it is / what it's usually served with
@@ -25,6 +26,7 @@ If the user mentions adapting the recipe (e.g. "we use this marinade for chicken
 Read 1–2 existing recipe files from `src/content/recipes/` and `src/content.config.ts` to confirm the current schema and naming style. Do NOT skip this — the schema evolves.
 
 Key constraints to check:
+
 - Allowed units (currently: g, ml, el, tl, kl, teen, stuk, beetje)
 - Required frontmatter fields (title, category, ingredients)
 - Allowed categories (main, dessert, side)
@@ -33,11 +35,13 @@ Key constraints to check:
 ### 3. Propose Name and Recipe
 
 Present the proposed recipe to the user **before creating any files**. Show:
+
 - Proposed recipe name
 - Full ingredient list with quantities and units (in Dutch)
 - Proposed instructions (in Dutch)
 
 Ask the user to confirm or adjust:
+
 - Recipe name
 - Ingredient names, quantities, units
 - Whether to include common accompaniments (rice, bread, etc.) as ingredients — useful for the shopping list generator
@@ -49,6 +53,7 @@ Use the `AskUserQuestion` tool to ask 1–2 targeted confirmation questions.
 Read `src/data/ingredient-categories.ts` and check whether every ingredient in the recipe is already mapped. Note any missing ones.
 
 Each missing ingredient needs to be added to the correct category:
+
 - `vlees-vis` — meat, fish, poultry
 - `groenten-fruit` — vegetables, fruit, fresh herbs
 - `zuivel` — dairy, eggs
@@ -59,6 +64,7 @@ Each missing ingredient needs to be added to the correct category:
 - `overig` — fallback (water, etc.)
 
 Also check `src/utils/calendar-events.ts` for smart reminders. Currently:
+
 - `kipfilet` → triggers "Defrost Chicken" reminder the evening before
 - `gemengd gehakt` → triggers "Fetch Minced Meat" reminder the morning of
 
@@ -69,6 +75,7 @@ If the recipe contains a new type of meat that should have a reminder, flag this
 After user confirms, create the recipe file and add any missing category entries.
 
 **Recipe file:** `src/content/recipes/<slug>.md`
+
 - Slug: lowercase, hyphens, no special characters, matches the title
 - All ingredient names in Dutch
 - Instructions in Dutch, as bullet points under `## Instructions`
@@ -78,6 +85,7 @@ After user confirms, create the recipe file and add any missing category entries
 ### 6. Verify
 
 Run:
+
 ```bash
 pnpm lint   # validates Zod schema + prettier
 pnpm build  # confirms recipe page renders
@@ -88,6 +96,7 @@ Fix any errors before proceeding.
 ### 7. Commit and Push
 
 Stage only the new/modified files:
+
 - `src/content/recipes/<slug>.md`
 - `src/data/ingredient-categories.ts` (if changed)
 
@@ -96,6 +105,7 @@ Commit with a clear message describing the recipe and any category additions. Pu
 ## Wrap Up
 
 Summarise what was done:
+
 - Recipe name and file created
 - Ingredients added to category map (if any)
 - Lint and build results
