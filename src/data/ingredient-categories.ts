@@ -35,7 +35,9 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
 
   // Groenten & fruit
   aardappel: "groenten-fruit",
+  citroen: "groenten-fruit",
   krielaardappel: "groenten-fruit",
+  krieltjesmix: "groenten-fruit",
   broccoli: "groenten-fruit",
   "broccoli (vers)": "groenten-fruit",
   wortel: "groenten-fruit",
@@ -58,7 +60,9 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   spruit: "groenten-fruit",
   spruitjes: "groenten-fruit",
   princessenbonen: "groenten-fruit",
+  snijbonen: "groenten-fruit",
   erwt: "groenten-fruit",
+  tuinerwten: "groenten-fruit",
   "edamame bonen": "groenten-fruit",
   "wokmix groenten": "groenten-fruit",
   komkommer: "groenten-fruit",
@@ -113,6 +117,7 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   pizzasaus: "conserven-sauzen",
   ketchup: "conserven-sauzen",
   mosterd: "conserven-sauzen",
+  mosterdzaad: "kruiden",
   dijonmosterd: "conserven-sauzen",
   sojasaus: "conserven-sauzen",
   ketjap: "conserven-sauzen",
