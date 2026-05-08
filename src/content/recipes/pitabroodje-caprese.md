@@ -17,9 +17,9 @@ ingredients:
   - name: tomaat
     quantity: 3
     unit: stuk
-  - name: sla
+  - name: slahart
     quantity: 1
-    unit: beetje
+    unit: stuk
   - name: basilicum
     quantity: 1
     unit: beetje
@@ -37,5 +37,5 @@ ingredients:
 - Bak de kip in een koekenpan met een beetje olie gaar en snijd in blokjes.
 - Bak ondertussen de pitabroodjes af.
 - Snijd de mozzarella en tomaten in plakjes.
-- Snijd de pitabroodjes open en beleg met sla, tomaat en mozzarella.
+- Snijd de pitabroodjes open en beleg met slahart, tomaat en mozzarella.
 - Verdeel de kipblokjes en pijnboompitten erover en garneer met verse basilicum.

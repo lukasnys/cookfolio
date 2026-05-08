@@ -24,8 +24,8 @@ ingredients:
     quantity: 400
     unit: g
   - name: kipfilet
-    quantity: 300
-    unit: g
+    quantity: 2
+    unit: stuk
   - name: komkommer
     quantity: 0.25
     unit: stuk

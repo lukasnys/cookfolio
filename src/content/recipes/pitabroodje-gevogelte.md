@@ -14,7 +14,10 @@ ingredients:
   - name: tomaat
     quantity: 3
     unit: stuk
-  - name: sla
+  - name: slahart
+    quantity: 1
+    unit: stuk
+  - name: looksaus
     quantity: 1
     unit: beetje
 ---
@@ -25,5 +28,5 @@ ingredients:
 - Bak de gevogelte pita in een koekenpan met een beetje olie gaar en snijd in blokjes.
 - Bak ondertussen de pitabroodjes af.
 - Snijd de tomaten in plakjes.
-- Snijd de pitabroodjes open en beleg met sla en tomaat.
+- Snijd de pitabroodjes open en beleg met slahart, tomaat en looksaus.
 - Verdeel de gebakken gevogelte pita erover en serveer direct.

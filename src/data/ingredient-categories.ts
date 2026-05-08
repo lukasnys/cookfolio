@@ -75,6 +75,7 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   ijsbergsla: "groenten-fruit",
   rucola: "groenten-fruit",
   sla: "groenten-fruit",
+  slahart: "groenten-fruit",
   avocado: "groenten-fruit",
   appel: "groenten-fruit",
   limoen: "groenten-fruit",
