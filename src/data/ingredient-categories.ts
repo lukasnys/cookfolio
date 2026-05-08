@@ -30,6 +30,7 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   "knack worsten": "vlees-vis",
   zalm: "vlees-vis",
   "gerookte zalm": "vlees-vis",
+  "gevogelte pita": "vlees-vis",
   tonijn: "vlees-vis",
 
   // Groenten & fruit
@@ -63,6 +64,7 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   komkommer: "groenten-fruit",
   ijsbergsla: "groenten-fruit",
   rucola: "groenten-fruit",
+  sla: "groenten-fruit",
   avocado: "groenten-fruit",
   appel: "groenten-fruit",
   citroensap: "groenten-fruit",
@@ -185,6 +187,8 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   gnocchi: "droge-voorraad",
   couscous: "droge-voorraad",
   quinoa: "droge-voorraad",
+  pitabroodje: "droge-voorraad",
+  pijnboompitten: "droge-voorraad",
   wraps: "droge-voorraad",
   pizzadeeg: "droge-voorraad",
   bladerdeeg: "droge-voorraad",
