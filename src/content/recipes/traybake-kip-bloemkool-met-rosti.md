@@ -3,7 +3,7 @@ title: Traybake kip en bloemkool met rösti
 category: main
 ingredients:
   - name: rösties
-    quantity: 600
+    quantity: 500
     unit: g
   - name: olijfolie
     quantity: 4
@@ -12,7 +12,7 @@ ingredients:
     quantity: 2
     unit: stuk
   - name: bloemkool
-    quantity: 800
+    quantity: 500
     unit: g
   - name: kipfilet
     quantity: 2

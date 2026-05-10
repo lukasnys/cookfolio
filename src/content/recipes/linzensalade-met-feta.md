@@ -1,6 +1,6 @@
 ---
 title: Linzensalade met feta
-category: side
+category: main
 ingredients:
   - name: komkommer
     quantity: 1
@@ -9,7 +9,7 @@ ingredients:
     quantity: 3
     unit: stuk
   - name: rode ui
-    quantity: 0.5
+    quantity: 1
     unit: stuk
   - name: olijven
     quantity: 4
