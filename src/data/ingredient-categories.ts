@@ -177,6 +177,7 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   kruidnagel: "kruiden",
   korianderzaad: "kruiden",
   "garam masala": "kruiden",
+  currykruiden: "kruiden",
   kerriepoeder: "kruiden",
   oregano: "kruiden",
   "gedroogde oregano": "kruiden",
